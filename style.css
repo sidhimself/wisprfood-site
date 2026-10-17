@@ -1,0 +1,80 @@
+/* WisprFood site: the app's Deep Herb palette and Plus Jakarta Sans. Light only, like the app. */
+:root{
+  --deep:#12372A; --lime:#C8E86B; --paper:#F5F2EA; --ivory:#F6F1E4; --card:#FFFFFF;
+  --muted:#5C6F66; --border:#E4DECF; --line:#D8D1BE; --green:#2E7D4F; --mint:#EEF3EA;
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--deep);font-family:var(--font);font-size:16px;line-height:1.65}
+a{color:inherit;text-decoration-color:var(--green);text-decoration-thickness:2px;text-underline-offset:3px}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left));padding-right:max(20px,env(safe-area-inset-right))}
+
+/* Top bar */
+.bar{display:flex;align-items:center;justify-content:space-between;padding-block:18px}
+.mark{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:18px;letter-spacing:-.01em;text-decoration:none}
+.mark img{width:32px;height:32px;border-radius:9px;display:block}
+.bar nav{display:flex;gap:18px;font-size:14px;font-weight:600}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover,.bar nav a[aria-current]{color:var(--deep)}
+
+/* Document pages */
+.doc{padding-block:24px 72px}
+.doc h1{font-weight:800;font-size:clamp(30px,6vw,40px);letter-spacing:-.025em;line-height:1.1;margin:8px 0 6px;text-wrap:balance}
+.meta{color:var(--muted);font-size:14px;margin:0 0 28px}
+.summary{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px 22px;margin-bottom:32px}
+.summary p{margin:0 0 8px;font-weight:700}
+.summary ul{margin:0;padding-left:20px}
+.doc h2{font-weight:800;font-size:20px;letter-spacing:-.01em;margin:36px 0 8px}
+.doc h3{font-weight:800;font-size:16px;margin:22px 0 4px}
+p{margin:0 0 12px} ul,ol{margin:0 0 12px;padding-left:22px} li{margin-bottom:6px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0 14px}
+th,td{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid var(--border)}
+th{font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tablewrap{overflow-x:auto}
+.contact{background:var(--deep);color:var(--ivory);border-radius:20px;padding:22px 24px;margin:8px 0 28px}
+.contact p{margin:0}
+.contact .big{font-weight:800;font-size:20px;margin-top:4px}
+.contact a{text-decoration-color:var(--lime)}
+
+/* Footer */
+footer{border-top:1px solid var(--border);padding-block:24px 40px;font-size:14px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:space-between}
+footer nav{display:flex;gap:18px;flex-wrap:wrap}
+footer a{text-decoration:none} footer a:hover{color:var(--deep)}
+
+/* Home */
+.hero{background:var(--deep);color:var(--ivory)}
+.hero .bar nav a{color:#B5C9BD} .hero .bar nav a:hover{color:var(--ivory)}
+.hero-body{padding-block:48px 72px;display:grid;gap:40px;align-items:center}
+@media (min-width:760px){.hero-body{grid-template-columns:1.1fr .9fr;padding-block:64px 88px}}
+.hero h1{font-weight:800;font-size:clamp(38px,8vw,60px);line-height:1.02;letter-spacing:-.035em;margin:0 0 16px;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--lime)}
+.hero .lede{font-size:18px;color:#D7DED5;max-width:30em;margin:0 0 28px}
+.soon{display:inline-flex;align-items:center;gap:10px;background:var(--lime);color:var(--deep);font-weight:800;border-radius:999px;padding:14px 22px;font-size:16px}
+.soon svg{width:18px;height:18px}
+.where{font-size:14px;color:#B5C9BD;margin-top:14px}
+.wide{max-width:1040px}
+
+/* Phone card in the hero */
+.phone{justify-self:center;width:min(300px,100%);background:var(--paper);color:var(--deep);border-radius:38px;padding:18px 16px 20px;border:8px solid #0A2017;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.phone .hi{font-weight:800;font-size:20px;margin:6px 4px 12px;letter-spacing:-.02em}
+.budget{background:var(--deep);color:var(--ivory);border-radius:18px;padding:14px 16px;margin-bottom:12px}
+.budget b{font-size:26px;letter-spacing:-.02em} .budget span{font-size:12px;color:#B5C9BD;margin-left:6px}
+.track{height:6px;border-radius:9px;background:rgba(255,255,255,.15);margin-top:10px}
+.track i{display:block;height:100%;width:46%;border-radius:9px;background:var(--lime)}
+.meal{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:14px}
+.meal small{display:block;color:var(--muted);font-size:12px}
+.meal b{color:var(--green);font-variant-numeric:tabular-nums}
+
+.features{padding-block:64px 24px;display:grid;gap:16px}
+@media (min-width:760px){.features{grid-template-columns:repeat(3,1fr)}}
+.feature{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:22px}
+.feature .dot{width:40px;height:40px;border-radius:12px;background:var(--mint);display:grid;place-items:center;margin-bottom:12px}
+.feature .dot svg{width:22px;height:22px}
+.feature h2{font-size:18px;font-weight:800;letter-spacing:-.01em;margin:0 0 6px}
+.feature p{margin:0;color:var(--muted);font-size:15px}
+.countries{padding-block:24px 72px;text-align:center}
+.countries h2{font-size:22px;font-weight:800;letter-spacing:-.02em;margin:0 0 6px}
+.countries p{color:var(--muted);margin:0 auto;max-width:34em}
