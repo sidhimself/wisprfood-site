@@ -103,9 +103,10 @@
   }
 
   /* ---------- Store marquee: duplicate the row so it loops seamlessly ---------- */
+  var wide = window.matchMedia && window.matchMedia('(min-width: 900px)').matches;
   ['stores-track', 'food-track'].forEach(function (id) {
   var track = document.getElementById(id);
-  if (track && !reduce) {
+  if (track && !reduce && wide) {
     Array.prototype.slice.call(track.children).forEach(function (c) {
       var d = c.cloneNode(true); d.setAttribute('aria-hidden', 'true'); track.appendChild(d);
     });
@@ -192,8 +193,8 @@
     screens.forEach(function (s, i) { s.classList.toggle('on', i === n); s.classList.toggle('up', i < n); });
     dots.forEach(function (d, i) { d.classList.toggle('on', i === n); });
   }
-  // mobile: give every step its own copy of its screen
-  steps.forEach(function (s, i) {
+  // (mobile now uses the same pinned phone; no per-step copies)
+  if (false) steps.forEach(function (s, i) {
     if (!screens[i]) return;
     var m = document.createElement('div'); m.className = 'mini-phone'; m.setAttribute('aria-hidden', 'true');
     var c = screens[i].cloneNode(true); c.classList.add('on'); m.appendChild(c); s.appendChild(m);
