@@ -3,45 +3,274 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>WisprFood · Meal plans priced at your supermarket</title>
-<meta name="description" content="WisprFood plans a week of meals for your household and prices every one at the supermarket you choose.">
+<title>WisprFood · Budget Meal Planner App With Grocery Prices</title>
+<meta name="description" content="Plan a week of meals for your family, priced at your own grocery store. WisprFood builds your meal plan, grocery list and food budget in seconds. Coming soon to iPhone.">
+<link rel="canonical" href="https://wisprfood.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#12372A">
+<meta name="color-scheme" content="light">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="WisprFood">
+<meta property="og:title" content="WisprFood · Meal plans priced at your grocery store">
+<meta property="og:description" content="A week of meals for everyone at your table, priced at the store you choose, with one grocery list. Coming soon to iPhone.">
+<meta property="og:url" content="https://wisprfood.com/">
+<meta property="og:image" content="https://wisprfood.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="WisprFood: good food, every night, within budget">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WisprFood · Meal plans priced at your grocery store">
+<meta name="twitter:description" content="A week of meals for everyone at your table, priced at the store you choose. Coming soon to iPhone.">
+<meta name="twitter:image" content="https://wisprfood.com/og-image.png">
+
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <link rel="stylesheet" href="/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://wisprfood.com/#org",
+      "name": "Kesitics Studios",
+      "url": "https://wisprfood.com/",
+      "logo": "https://wisprfood.com/apple-touch-icon.png",
+      "email": "kesitics.studios@gmail.com",
+      "brand": {"@type": "Brand", "name": "WisprFood"}
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://wisprfood.com/#website",
+      "url": "https://wisprfood.com/",
+      "name": "WisprFood",
+      "inLanguage": "en",
+      "publisher": {"@id": "https://wisprfood.com/#org"}
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://wisprfood.com/#app",
+      "name": "WisprFood",
+      "alternateName": "WisprFood: Meal Plan & Save",
+      "description": "A budget meal planner that plans a week of meals for your household and prices every meal at the grocery store you choose, with one combined grocery list.",
+      "operatingSystem": "iOS",
+      "applicationCategory": "LifestyleApplication",
+      "applicationSubCategory": "Food & Drink",
+      "inLanguage": ["en", "es", "fr", "de", "da", "pl"],
+      "image": "https://wisprfood.com/og-image.png",
+      "url": "https://wisprfood.com/",
+      "publisher": {"@id": "https://wisprfood.com/#org"},
+      "offers": [
+        {"@type": "Offer", "name": "Yearly", "price": "44.99", "priceCurrency": "USD", "description": "3-day free trial, then $44.99 per year"},
+        {"@type": "Offer", "name": "Monthly", "price": "8.99", "priceCurrency": "USD"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://wisprfood.com/#faq",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is WisprFood?", "acceptedAnswer": {"@type": "Answer", "text": "WisprFood is a meal planning app for iPhone. It plans breakfast, lunch and dinner for everyone in your household, shows what each meal costs at the grocery store you choose, and turns the week into one grocery list sorted by aisle."}},
+        {"@type": "Question", "name": "How does WisprFood know grocery prices?", "acceptedAnswer": {"@type": "Answer", "text": "Every ingredient has a price at every supported store: 70 grocery stores across 10 countries. Meal prices are worked out from the exact amounts in each recipe for the people you cook for. Prices are estimates for planning, so your receipt can differ a little."}},
+        {"@type": "Question", "name": "Which grocery stores does WisprFood support?", "acceptedAnswer": {"@type": "Answer", "text": "Seven stores in each of our 10 countries, 70 in all, including Walmart in the US, Tesco in the UK, and Lidl, Aldi, Carrefour and Mercadona in Europe. You can compare your whole week across the stores in your country."}},
+        {"@type": "Question", "name": "Does it work with allergies and diets?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Tell WisprFood about diets, allergies, proteins you avoid and the equipment in your kitchen. Meals are planned around them, and ingredient swaps can be set per person. Kids get smaller portions, and the grocery list follows."}},
+        {"@type": "Question", "name": "How much does WisprFood cost?", "acceptedAnswer": {"@type": "Answer", "text": "WisprFood starts with a 3-day free trial. After that it is $44.99 a year (about $3.75 a month) or $8.99 a month in the US. Subscriptions are handled by Apple and you can cancel any time in your iPhone settings."}},
+        {"@type": "Question", "name": "When can I download WisprFood?", "acceptedAnswer": {"@type": "Answer", "text": "WisprFood is coming soon to iPhone and iPad on the App Store, launching first in the United States. An Android version is planned for later."}},
+        {"@type": "Question", "name": "What happens to my data?", "acceptedAnswer": {"@type": "Answer", "text": "You sign in with Apple or Google, your account data is stored securely in the EU under GDPR, and you can delete your account and everything in it from Profile in the app."}},
+        {"@type": "Question", "name": "Are the nutrition figures exact?", "acceptedAnswer": {"@type": "Answer", "text": "Calories and macros are rounded grocery-store averages. They are good for planning a balanced week, but they are not medical advice."}}
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
+
 <div class="hero">
-<header class="wrap wide bar"><a class="mark" href="/"><img src="/favicon.svg" alt="">WisprFood</a><nav><a href="/support">Support</a><a href="/privacy">Privacy</a></nav></header>
+<header class="wrap wide bar">
+  <a class="mark" href="/" aria-label="WisprFood home"><img src="/favicon.svg" alt="" width="32" height="32">WisprFood</a>
+  <nav aria-label="Main">
+    <a class="nav-hide" href="#how">How it works</a>
+    <a class="nav-hide" href="#features">Features</a>
+    <a class="nav-hide" href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
 <section class="wrap wide hero-body">
   <div>
+    <p class="eyebrow">Budget meal planner for iPhone</p>
     <h1>Good food, every night, <em>within budget.</em></h1>
-    <p class="lede">WisprFood plans a week of meals for everyone at your table and prices each one at the supermarket you choose.</p>
-    <span class="soon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.9-1.1-2.9-4.2zM13.9 5.2c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg>Coming soon to iPhone</span>
-    <p class="where">Launching first in Spain.</p>
+    <p class="lede">WisprFood plans a week of meals for everyone at your table, prices each one at the grocery store you choose, and turns it all into one shopping list.</p>
+    <div class="ctas">
+      <span class="btn btn-lime"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.9-1.1-2.9-4.2zM13.9 5.2c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg>Coming soon to iPhone</span>
+      <a class="btn btn-ghost" href="mailto:kesitics.studios@gmail.com?subject=Tell%20me%20when%20WisprFood%20launches">Tell me when it launches</a>
+    </div>
+    <p class="where">Launching first in the US · 3-day free trial</p>
   </div>
   <div class="phone" aria-hidden="true">
-    <div class="hi">Good evening</div>
-    <div class="budget"><b>€24.60</b><span>left of €45.00</span><div class="track"><i></i></div></div>
-    <div class="meal"><div>Cacio e pepe<small>20 min · for 2</small></div><b>€1.61</b></div>
-    <div class="meal"><div>Lentil &amp; chorizo stew<small>35 min · for 2</small></div><b>€2.08</b></div>
-    <div class="meal"><div>Sweet chilli tofu &amp; rice<small>25 min · for 2</small></div><b>€4.10</b></div>
+    <div class="hi">This week <small>2 people</small></div>
+    <div class="days"><span class="on">Mon<b>19</b></span><span>Tue<b>20</b></span><span>Wed<b>21</b></span><span>Thu<b>22</b></span><span>Fri<b>23</b></span></div>
+    <div class="budget"><b>$24.60</b><span>left of $45.00</span><div class="track"><i></i></div></div>
+    <div class="meal"><div><span class="tag">Lunch</span>Cacio e pepe<small>20 min · for 2</small></div><b>$1.61</b></div>
+    <div class="meal"><div><span class="tag">Dinner</span>Lentil &amp; chorizo stew<small>35 min · for 2</small></div><b>$2.08</b></div>
+    <div class="meal"><div><span class="tag">Dinner</span>Sweet chili tofu &amp; rice<small>25 min · for 2</small></div><b>$4.10</b></div>
   </div>
 </section>
 </div>
-<main class="wrap wide">
-<section class="features">
-  <div class="feature"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#2E7D4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="3"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></div><h2>Your week, planned</h2><p>Breakfast to dinner, built around your diets, allergies, kitchen and the time you have to cook.</p></div>
-  <div class="feature"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#2E7D4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12l-8 8-9-9V3h8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div><h2>Priced at your shop</h2><p>Every meal shows what it costs at your supermarket, and you can compare the whole week across shops.</p></div>
-  <div class="feature"><div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="#2E7D4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg></div><h2>One grocery list</h2><p>Ingredients combined by aisle, with a running total as you tick things into the basket.</p></div>
-</section>
-<section class="countries">
-  <h2>10 countries, 6 languages</h2>
-  <p>Spain, France, Germany, Ireland, the UK, Denmark, Poland, the US, Mexico and Colombia. In English, Spanish, French, German, Danish and Polish.</p>
+
+<main id="main">
+<div class="wrap wide">
+  <section class="stats" aria-label="WisprFood in numbers">
+    <div class="stat"><b>165</b><span>cook-tested recipes</span></div>
+    <div class="stat"><b>70</b><span>grocery stores priced</span></div>
+    <div class="stat"><b>10</b><span>countries</span></div>
+    <div class="stat"><b>6</b><span>languages</span></div>
+  </section>
+
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="section-head">
+      <p class="kicker">How it works</p>
+      <h2 id="how-title">A whole week of meals, <em>planned in a minute.</em></h2>
+      <p>Answer a few questions once. WisprFood does the planning, the math and the grocery list every week after.</p>
+    </div>
+    <ol class="steps" role="list">
+      <li class="step"><div class="num" aria-hidden="true">1</div><h3>Tell us about your table</h3><p>How many adults and kids, which days you cook, your weekly budget, diets, allergies, the proteins you skip and what's in your kitchen.</p></li>
+      <li class="step"><div class="num" aria-hidden="true">2</div><h3>Get your week, priced</h3><p>Breakfast, lunch and dinner on a rolling week, every meal priced at your grocery store. Swap, skip or fill any slot with one tap.</p></li>
+      <li class="step"><div class="num" aria-hidden="true">3</div><h3>Shop one list, then cook</h3><p>Every ingredient combined into one grocery list by aisle. Then follow each recipe step by step in cooking mode, with timers.</p></li>
+    </ol>
+  </section>
+
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="section-head">
+      <p class="kicker">Features</p>
+      <h2 id="features-title">Everything a weekly meal plan <em>should do.</em></h2>
+      <p>Built for real households: busy weeknights, picky eaters, tight budgets and small kitchens.</p>
+    </div>
+    <div class="features">
+      <article class="feature"><div class="dot t-green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12l-8 8-9-9V3h8z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg></div><h3>Priced at your store</h3><p>Every meal shows what it costs at your own grocery store, for the exact number of people you cook for.</p></article>
+      <article class="feature"><div class="dot t-saffron"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.8 9.2c-.6-.8-1.6-1.2-2.8-1.2-1.7 0-3 .9-3 2.2 0 3 6 1.6 6 4.4 0 1.3-1.3 2.4-3 2.4-1.3 0-2.4-.5-3-1.4M12 6v2M12 16.8V18"/></svg></div><h3>Fit to budget</h3><p>Set a weekly food budget and WisprFood adjusts the plan to fit, without touching the meals you picked yourself.</p></article>
+      <article class="feature"><div class="dot t-sky"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12"/><path d="M8 21v-6h8v6M3 13h18"/></svg></div><h3>Compare stores</h3><p>See what your whole week would cost at each grocery store near you, and how much you'd save by switching.</p></article>
+      <article class="feature"><div class="dot t-tomato"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a4 4 0 0 1 4 4v1H8V7a4 4 0 0 1 4-4z"/><path d="M5 8h14l-1 13H6z"/><path d="M10 12v5M14 12v5"/></svg></div><h3>Allergies and diets</h3><p>Vegetarian, gluten-free, dairy-free and more. Allergens are kept out, and ingredient swaps can be set per person.</p></article>
+      <article class="feature"><div class="dot t-berry"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14.5 20c0-2.6 1.1-4.6 3-4.6s3.5 2 3.5 4.6"/></svg></div><h3>Made for families</h3><p>Kids get smaller portions, and the recipe, cooking steps and grocery list all use the same household totals.</p></article>
+      <article class="feature"><div class="dot t-leaf"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M5 9h14M9 5.5v1M9 12v3"/></svg></div><h3>Fridge scan</h3><p>Snap a photo of your fridge and get dinner ideas from what you already have, so less food goes in the trash.</p></article>
+      <article class="feature"><div class="dot t-sky"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></div><h3>Cooking mode</h3><p>Full-screen steps with built-in timers and the right amounts for your household, so you never scroll with floury hands.</p></article>
+      <article class="feature"><div class="dot t-green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></div><h3>Import a recipe</h3><p>Bring in a favorite recipe and WisprFood prices it and adds it to your week like any other meal.</p></article>
+      <article class="feature"><div class="dot t-saffron"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 5-6"/></svg></div><h3>Weekly recap</h3><p>See what you cooked, what you spent and how you tracked against your budget, week after week.</p></article>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="list-title">
+    <div class="band">
+      <div>
+        <p class="kicker" style="color:var(--lime)">Grocery list</p>
+        <h2 id="list-title">One list. One total. <em>No surprises at checkout.</em></h2>
+        <p>Your week's ingredients land in a single shopping list, grouped by aisle and priced at your store.</p>
+        <ul class="checks">
+          <li>Sorted by aisle, so you walk the store once</li>
+          <li>A running total as you check things off</li>
+          <li>Share the list with whoever is doing the shopping</li>
+          <li>Cups and ounces or grams, in your language and currency</li>
+        </ul>
+      </div>
+      <div class="list-card" aria-hidden="true">
+        <div class="aisle">Produce</div>
+        <div class="row done"><span><i class="box"></i>Yellow onions</span><span class="muted">3</span></div>
+        <div class="row"><span><i class="box"></i>Lemons</span><span class="muted">2</span></div>
+        <div class="row"><span><i class="box"></i>Baby spinach</span><span class="muted">7 oz</span></div>
+        <div class="aisle">Pantry</div>
+        <div class="row done"><span><i class="box"></i>Brown lentils</span><span class="muted">14 oz</span></div>
+        <div class="row"><span><i class="box"></i>Spaghetti</span><span class="muted">1 lb</span></div>
+        <div class="total"><span>Week total</span><b>$20.40</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="stores" aria-labelledby="stores-title">
+    <div class="section-head">
+      <p class="kicker">Where it works</p>
+      <h2 id="stores-title">Real prices from <em>the stores you use.</em></h2>
+      <p>Every one of our 149 ingredients is priced at all 70 grocery stores, seven in each country.</p>
+    </div>
+    <div class="split">
+      <div class="panel">
+        <h3>Grocery stores you know</h3>
+        <p>Pick your store once and every meal, list and budget is priced there. Compare your week across the other stores in your country any time.</p>
+        <ul class="chips"><li>Walmart</li><li>Tesco</li><li>Lidl</li><li>Aldi</li><li>Carrefour</li><li>Mercadona</li><li>Dia</li><li>Eroski</li><li>Alcampo</li><li>+ more in every country</li></ul>
+        <p class="fineprint">Store names belong to their owners. WisprFood is independent and isn't affiliated with any grocery store.</p>
+      </div>
+      <div class="panel">
+        <h3>10 countries, 6 languages</h3>
+        <p>Plan in your language, with local money and local units.</p>
+        <ul class="chips"><li>United States</li><li>United Kingdom</li><li>Ireland</li><li>Spain</li><li>France</li><li>Germany</li><li>Denmark</li><li>Poland</li><li>Mexico</li><li>Colombia</li></ul>
+        <p class="fineprint">English, Español, Français, Deutsch, Dansk and Polski.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="pricing" aria-labelledby="pricing-title">
+    <div class="section-head center">
+      <p class="kicker">Pricing</p>
+      <h2 id="pricing-title">Try it free for <em>3 days.</em></h2>
+      <p>One plan, every feature. Cancel any time in your iPhone settings.</p>
+    </div>
+    <div class="plans">
+      <div class="plan best">
+        <span class="badge">Best value</span>
+        <h3>Yearly</h3>
+        <div class="price">$44.99<small> / year</small></div>
+        <p class="per">3 days free, then about $3.75 a month</p>
+        <ul><li>Unlimited weekly meal plans</li><li>Prices at every supported store</li><li>Grocery list, cooking mode, fridge scan</li></ul>
+      </div>
+      <div class="plan">
+        <h3>Monthly</h3>
+        <div class="price">$8.99<small> / month</small></div>
+        <p class="per">Pay month to month</p>
+        <ul><li>Every feature included</li><li>Switch or cancel any time</li><li>Billed through the App Store</li></ul>
+      </div>
+    </div>
+    <p class="plans-note">US prices. In other countries the App Store shows the price in your local currency.</p>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-title">
+    <div class="section-head center">
+      <p class="kicker">FAQ</p>
+      <h2 id="faq-title">Questions, <em>answered.</em></h2>
+    </div>
+    <div class="faq">
+      <details><summary>What is WisprFood?</summary><p>WisprFood is a meal planning app for iPhone. It plans breakfast, lunch and dinner for everyone in your household, shows what each meal costs at the grocery store you choose, and turns the week into one grocery list sorted by aisle.</p></details>
+      <details><summary>How does WisprFood know grocery prices?</summary><p>Every ingredient has a price at every supported store: 70 grocery stores across 10 countries. Meal prices are worked out from the exact amounts in each recipe for the people you cook for. Prices are estimates for planning, so your receipt can differ a little.</p></details>
+      <details><summary>Which grocery stores does WisprFood support?</summary><p>Seven stores in each of our 10 countries, 70 in all, including Walmart in the US, Tesco in the UK, and Lidl, Aldi, Carrefour and Mercadona in Europe. You can compare your whole week across the stores in your country.</p></details>
+      <details><summary>Does it work with allergies and diets?</summary><p>Yes. Tell WisprFood about diets, allergies, proteins you avoid and the equipment in your kitchen. Meals are planned around them, and ingredient swaps can be set per person. Kids get smaller portions, and the grocery list follows.</p></details>
+      <details><summary>How much does WisprFood cost?</summary><p>WisprFood starts with a 3-day free trial. After that it is $44.99 a year (about $3.75 a month) or $8.99 a month in the US. Subscriptions are handled by Apple and you can cancel any time in your iPhone settings.</p></details>
+      <details><summary>When can I download WisprFood?</summary><p>WisprFood is coming soon to iPhone and iPad on the App Store, launching first in the United States. An Android version is planned for later.</p></details>
+      <details><summary>What happens to my data?</summary><p>You sign in with Apple or Google, your account data is stored securely in the EU under GDPR, and you can delete your account and everything in it from Profile in the app. Read the <a href="/privacy">privacy policy</a>.</p></details>
+      <details><summary>Are the nutrition figures exact?</summary><p>Calories and macros are rounded grocery-store averages. They are good for planning a balanced week, but they are not medical advice.</p></details>
+    </div>
+  </section>
+</div>
+
+<section class="wrap wide section closing" aria-labelledby="closing-title">
+  <div class="band">
+    <h2 id="closing-title">Eat well. Spend less. <em>Think about it once.</em></h2>
+    <p>WisprFood is coming soon to iPhone, launching first in the US. Drop us a line and we'll tell you the day it's out.</p>
+    <div class="ctas">
+      <a class="btn btn-lime" href="mailto:kesitics.studios@gmail.com?subject=Tell%20me%20when%20WisprFood%20launches">Tell me when it launches</a>
+    </div>
+  </div>
 </section>
 </main>
-<footer><div class="wrap"><span>© 2026 Kesitics Studios</span><nav><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav></div></footer>
+
+<footer><div class="wrap wide">
+  <div class="brand"><span>© 2026 Kesitics Studios · WisprFood</span><small>Prices are estimates for meal planning. Nutrition figures are rounded averages, not medical advice.</small></div>
+  <nav aria-label="Footer"><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
+</div></footer>
 </body>
 </html>
