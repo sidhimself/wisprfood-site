@@ -46,7 +46,7 @@
     setTimeout(function () {
       bdemo.classList.add('go');
       var b = bdemo.querySelector('[data-budget]');
-      if (b) countUp(b, 41.80, { from: 52.40, dur: 1300, dec: 2, pre: '$' });
+      if (b) countUp(b, 41.96, { from: 49.80, dur: 1300, dec: 2, pre: '$' });
     }, reduce ? 0 : 700);
   });
 
@@ -58,7 +58,7 @@
     var bk = list.querySelector('[data-basket]'); if (bk) bk.textContent = '$0.00';
     onView(list, function () {
       var rows = list.querySelectorAll('.row'), basket = list.querySelector('[data-basket]');
-      var order = [0, 3, 1, 4, 2], total = 0, steps = [3.15, 4.40, 2.60, 6.95, 3.30];
+      var order = [0, 3, 1, 4, 2], total = 0, steps = [4.20, 6.60, 2.10, 1.01, 1.60];
       order.forEach(function (i, n) {
         setTimeout(function () {
           rows[i].classList.add('t');
@@ -103,12 +103,14 @@
   }
 
   /* ---------- Store marquee: duplicate the row so it loops seamlessly ---------- */
-  var track = document.getElementById('stores-track');
+  ['stores-track', 'food-track'].forEach(function (id) {
+  var track = document.getElementById(id);
   if (track && !reduce) {
     Array.prototype.slice.call(track.children).forEach(function (c) {
       var d = c.cloneNode(true); d.setAttribute('aria-hidden', 'true'); track.appendChild(d);
     });
   }
+  });
 
   /* ---------- Lottie animations (the app's own files in /animations) ---------- */
   var slots = document.querySelectorAll('[data-lottie]');

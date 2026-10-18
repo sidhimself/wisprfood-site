@@ -276,7 +276,7 @@ footer .brand small{font-size:12px;max-width:38em}
 .bdemo .swaps li .from{color:var(--muted);text-decoration:line-through;font-weight:600}
 .bdemo .swaps li b{margin-left:auto;color:var(--green);font-variant-numeric:tabular-nums}
 .js .bdemo .swaps li{opacity:0;transform:translateX(-14px);transition:opacity .5s,transform .5s}
-.bdemo.go .bar i{width:78%;background:var(--green)}
+.bdemo.go .bar i{width:93%;background:var(--green)}
 .bdemo.go .row b{color:var(--green)}
 .js .bdemo.go .swaps li{opacity:1;transform:none}
 .bdemo.go .swaps li:nth-child(2){transition-delay:.25s}.bdemo.go .swaps li:nth-child(3){transition-delay:.5s}
@@ -333,3 +333,83 @@ footer .brand small{font-size:12px;max-width:38em}
   .floaty,.marquee-track,.scanline,.js .phone .track i{animation:none!important}
   .marquee-track{flex-wrap:wrap;width:auto;justify-content:center}
 }
+
+/* ===== v3: store buttons, food photos, logos ===== */
+.store-btns{display:flex;flex-wrap:wrap;gap:12px}
+.store-btn{display:inline-flex;align-items:center;gap:12px;min-width:196px;padding:11px 20px 11px 16px;border-radius:16px;text-decoration:none;line-height:1.1;font-weight:800;font-size:19px;letter-spacing:-.01em;transition:transform .2s cubic-bezier(.3,1.6,.5,1),box-shadow .2s}
+.store-btn small{display:block;font-size:11px;font-weight:600;letter-spacing:.02em;opacity:.8;margin-bottom:2px}
+.store-btn svg{width:26px;height:26px;flex:none}
+.store-btn:hover{transform:translateY(-2px) scale(1.02)}
+.store-btn.light{background:var(--lime);color:var(--deep);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.store-btn.dark{background:var(--ivory);color:var(--deep)}
+.store-btn.deep{background:var(--deep);color:var(--ivory)}
+
+/* Hero meal thumbnails + floating food photos */
+.meal{gap:12px}
+.meal .th{width:44px;height:44px;border-radius:12px;object-fit:cover;flex:none}
+.meal > div{flex:1;min-width:0}
+.food-bubble{position:absolute;border-radius:50%;overflow:hidden;box-shadow:0 18px 40px rgba(0,0,0,.35);border:4px solid rgba(246,241,228,.9);z-index:2;animation:bob 6s ease-in-out infinite}
+.food-bubble img{display:block;width:100%;height:100%;object-fit:cover}
+.food-bubble.b1{width:96px;height:96px;left:-56px;top:-14px;animation-delay:-2s}
+.food-bubble.b2{width:78px;height:78px;right:-40px;bottom:12%;animation-delay:-4s}
+@media (max-width:520px){.food-bubble.b1{left:-14px;top:-30px;width:76px;height:76px}.food-bubble.b2{right:-8px;width:64px;height:64px}}
+.js .food-bubble{animation:popin .7s cubic-bezier(.3,1.6,.5,1) both,bob 6s ease-in-out 1s infinite}
+.js .food-bubble.b2{animation-delay:.25s,1.25s}
+@keyframes popin{from{opacity:0;transform:scale(.3)}to{opacity:1;transform:scale(1)}}
+
+/* Logo tiles */
+.logo-chip.has-logo{padding:0 26px;height:76px}
+.logo-chip.has-logo img{height:38px;max-width:140px}
+.logo-chip.has-logo.sq img{height:52px}
+.logo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0;padding:0;list-style:none}
+.logo-grid li{margin:0;height:78px;background:var(--paper);border:1px solid var(--border);border-radius:18px;display:grid;place-items:center;padding:10px;transition:transform .3s cubic-bezier(.3,1.6,.5,1)}
+.logo-grid li:hover{transform:translateY(-3px) rotate(-2deg) scale(1.04)}
+.logo-grid img{max-height:44px;max-width:100%;width:auto;object-fit:contain}
+.logo-grid .txt{font-weight:800;font-size:16px}
+.js .logo-grid li{opacity:0;transform:scale(.6)}
+.js .in .logo-grid li,.js .logo-grid.in li{opacity:1;transform:none;transition:opacity .4s,transform .55s cubic-bezier(.3,1.6,.5,1)}
+.js .in .logo-grid li:nth-child(2){transition-delay:.06s}.js .in .logo-grid li:nth-child(3){transition-delay:.12s}
+.js .in .logo-grid li:nth-child(4){transition-delay:.18s}.js .in .logo-grid li:nth-child(5){transition-delay:.24s}
+.js .in .logo-grid li:nth-child(6){transition-delay:.3s}.js .in .logo-grid li:nth-child(7){transition-delay:.36s}
+.js .in .logo-grid li:nth-child(8){transition-delay:.42s}.js .in .logo-grid li:nth-child(9){transition-delay:.48s}
+
+/* Recipe photo marquee */
+.food-marquee{overflow:hidden;margin-top:24px;padding-block:6px 10px;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.food-track{display:flex;gap:14px;width:max-content;animation:slide 70s linear infinite}
+.food-marquee:hover .food-track{animation-play-state:paused}
+.food-card{width:200px;flex:none;background:var(--card);border:1px solid var(--border);border-radius:22px;padding:6px 6px 12px;transition:transform .3s cubic-bezier(.3,1.6,.5,1),box-shadow .3s}
+.food-card:hover{transform:translateY(-6px) rotate(-1.5deg);box-shadow:0 18px 34px rgba(18,55,42,.14)}
+.food-card img{display:block;width:100%;aspect-ratio:1;border-radius:17px;object-fit:cover}
+.food-card b{display:block;font-size:14.5px;margin:9px 8px 0;line-height:1.25}
+.food-card span{display:block;font-size:12px;color:var(--muted);margin:3px 8px 0;font-weight:600}
+.food-card .tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;margin:0 0 0 8px;color:var(--green)}
+
+/* Budget swaps with photos */
+.bdemo .swaps li img{width:34px;height:34px;border-radius:9px;object-fit:cover;flex:none}
+.bdemo .swaps li .arrow{color:var(--muted);font-weight:600}
+.bdemo .swaps li .to{display:flex;align-items:center;gap:8px}
+
+/* Cooking card header */
+.cook .head{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.cook .head img{width:44px;height:44px;border-radius:12px;object-fit:cover}
+.cook .head b{display:block;font-size:15px}
+.cook .head small{color:#B5C9BD;font-size:12px}
+.cook .lime{color:var(--lime)}
+
+/* Fridge photo */
+.fridge-photo{position:relative;border-radius:20px;overflow:hidden;margin:-8px -8px 16px;aspect-ratio:16/10}
+.fridge-photo img{display:block;width:100%;height:100%;object-fit:cover}
+.fridge-photo .beam{position:absolute;left:6%;right:6%;height:34px;top:20%;background:linear-gradient(180deg,rgba(200,232,107,0),rgba(200,232,107,.75),rgba(200,232,107,0));animation:beam 2.6s ease-in-out infinite}
+@keyframes beam{0%,100%{top:12%}50%{top:72%}}
+.fridge-ideas li img{width:48px;height:48px;border-radius:12px;object-fit:cover;flex:none}
+.fridge-ideas li b{margin-left:auto;color:var(--green);font-variant-numeric:tabular-nums;font-size:14px}
+
+@media (prefers-reduced-motion:reduce){.food-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}.food-bubble,.fridge-photo .beam{animation:none!important}}
+.food-card{margin:0}
+.food-card img{height:auto}
+.food-card figcaption{padding-bottom:2px}
+.logo-chip.aldi{gap:10px}
+.logo-chip.aldi b,.logo-grid .aldi b{font-weight:800;font-size:17px;letter-spacing:.02em}
+.logo-grid .aldi{display:flex;align-items:center;gap:8px}
+.logo-grid .aldi img{max-height:38px}
+.meal .th,.bdemo .swaps li img,.fridge-ideas li img,.cook .head img{height:auto;aspect-ratio:1}
