@@ -619,3 +619,19 @@ footer .brand small{font-size:12px;max-width:38em}
 
 html,body{overflow-x:clip}
 .sec-band.deep .plan{color:var(--deep)}
+
+/* ===== v8: custom icon set (replaces emoji) ===== */
+.ic{width:24px;height:24px;display:block;overflow:visible}
+.ci{display:grid!important;place-items:center;width:56px;height:56px;border-radius:18px;margin:0 auto 12px;font-size:0}
+.ci .ic{width:30px;height:30px}
+.cuisine .ci{margin-bottom:10px}
+.who .ci{margin:0 0 14px}
+.cuisine:hover .e.ci{transform:scale(1.1) rotate(-6deg)}
+.ci-s{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:11px;margin-right:10px;vertical-align:-9px}
+.ci-s .ic{width:20px;height:20px}
+.feature .dot .ic{width:24px;height:24px}
+.t-sky{color:#2F68A3}.t-berry{color:#A8355F}.t-leaf{color:#3E8A44}.t-saffron{color:#9A6A05}.t-tomato{color:#C24A26}.t-green{color:#2E7D4F}
+.sec-band.deep .feature .dot{box-shadow:inset 0 0 0 1px rgba(255,255,255,.4)}
+.logo-grid img[src$=".svg"]{max-height:40px}
+.logo-chip.has-logo img[src$="target.svg"]{height:50px}
+.logo-chip.has-logo img[src$="waitrose.svg"]{height:22px}
