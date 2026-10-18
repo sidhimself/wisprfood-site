@@ -616,6 +616,6 @@ footer .brand small{font-size:12px;max-width:38em}
 .dock a:first-of-type{background:var(--lime)}
 .dock a svg{width:20px;height:20px}
 @media (min-width:900px){.dock{display:none}}
-@media (max-width:899px){footer{padding-bottom:96px}}
+
 html,body{overflow-x:clip}
 .sec-band.deep .plan{color:var(--deep)}
