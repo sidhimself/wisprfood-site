@@ -95,6 +95,17 @@
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
+<div class="topbar" id="topbar" aria-hidden="true">
+  <div class="wrap wide topbar-in">
+    <a class="mark" href="#" tabindex="-1"><img src="/favicon.svg" alt="" width="28" height="28">WisprFood</a>
+    <nav class="spy" aria-label="Sections">
+      <a href="#how" tabindex="-1">How it works</a><a href="#recipes" tabindex="-1">Recipes</a><a href="#features" tabindex="-1">Features</a><a href="#budget" tabindex="-1">Budget</a><a href="#pricing" tabindex="-1">Pricing</a><a href="#faq" tabindex="-1">FAQ</a>
+    </nav>
+    <a class="topbar-cta" href="#download" tabindex="-1">Get the app</a>
+    <div class="tb-stores"><a class="tb-store" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener" tabindex="-1"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.9-1.1-2.9-4.2zM13.9 5.2c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span>App Store</span></a><a class="tb-store" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M3.6 2.4 13.7 12 3.6 21.6c-.3-.3-.4-.7-.4-1.2V3.6c0-.5.1-.9.4-1.2z"/><path fill="#34A853" d="M3.6 2.4 16.9 8.9 13.7 12z"/><path fill="#EA4335" d="M3.6 21.6 13.7 12l3.2 3.1z"/><path fill="#FBBC04" d="m16.9 8.9 3.5 2c.9.5.9 1.7 0 2.2l-3.5 2L13.7 12z"/></svg><span>Google Play</span></a></div>
+  </div>
+  <i class="progress"></i>
+</div>
 
 <div class="hero">
 <header class="wrap wide bar">
@@ -156,17 +167,72 @@
 </div>
 
 <div class="wrap wide">
-  <section class="section" id="how" aria-labelledby="how-title" style="padding-top:48px">
+  <section class="section story" id="how" aria-labelledby="how-title" style="padding-top:56px">
     <div class="section-head reveal">
       <p class="kicker">How it works</p>
       <h2 id="how-title">A whole week of meals, <em>planned in a minute.</em></h2>
       <p>Answer a few questions once. WisprFood does the planning, the math and the grocery list every week after.</p>
     </div>
-    <ol class="steps">
-      <li class="step reveal"><div class="lottie" data-lottie="stopwatch"></div><div class="num" aria-hidden="true">1</div><h3>Tell us about your table</h3><p>How many adults and kids, which days you cook, your weekly budget, diets, allergies, the proteins you skip and what's in your kitchen.</p></li>
-      <li class="step reveal" style="--d:.12s"><div class="lottie" data-lottie="tick"></div><div class="num" aria-hidden="true">2</div><h3>Get your week, priced</h3><p>Breakfast, lunch and dinner on a rolling week, every meal priced at your grocery store. Swap, skip or fill any slot with one tap.</p></li>
-      <li class="step reveal" style="--d:.24s"><div class="lottie" data-lottie="cart"></div><div class="num" aria-hidden="true">3</div><h3>Shop one list, then cook</h3><p>Every ingredient combined into one grocery list by aisle. Then follow each recipe step by step in cooking mode, with timers.</p></li>
-    </ol>
+    <div class="story-grid">
+      <ol class="story-steps">
+        <li class="story-step" data-step="0"><div class="lottie" data-lottie="stopwatch" aria-hidden="true"></div><span class="step-no">Step 1</span><h3>Tell us about your table</h3><p>How many adults and kids, which days you cook, your weekly budget, diets, allergies, the proteins you skip and the store you shop at. It takes about a minute.</p></li>
+        <li class="story-step" data-step="1"><div class="lottie" data-lottie="tick" aria-hidden="true"></div><span class="step-no">Step 2</span><h3>Get your week, priced</h3><p>Breakfast, lunch and dinner on a rolling week, every meal priced at your store for the exact number of people you cook for. Swap, skip or fill any slot with one tap.</p></li>
+        <li class="story-step" data-step="2"><div class="lottie" data-lottie="coins" aria-hidden="true"></div><span class="step-no">Step 3</span><h3>See where it's cheapest</h3><p>Compare your whole week across the grocery stores near you and see exactly how much you'd save by switching. Then shop one list, sorted by aisle.</p></li>
+        <li class="story-step" data-step="3"><div class="lottie" data-lottie="pot" aria-hidden="true"></div><span class="step-no">Step 4</span><h3>Cook it step by step</h3><p>Full-screen steps with big text, built-in timers and the right amounts for your household. No scrolling with floury hands.</p></li>
+      </ol>
+      <div class="story-stage" aria-hidden="true">
+        <div class="story-phone">
+          <div class="story-dots"><i class="on"></i><i></i><i></i><i></i></div>
+          <div class="scr s-setup on" data-screen="0">
+            <div class="scr-top"><span class="scr-back">‹</span><span class="scr-bar"><i style="width:66%"></i></span><span class="scr-count">2/3</span></div>
+            <div class="scr-h">Who's eating?</div>
+            <div class="pick"><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5+</span></div>
+            <div class="scr-h sm">Where do you shop?</div>
+            <div class="shops">
+              <span class="on"><img src="/images/stores/walmart.webp" alt=""><b>Walmart</b><i>✓</i></span>
+              <span><img src="/images/stores/aldi.webp" alt=""><b>Aldi</b></span>
+              <span><img src="/images/stores/lidl.webp" alt=""><b>Lidl</b></span>
+              <span><img src="/images/stores/tesco.webp" alt=""><b>Tesco</b></span>
+            </div>
+            <div class="scr-h sm">Weekly budget</div>
+            <div class="slider"><span style="width:45%"><i></i></span></div>
+            <div class="slider-val"><b>$45</b> a week</div>
+            <div class="scr-btn">Continue</div>
+          </div>
+          <div class="scr s-week" data-screen="1">
+            <div class="scr-sub">Mon 19 – Sun 25 Oct</div>
+            <div class="scr-h">Your week</div>
+            <div class="wk-budget"><div><small>This week's food</small><b>$30.71</b></div><span>$4.29 under budget</span><div class="track"><i style="width:88%"></i></div></div>
+            <div class="wk-day">Monday <small>$3.72 today</small></div>
+            <div class="wk-meal"><img src="/images/recipes/porridge-banana-sm.webp" alt=""><div><em class="t-b">Breakfast</em>Porridge with banana</div><b>$0.56</b></div>
+            <div class="wk-meal"><img src="/images/recipes/chickpeas-spinach-sm.webp" alt=""><div><em class="t-l">Lunch</em>Chickpeas with spinach</div><b>$0.94</b></div>
+            <div class="wk-meal"><img src="/images/recipes/pollo-al-chilindron-sm.webp" alt=""><div><em class="t-d">Dinner</em>Pollo al chilindrón</div><b>$2.22</b></div>
+            <div class="wk-day">Tuesday <small>$3.06 today</small></div>
+            <div class="wk-meal"><img src="/images/recipes/tomato-toast-sm.webp" alt=""><div><em class="t-b">Breakfast</em>Tomato toast</div><b>$0.55</b></div>
+          </div>
+          <div class="scr s-compare" data-screen="2">
+            <div class="scr-h">Compare stores</div>
+            <div class="scr-sub2">This week's 21 meals · 2 people</div>
+            <div class="cmp best"><img src="/images/stores/aldi.webp" alt=""><div><b>Aldi <em>Cheapest</em></b><span class="cbar"><i style="width:30%"></i></span></div><strong>$59.57</strong></div>
+            <div class="cmp"><img src="/images/stores/lidl.webp" alt=""><div><b>Lidl</b><span class="cbar"><i style="width:40%"></i></span></div><strong>$60.80</strong></div>
+            <div class="cmp you"><img src="/images/stores/walmart.webp" alt=""><div><b>Walmart <em>Your store</em></b><span class="cbar"><i style="width:55%"></i></span></div><strong>$62.64</strong></div>
+            <div class="cmp"><img src="/images/stores/carrefour.webp" alt=""><div><b>Carrefour</b><span class="cbar"><i style="width:66%"></i></span></div><strong>$63.87</strong></div>
+            <div class="cmp"><img src="/images/stores/tesco.webp" alt=""><div><b>Tesco</b><span class="cbar"><i style="width:81%"></i></span></div><strong>$65.71</strong></div>
+            <div class="scr-btn">Switch to Aldi · <span>save $3.07</span></div>
+          </div>
+          <div class="scr s-cook" data-screen="3">
+            <div class="ck-head"><img src="/images/recipes/spanish-potato-omelette-sm.webp" alt=""><div><b>Spanish potato omelette</b><small>Step 2 of 4</small></div></div>
+            <div class="ck-dots"><i class="on"></i><i class="on"></i><i></i><i></i></div>
+            <div class="ck-num">02</div>
+            <div class="ck-text">Cook them gently in the <span>olive oil</span> over medium-low heat until soft, not crispy.</div>
+            <div class="ck-chip">🫒 6 tbsp olive oil</div>
+            <div class="ck-timer"><svg viewBox="0 0 62 62"><circle class="bg" cx="31" cy="31" r="26"/><circle class="fg" cx="31" cy="31" r="26"/></svg><div><b>15:00</b><span>Start timer</span></div></div>
+            <div class="ck-next"><span>Back</span><span class="go">Next step →</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta-row reveal"><p>Plan your first week tonight.<small>Free for 3 days on iPhone, iPad and Android.</small></p><div class="store-btns"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div></div>
   </section>
 
   <section class="section" id="recipes" aria-labelledby="recipes-title">
@@ -211,6 +277,9 @@
   </div>
   <div class="wrap wide">
 
+</div>
+<div class="sec-band deep" data-band>
+<div class="wrap wide">
   <section class="section" id="features" aria-labelledby="features-title">
     <div class="section-head reveal">
       <p class="kicker">Features</p>
@@ -225,7 +294,11 @@
       <article class="feature reveal" style="--d:.08s"><div class="dot emoji t-green" aria-hidden="true">📝</div><h3>Import a recipe</h3><p>Bring in a favorite recipe and WisprFood prices it and adds it to your week like any other meal.</p></article>
       <article class="feature reveal" style="--d:.16s"><div class="dot emoji t-berry" aria-hidden="true">📊</div><h3>Weekly recap</h3><p>See what you cooked, what you spent and how you tracked against your budget, week after week.</p></article>
     </div>
+    <div class="cta-row reveal"><p>Ready when you are.<small>Download WisprFood and get your week priced in a minute.</small></p><div class="store-btns"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div></div>
   </section>
+</div>
+</div>
+<div class="wrap wide">
 
   <section class="section" id="budget" aria-labelledby="budget-title">
     <div class="show">
@@ -254,30 +327,9 @@
     </div>
   </section>
 
-  <section class="section" id="cooking" aria-labelledby="cooking-title">
-    <div class="show flip">
-      <div class="reveal from-right">
-        <div class="lottie" data-lottie="pot" style="width:96px;height:96px;margin:-10px 0 6px -8px"></div>
-        <p class="kicker">Cooking mode</p>
-        <h2 id="cooking-title">Cook it <em>step by step.</em></h2>
-        <p>Full-screen steps, big text, built-in timers and the right amounts for your household. No scrolling with floury hands, and a little celebration when dinner's done. 🎉</p>
-        <ul class="checks">
-          <li>Ingredient chips on every step</li>
-          <li>Tap a time to start a timer</li>
-          <li>Kids' portions already worked in</li>
-        </ul>
-      </div>
-      <div class="visual deep cook reveal from-left" aria-hidden="true">
-        <div class="head"><img src="/images/recipes/spanish-potato-omelette-sm.webp" alt="" width="44" height="44"><div><b>Spanish potato omelette</b><small>Step 2 of 4</small></div></div>
-        <h3>Cook them gently in the <span class="lime">olive oil</span> over medium-low heat until soft, not crispy.</h3>
-        <div class="ings"><span>🫒 6 tbsp olive oil</span><span>🥔 Potatoes</span><span>🧅 Onion</span></div>
-        <div class="timer"><svg viewBox="0 0 62 62"><circle class="bg" cx="31" cy="31" r="26"/><circle class="fg" cx="31" cy="31" r="26"/></svg><div><b data-timer="900">15:00</b><small>Cook them gently</small></div></div>
-        <div class="dots"><i class="on"></i><i class="on"></i><i></i><i></i></div>
-      </div>
-    </div>
-  </section>
 
-  <section class="section" aria-labelledby="list-title">
+
+  <section class="section" id="grocery-list" aria-labelledby="list-title">
     <div class="band">
       <div class="reveal">
         <div class="lottie lottie-inline" data-lottie="cart" aria-hidden="true"></div>
@@ -323,6 +375,9 @@
     </div>
   </section>
 
+</div>
+<div class="sec-band mint" data-band>
+<div class="wrap wide">
   <section class="section" id="for" aria-labelledby="for-title">
     <div class="section-head center reveal">
       <p class="kicker">Made for</p>
@@ -335,6 +390,9 @@
       <div class="who reveal pop" style="--d:.24s"><span class="e" aria-hidden="true">🌱</span><h3>Veggie and allergy-aware</h3><p>Vegetarian weeks, allergens kept out, proteins you skip left off.</p></div>
     </div>
   </section>
+</div>
+</div>
+<div class="wrap wide">
 
   <section class="section" id="stores" aria-labelledby="stores-title">
     <div class="section-head reveal">
@@ -368,6 +426,9 @@
     </div>
   </section>
 
+</div>
+<div class="sec-band deep" data-band>
+<div class="wrap wide">
   <section class="section" id="pricing" aria-labelledby="pricing-title">
     <div class="section-head center reveal">
       <p class="kicker">Pricing</p>
@@ -391,7 +452,11 @@
       </div>
     </div>
     <p class="plans-note">US prices. In other countries the store shows the price in your local currency.</p>
+    <div class="cta-row reveal center"><p>Start your 3-day free trial<small>Cancel any time. We remind you before it ends.</small></p><div class="store-btns"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div></div>
   </section>
+</div>
+</div>
+<div class="wrap wide">
 
   <section class="section" id="faq" aria-labelledby="faq-title">
     <div class="section-head center reveal">
@@ -421,6 +486,7 @@
 </section>
 </main>
 
+<div class="dock" id="dock"><img class="ico" src="/apple-touch-icon.png" alt="" width="34" height="34"><b>WisprFood<small>Free for 3 days</small></b><a href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener" aria-label="Download on the App Store"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.9-1.1-2.9-4.2zM13.9 5.2c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg></a><a href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener" aria-label="Get it on Google Play"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M3.6 2.4 13.7 12 3.6 21.6c-.3-.3-.4-.7-.4-1.2V3.6c0-.5.1-.9.4-1.2z"/><path fill="#34A853" d="M3.6 2.4 16.9 8.9 13.7 12z"/><path fill="#EA4335" d="M3.6 21.6 13.7 12l3.2 3.1z"/><path fill="#FBBC04" d="m16.9 8.9 3.5 2c.9.5.9 1.7 0 2.2l-3.5 2L13.7 12z"/></svg></a></div>
 <footer><div class="wrap wide">
   <div class="brand"><span>© 2026 Kesitics Studios · WisprFood</span><small>Prices are estimates for meal planning. Nutrition figures are rounded averages, not medical advice. Store names and logos belong to their owners; WisprFood isn't affiliated with any grocery store. App Store is a service mark of Apple Inc. Google Play is a trademark of Google LLC.</small></div>
   <nav aria-label="Footer"><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>

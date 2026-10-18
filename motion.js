@@ -147,3 +147,117 @@
   };
   document.head.appendChild(s);
 })();
+
+/* ===== Scroll choreography: sticky bar, progress, scrollspy, bands, headings, story ===== */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasIO = 'IntersectionObserver' in window;
+  var vh = function () { return window.innerHeight || 800; };
+
+  /* Headings rise word by word (keeps <em> colouring) */
+  if (!reduce) {
+    document.querySelectorAll('main h2').forEach(function (h) {
+      var n = 0;
+      (function walk(node) {
+        Array.prototype.slice.call(node.childNodes).forEach(function (c) {
+          if (c.nodeType === 3) {
+            var parts = c.textContent.split(/(\s+)/), frag = document.createDocumentFragment();
+            parts.forEach(function (p) {
+              if (!p) return;
+              if (/^\s+$/.test(p)) { frag.appendChild(document.createTextNode(p)); return; }
+              var o = document.createElement('span'), i = document.createElement('span');
+              o.className = 'wd'; i.textContent = p; i.style.setProperty('--w', n++); o.appendChild(i); frag.appendChild(o);
+            });
+            c.parentNode.replaceChild(frag, c);
+          } else if (c.nodeType === 1) walk(c);
+        });
+      })(h);
+    });
+  }
+
+  /* Grids stagger their children */
+  ['.features', '.cuisines', '.audience', '.plans', '.stats'].forEach(function (sel) {
+    document.querySelectorAll(sel).forEach(function (g) {
+      g.classList.add('stagger');
+      Array.prototype.forEach.call(g.children, function (c, i) { c.style.setProperty('--d', (i * 0.07).toFixed(2) + 's'); });
+    });
+  });
+
+  /* Story: the pinned phone changes screen per step */
+  var steps = document.querySelectorAll('.story-step');
+  var screens = document.querySelectorAll('.story-phone .scr');
+  var dots = document.querySelectorAll('.story-dots i');
+  function setStep(n) {
+    steps.forEach(function (s, i) { s.classList.toggle('on', i === n); });
+    screens.forEach(function (s, i) { s.classList.toggle('on', i === n); s.classList.toggle('up', i < n); });
+    dots.forEach(function (d, i) { d.classList.toggle('on', i === n); });
+  }
+  // mobile: give every step its own copy of its screen
+  steps.forEach(function (s, i) {
+    if (!screens[i]) return;
+    var m = document.createElement('div'); m.className = 'mini-phone'; m.setAttribute('aria-hidden', 'true');
+    var c = screens[i].cloneNode(true); c.classList.add('on'); m.appendChild(c); s.appendChild(m);
+  });
+  var stage = document.querySelector('.story-stage');
+  if (stage && !document.querySelector('.story-stage > .story-dots')) {
+    var d = document.querySelector('.story-phone .story-dots'); if (d) stage.appendChild(d);
+    dots = document.querySelectorAll('.story-dots i');
+  }
+  if (steps.length) {
+    setStep(0);
+    if (hasIO) {
+      var sio = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) setStep(+e.target.getAttribute('data-step')); });
+      }, { rootMargin: '-45% 0px -45% 0px' });
+      steps.forEach(function (s) { sio.observe(s); });
+    }
+  }
+
+  /* Sticky bar + phone dock: show after the hero, hide the dock at the final download section */
+  var bar = document.getElementById('topbar'), dock = document.getElementById('dock');
+  var hero = document.querySelector('.hero'), dl = document.getElementById('download');
+  var pastHero = false, atDownload = false;
+  function syncChrome() {
+    if (bar) bar.classList.toggle('on', pastHero);
+    if (dock) dock.classList.toggle('on', pastHero && !atDownload);
+  }
+  if (hasIO && hero) new IntersectionObserver(function (es) { pastHero = !es[0].isIntersecting; syncChrome(); }, { rootMargin: '-80px 0px 0px 0px' }).observe(hero);
+  if (hasIO && dl) new IntersectionObserver(function (es) { atDownload = es[0].isIntersecting; syncChrome(); }).observe(dl);
+
+  /* Scrollspy */
+  var spyLinks = document.querySelectorAll('.spy a');
+  var spyMap = {};
+  spyLinks.forEach(function (a) { var id = a.getAttribute('href').slice(1); var el = document.getElementById(id); if (el) spyMap[id] = a; });
+  if (hasIO) {
+    var spyIO = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        spyLinks.forEach(function (a) { a.classList.remove('active'); });
+        spyMap[e.target.id].classList.add('active');
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    Object.keys(spyMap).forEach(function (id) { spyIO.observe(document.getElementById(id)); });
+  }
+
+  /* Progress bar + bands that rise and widen as they arrive */
+  var prog = document.querySelector('.topbar .progress');
+  var bands = reduce ? [] : Array.prototype.slice.call(document.querySelectorAll('[data-band]'));
+  var ticking = false;
+  function frame() {
+    ticking = false;
+    var doc = document.documentElement, max = doc.scrollHeight - vh();
+    if (prog) prog.style.transform = 'scaleX(' + (max > 0 ? Math.min(1, window.scrollY / max) : 0).toFixed(4) + ')';
+    var H = vh();
+    bands.forEach(function (b) {
+      var r = b.getBoundingClientRect();
+      if (r.top > H || r.bottom < 0) return;
+      var p = Math.min(1, Math.max(0, (H - r.top) / (H * 0.7)));
+      var e = 1 - Math.pow(1 - p, 3);
+      b.style.transform = 'translateY(' + ((1 - e) * 60).toFixed(1) + 'px) scale(' + (0.94 + 0.06 * e).toFixed(4) + ')';
+    });
+  }
+  function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(frame); } }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  frame();
+})();
