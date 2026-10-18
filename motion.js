@@ -261,3 +261,15 @@
   window.addEventListener('resize', onScroll);
   frame();
 })();
+
+/* Land exactly on the section when the page opens with #section (short links like /pricing) */
+(function () {
+  if (!location.hash) return;
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  function jump() {
+    var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (el) el.scrollIntoView({ behavior: 'instant', block: 'start' });
+  }
+  jump();
+  window.addEventListener('load', function () { jump(); setTimeout(jump, 350); setTimeout(jump, 900); });
+})();
