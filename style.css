@@ -302,7 +302,7 @@ footer .brand small{font-size:12px;max-width:38em}
 .list-card .row.t{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line)}
 .list-card .row.t .box{background:var(--green)!important;border-color:var(--green)!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 12.5l4 4 8-9'/%3E%3C/svg%3E")!important;background-size:14px!important;background-position:center!important;background-repeat:no-repeat!important}
 .list-card .e{margin-right:6px}
-.lottie-inline{width:96px;height:96px;margin:-10px 0 6px -8px;background:var(--paper);border-radius:24px}
+.lottie-inline{width:104px;height:104px;margin:-12px 0 6px -12px}
 .band{position:relative}
 
 /* Made for */
@@ -413,3 +413,14 @@ footer .brand small{font-size:12px;max-width:38em}
 .logo-grid .aldi{display:flex;align-items:center;gap:8px}
 .logo-grid .aldi img{max-height:38px}
 .meal .th,.bdemo .swaps li img,.fridge-ideas li img,.cook .head img{height:auto;aspect-ratio:1}
+
+/* Official store badges (served by Apple and Google) */
+.store-btns{align-items:center;gap:14px}
+.badge-link{display:inline-flex;align-items:center;height:52px;border-radius:12px;transition:transform .2s cubic-bezier(.3,1.6,.5,1)}
+.badge-link:hover{transform:translateY(-2px)}
+.badge-link img{display:block;width:auto}
+.badge-link img.apple{height:52px}
+.badge-link img.play{height:77px;margin:0 -12px}
+/* Bigger, cleaner animation slots */
+.step .lottie{width:96px;height:96px;margin:-10px 0 6px -10px}
+.plan .lottie-bell{width:64px;height:64px;right:14px;top:10px}
