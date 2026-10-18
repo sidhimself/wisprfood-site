@@ -635,38 +635,3 @@ html,body{overflow-x:clip}
 .logo-grid img[src$=".svg"]{max-height:40px}
 .logo-chip.has-logo img[src$="target.svg"]{height:50px}
 .logo-chip.has-logo img[src$="waitrose.svg"]{height:22px}
-
-/* ===== v9: phones — pinned story phone, swipe rows instead of wide marquees ===== */
-.mini-phone{display:none!important}
-@media (max-width:899px){
-  .story-grid{display:grid;gap:0}
-  .story-steps,.story-stage{grid-area:1/1}
-  .story-stage{display:block;position:relative;z-index:1}
-  .story-phone{position:sticky;top:78px;margin:0 auto;width:320px;height:636px;transform:scale(.8);transform-origin:50% 0;border-width:9px}
-  .story-stage .story-dots{display:none}
-  .story-steps{position:relative;z-index:2;padding:520px 0 40vh;pointer-events:none}
-  .story-step{pointer-events:auto;min-height:0;display:block;margin:0 0 62vh;padding:20px 20px 22px;background:#fff;border:1px solid var(--border);border-radius:24px;box-shadow:0 18px 40px rgba(18,55,42,.16)}
-  .story-step:last-child{margin-bottom:0}
-  .js .story-step,.js .story-step.on{opacity:1;border-color:var(--border)}
-  .story-step .lottie{width:60px;height:60px;margin:-6px 0 4px -6px}
-  .story-step h3{font-size:22px}
-  .story-step p{font-size:15.5px}
-
-  /* recipe photos: native swipe row (wide animated strips don't render in iOS Safari) */
-  .food-marquee{overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x mandatory;mask-image:none;-webkit-mask-image:none;padding:6px 16px 14px;scrollbar-width:none}
-  .food-marquee::-webkit-scrollbar{display:none}
-  .food-track{animation:none!important;width:max-content}
-  .food-track > [aria-hidden="true"]{display:none}
-  .food-card{width:62vw;max-width:240px;scroll-snap-align:start}
-  .food-card:hover{transform:none}
-
-  /* store logos: swipe row too */
-  .marquee{overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;mask-image:none;-webkit-mask-image:none;padding:14px 16px 20px;scrollbar-width:none}
-  .marquee::-webkit-scrollbar{display:none}
-  .marquee-track{animation:none!important}
-  .marquee-track > [aria-hidden="true"]{display:none}
-  .logo-chip{scroll-snap-align:start}
-  .logo-chip.has-logo{height:64px;padding:0 20px}
-  .logo-chip.has-logo img{height:30px}
-}
-@media (max-width:639px){.cuisines .cuisine:first-child{grid-column:1/-1}}
