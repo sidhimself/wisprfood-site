@@ -273,3 +273,32 @@
   jump();
   window.addEventListener('load', function () { jump(); setTimeout(jump, 350); setTimeout(jump, 900); });
 })();
+
+/* Phones lift toward the middle of the screen: deeper, softer shadow and a hint of scale */
+(function () {
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els = Array.prototype.slice.call(document.querySelectorAll('.phone, .story-phone, .mini-phone, .food-bubble'));
+  if (!els.length) return;
+  var queued = false;
+  function frame() {
+    queued = false;
+    var H = window.innerHeight || 800;
+    els.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.bottom < -100 || r.top > H + 100) return;
+      var c = (r.top + r.height / 2 - H / 2) / (H * 0.75);
+      var lift = Math.max(0, 1 - Math.abs(c));
+      lift = lift * lift * (3 - 2 * lift);
+      el.style.setProperty('--lift', lift.toFixed(3));
+    });
+  }
+  function q() { if (!queued) { queued = true; requestAnimationFrame(frame); } }
+  window.addEventListener('scroll', q, { passive: true });
+  window.addEventListener('resize', q);
+  // mini-phones are added by the story script; pick them up once the page is ready
+  window.addEventListener('load', function () {
+    els = Array.prototype.slice.call(document.querySelectorAll('.phone, .story-phone, .mini-phone, .food-bubble'));
+    frame();
+  });
+  frame();
+})();
