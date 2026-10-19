@@ -307,5 +307,30 @@
 
 /* Language menu: close when tapping outside it */
 document.addEventListener('click', function (e) {
-  document.querySelectorAll('details.lang[open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
+  document.querySelectorAll('details.lang[open], details.fmenu[open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
 });
+
+/* Floating phone header: Get app goes to the right store, menu closes after a tap, active section highlighted */
+(function () {
+  var bar = document.getElementById('fbar'); if (!bar) return;
+  var ua = navigator.userAgent || '';
+  var cta = bar.querySelector('[data-get-app]');
+  var badges = document.querySelectorAll('.badge-link');
+  if (cta && badges.length >= 2) {
+    if (/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && 'ontouchend' in document)) cta.href = badges[0].href;
+    else if (/Android/.test(ua)) cta.href = badges[1].href;
+  }
+  var menu = bar.querySelector('.fmenu');
+  bar.querySelectorAll('.fmenu nav a').forEach(function (a) { a.addEventListener('click', function () { menu.removeAttribute('open'); }); });
+  var onScroll = function () { bar.classList.toggle('scrolled', window.scrollY > 40); };
+  window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+  if (!('IntersectionObserver' in window)) return;
+  var links = {}; bar.querySelectorAll('.fmenu nav a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      Object.keys(links).forEach(function (k) { links[k].classList.toggle('active', k === e.target.id); });
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  Object.keys(links).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
+})();
