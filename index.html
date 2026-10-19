@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="/style.css?v=12">
+<link rel="stylesheet" href="/style.css?v=14">
 
 <script type="application/ld+json">
 {
@@ -46,7 +46,10 @@
       "url": "https://wisprfood.com/",
       "logo": "https://wisprfood.com/apple-touch-icon.png",
       "email": "kesitics.studios@gmail.com",
-      "brand": {"@type": "Brand", "name": "WisprFood"}
+      "brand": {
+        "@type": "Brand",
+        "name": "WisprFood"
+      }
     },
     {
       "@type": "WebSite",
@@ -54,7 +57,9 @@
       "url": "https://wisprfood.com/",
       "name": "WisprFood",
       "inLanguage": "en",
-      "publisher": {"@id": "https://wisprfood.com/#org"}
+      "publisher": {
+        "@id": "https://wisprfood.com/#org"
+      }
     },
     {
       "@type": "MobileApplication",
@@ -65,28 +70,83 @@
       "operatingSystem": "iOS, Android",
       "applicationCategory": "LifestyleApplication",
       "applicationSubCategory": "Food & Drink",
-      "inLanguage": ["en", "es", "fr", "de", "da", "pl"],
+      "inLanguage": [
+        "en",
+        "es",
+        "fr",
+        "de",
+        "da",
+        "pl"
+      ],
       "image": "https://wisprfood.com/og-image.png",
       "url": "https://wisprfood.com/",
-      "installUrl": ["https://apps.apple.com/us/search?term=WisprFood", "https://play.google.com/store/search?q=WisprFood&c=apps"],
-      "publisher": {"@id": "https://wisprfood.com/#org"},
+      "installUrl": [
+        "https://apps.apple.com/us/search?term=WisprFood",
+        "https://play.google.com/store/search?q=WisprFood&c=apps"
+      ],
+      "publisher": {
+        "@id": "https://wisprfood.com/#org"
+      },
       "offers": [
-        {"@type": "Offer", "name": "Yearly", "price": "44.99", "priceCurrency": "USD", "description": "3-day free trial, then $44.99 per year"},
-        {"@type": "Offer", "name": "Monthly", "price": "8.99", "priceCurrency": "USD"}
+        {
+          "@type": "Offer",
+          "name": "Yearly",
+          "price": "44.99",
+          "priceCurrency": "USD",
+          "description": "3-day free trial, then $44.99 per year"
+        },
+        {
+          "@type": "Offer",
+          "name": "Monthly",
+          "price": "8.99",
+          "priceCurrency": "USD"
+        }
       ]
     },
     {
       "@type": "FAQPage",
       "@id": "https://wisprfood.com/#faq",
       "mainEntity": [
-        {"@type": "Question", "name": "What is WisprFood?", "acceptedAnswer": {"@type": "Answer", "text": "WisprFood is a meal planning app for iPhone, iPad and Android. It plans breakfast, lunch and dinner for everyone in your household, shows what each meal costs at the grocery store you choose, and turns the week into one grocery list sorted by aisle."}},
-        {"@type": "Question", "name": "Where can I download WisprFood?", "acceptedAnswer": {"@type": "Answer", "text": "WisprFood is on the App Store for iPhone and iPad, and on Google Play for Android phones. Every new account starts with a 3-day free trial."}},
-        {"@type": "Question", "name": "How does WisprFood know grocery prices?", "acceptedAnswer": {"@type": "Answer", "text": "Every ingredient has a price at every supported store: 70 grocery stores across 10 countries. Meal prices are worked out from the exact amounts in each recipe for the people you cook for. Prices are estimates for planning, so your receipt can differ a little."}},
-        {"@type": "Question", "name": "Which grocery stores does WisprFood support?", "acceptedAnswer": {"@type": "Answer", "text": "Seven stores in each of our 10 countries, 70 in all, including Walmart in the US, Tesco in the UK, and Aldi, Lidl, Carrefour and Mercadona in Europe. You can compare your whole week across the stores in your country."}},
-        {"@type": "Question", "name": "Does it work with allergies and diets?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Tell WisprFood about diets, allergies, proteins you avoid and the equipment in your kitchen. Meals are planned around them, and ingredient swaps can be set per person. Kids get smaller portions, and the grocery list follows."}},
-        {"@type": "Question", "name": "How much does WisprFood cost?", "acceptedAnswer": {"@type": "Answer", "text": "WisprFood starts with a 3-day free trial. After that it is $44.99 a year (about $3.75 a month) or $8.99 a month in the US. Subscriptions are handled by the App Store or Google Play, and you can cancel any time in your subscription settings."}},
-        {"@type": "Question", "name": "What happens to my data?", "acceptedAnswer": {"@type": "Answer", "text": "You sign in with Apple or Google, your account data is stored securely in the EU under GDPR, and you can delete your account and everything in it from Profile in the app."}},
-        {"@type": "Question", "name": "Are the nutrition figures exact?", "acceptedAnswer": {"@type": "Answer", "text": "Calories and macros are rounded grocery-store averages. They are good for planning a balanced week, but they are not medical advice."}}
+        {
+          "@type": "Question",
+          "name": "How does WisprFood know grocery prices?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every ingredient has a price at every supported store: 70 grocery stores across 10 countries. Meal prices are worked out from the exact amounts in each recipe for the people you cook for. Prices are estimates for planning, so your receipt can differ a little."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which grocery stores does WisprFood support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Seven stores in each of our 10 countries, 70 in all, including Walmart in the US, Tesco in the UK, and Aldi, Lidl, Carrefour and Mercadona in Europe. You can compare your whole week across the stores in your country."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with allergies and diets?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Tell WisprFood about diets, allergies, proteins you avoid and the equipment in your kitchen. Meals are planned around them, and ingredient swaps can be set per person. Kids get smaller portions, and the grocery list follows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to my data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You sign in with Apple or Google, your account data is stored securely in the EU under GDPR, and you can delete your account and everything in it from Profile in the app."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are the nutrition figures exact?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Calories and macros are rounded grocery-store averages. They are good for planning a balanced week, but they are not medical advice."
+          }
+        }
       ]
     }
   ]
@@ -432,12 +492,9 @@
       <h2 id="faq-title">Questions, <em>answered.</em></h2>
     </div>
     <div class="faq reveal">
-      <details><summary>What is WisprFood?</summary><p>WisprFood is a meal planning app for iPhone, iPad and Android. It plans breakfast, lunch and dinner for everyone in your household, shows what each meal costs at the grocery store you choose, and turns the week into one grocery list sorted by aisle.</p></details>
-      <details><summary>Where can I download WisprFood?</summary><p>WisprFood is on the App Store for iPhone and iPad, and on Google Play for Android phones. Every new account starts with a 3-day free trial.</p></details>
       <details><summary>How does WisprFood know grocery prices?</summary><p>Every ingredient has a price at every supported store: 70 grocery stores across 10 countries. Meal prices are worked out from the exact amounts in each recipe for the people you cook for. Prices are estimates for planning, so your receipt can differ a little.</p></details>
       <details><summary>Which grocery stores does WisprFood support?</summary><p>Seven stores in each of our 10 countries, 70 in all, including Walmart in the US, Tesco in the UK, and Aldi, Lidl, Carrefour and Mercadona in Europe. You can compare your whole week across the stores in your country.</p></details>
       <details><summary>Does it work with allergies and diets?</summary><p>Yes. Tell WisprFood about diets, allergies, proteins you avoid and the equipment in your kitchen. Meals are planned around them, and ingredient swaps can be set per person. Kids get smaller portions, and the grocery list follows.</p></details>
-      <details><summary>How much does WisprFood cost?</summary><p>WisprFood starts with a 3-day free trial. After that it is $44.99 a year (about $3.75 a month) or $8.99 a month in the US. Subscriptions are handled by the App Store or Google Play, and you can cancel any time in your subscription settings.</p></details>
       <details><summary>What happens to my data?</summary><p>You sign in with Apple or Google, your account data is stored securely in the EU under GDPR, and you can delete your account and everything in it from Profile in the app. Read the <a href="/privacy">privacy policy</a>.</p></details>
       <details><summary>Are the nutrition figures exact?</summary><p>Calories and macros are rounded grocery-store averages. They are good for planning a balanced week, but they are not medical advice.</p></details>
     </div>
@@ -459,6 +516,6 @@
   <nav aria-label="Footer"><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
 </div></footer>
 
-<script src="/motion.js?v=12" defer></script>
+<script src="/motion.js?v=14" defer></script>
 </body>
 </html>
