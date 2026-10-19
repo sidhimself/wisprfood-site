@@ -791,3 +791,7 @@ footer{font-size:13px}
   .topbar .spy a.active{background:rgba(200,232,107,.18)}
   [id]{scroll-margin-top:110px}
 }
+.lang a{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.lang a .lc{font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--muted);background:var(--paper);border-radius:6px;padding:2px 6px}
+.lang a[aria-current] .lc{background:#fff;color:var(--green)}
+@media (max-width:620px){.topbar .lang .lang-code{display:inline}}
