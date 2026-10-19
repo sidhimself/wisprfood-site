@@ -840,3 +840,14 @@ footer{font-size:13px}
   .fbar:has(.fmenu[open]){background:#12372A}
 }
 @media (max-width:899px){ section[id],[id].sec-band{scroll-margin-top:84px} }
+
+/* ===== v22: phones — store and recipe strips are native scrollers that drift (iPhone Safari didn't draw the animated strip) ===== */
+@media (max-width:899px){
+  .food-marquee,.marquee{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;-webkit-mask-image:none;mask-image:none;scrollbar-width:none;overscroll-behavior-x:contain}
+  .food-marquee::-webkit-scrollbar,.marquee::-webkit-scrollbar{display:none}
+  .food-track,.marquee-track{animation:none!important;padding-inline:16px}
+}
+@media (max-width:899px){
+  .food-marquee{padding-block:10px 36px;margin-bottom:-26px}
+  .marquee{padding-block:16px 30px;margin-bottom:-14px}
+}

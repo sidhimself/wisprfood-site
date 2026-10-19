@@ -103,14 +103,44 @@
   }
 
   /* ---------- Store marquee: duplicate the row so it loops seamlessly ---------- */
+  var narrow = window.matchMedia && window.matchMedia('(max-width: 899px)').matches;
   ['stores-track', 'food-track'].forEach(function (id) {
   var track = document.getElementById(id);
   if (track && !reduce) {
     Array.prototype.slice.call(track.children).forEach(function (c) {
       var d = c.cloneNode(true); d.setAttribute('aria-hidden', 'true'); track.appendChild(d);
     });
+    if (narrow) driftRow(track.parentNode, track);
   }
   });
+
+  /* Phones: a CSS-animated strip this wide doesn't draw in iPhone Safari (it left a blank gap),
+     so on phones the row is a normal swipeable scroller that drifts on its own. */
+  function driftRow(box, track) {
+    var pos = 0, last = 0, running = false, visible = false, held = false, resume = 0, speed = 34;
+    var half = function () { var k = track.children, n = k.length / 2; return n ? k[n].offsetLeft - k[0].offsetLeft : 0; };
+    function frame(t) {
+      if (!visible) { running = false; return; }
+      var dt = last ? Math.min(t - last, 64) : 16; last = t;
+      if (!held && t > resume) {
+        pos += speed * dt / 1000;
+        var h = half(); if (h && pos >= h) pos -= h;
+        box.scrollLeft = pos;
+      }
+      requestAnimationFrame(frame);
+    }
+    function start() { if (!running && visible) { running = true; last = 0; requestAnimationFrame(frame); } }
+    function hold() { held = true; }
+    function release() { held = false; pos = box.scrollLeft; resume = performance.now() + 2500; }
+    box.addEventListener('touchstart', hold, { passive: true });
+    box.addEventListener('touchend', release, { passive: true });
+    box.addEventListener('touchcancel', release, { passive: true });
+    box.addEventListener('scroll', function () {
+      if (held || performance.now() < resume) { pos = box.scrollLeft; var h = half(); if (h && pos >= h) { pos -= h; box.scrollLeft = pos; } }
+    }, { passive: true });
+    if ('IntersectionObserver' in window) new IntersectionObserver(function (es) { visible = es[0].isIntersecting; start(); }).observe(box);
+    else { visible = true; start(); }
+  }
 
   /* ---------- Lottie animations (the app's own files in /animations) ---------- */
   var slots = document.querySelectorAll('[data-lottie]');
