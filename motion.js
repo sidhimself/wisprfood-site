@@ -303,3 +303,8 @@
   });
   frame();
 })();
+
+/* Language menu: close when tapping outside it */
+document.addEventListener('click', function (e) {
+  document.querySelectorAll('details.lang[open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
+});
