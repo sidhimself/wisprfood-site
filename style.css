@@ -774,3 +774,20 @@ footer{font-size:13px}
 @media (max-width:620px){.topbar .lang .lang-code{display:none}}
 .lang summary:focus{outline:none}.lang summary:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
 .hero .bar details.lang{border:0;padding:0;border-radius:0}
+
+/* ===== section links on phones ===== */
+.mnav{display:none}
+@media (max-width:759px){
+  .mnav{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 16px 4px;margin:-4px 0 0;-webkit-overflow-scrolling:touch}
+  .mnav::-webkit-scrollbar{display:none}
+  .mnav a{flex:none;color:#D7DED5;text-decoration:none;font-size:13px;font-weight:700;padding:7px 13px;border-radius:999px;background:rgba(246,241,228,.08);border:1px solid rgba(246,241,228,.14)}
+  .mnav a:active{background:rgba(200,232,107,.18);color:var(--lime)}
+}
+@media (max-width:899px){
+  .topbar-in{flex-wrap:wrap;height:auto;row-gap:0;padding-top:8px}
+  .topbar .spy{display:flex;order:3;flex-basis:100%;overflow-x:auto;scrollbar-width:none;gap:6px;padding:8px 0 10px;margin:0 -4px}
+  .topbar .spy::-webkit-scrollbar{display:none}
+  .topbar .spy a{flex:none;font-size:13px;padding:6px 12px;background:rgba(246,241,228,.06)}
+  .topbar .spy a.active{background:rgba(200,232,107,.18)}
+  [id]{scroll-margin-top:110px}
+}

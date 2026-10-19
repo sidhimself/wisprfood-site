@@ -234,6 +234,8 @@
         if (!e.isIntersecting) return;
         spyLinks.forEach(function (a) { a.classList.remove('active'); });
         spyMap[e.target.id].classList.add('active');
+        var link = spyMap[e.target.id], row = link.parentNode;
+        if (row.scrollWidth > row.clientWidth) row.scrollTo({ left: link.offsetLeft - (row.clientWidth - link.offsetWidth) / 2, behavior: 'smooth' });
       });
     }, { rootMargin: '-40% 0px -55% 0px' });
     Object.keys(spyMap).forEach(function (id) { spyIO.observe(document.getElementById(id)); });
