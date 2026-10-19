@@ -88,19 +88,7 @@
     tio.observe(timer);
   }
 
-  /* ---------- Gentle parallax on the hero phone ---------- */
-  var phone = document.querySelector('[data-parallax]');
-  if (phone && !reduce) {
-    var ticking = false;
-    window.addEventListener('scroll', function () {
-      if (ticking) return; ticking = true;
-      requestAnimationFrame(function () {
-        var y = Math.min(window.scrollY, 700);
-        phone.style.transform = 'translateY(' + (y * -0.08).toFixed(1) + 'px) rotate(' + (2 - y * 0.004).toFixed(2) + 'deg)';
-        ticking = false;
-      });
-    }, { passive: true });
-  }
+  /* Hero phone: a slow CSS float (style.css, .phone-wrap .phone); it no longer moves with scrolling */
 
   /* ---------- Store marquee: duplicate the row so it loops seamlessly ---------- */
   var narrow = window.matchMedia && window.matchMedia('(max-width: 899px)').matches;

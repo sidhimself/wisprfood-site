@@ -851,3 +851,8 @@ footer{font-size:13px}
   .food-marquee{padding-block:10px 36px;margin-bottom:-26px}
   .marquee{padding-block:16px 30px;margin-bottom:-14px}
 }
+
+/* ===== v23: hero phone floats slowly on its own instead of moving with the scroll ===== */
+.js .phone-wrap .phone{animation:phoneFloat 7s ease-in-out infinite}
+@keyframes phoneFloat{0%,100%{transform:translateY(0) rotate(2deg)}50%{transform:translateY(-14px) rotate(.8deg)}}
+@media (prefers-reduced-motion:reduce){.js .phone-wrap .phone{animation:none}}
