@@ -857,3 +857,4 @@ footer{font-size:13px}
 .topbar .lang summary{padding:6px 9px}
 @media (max-width:620px){.topbar .lang .lang-code{display:none}}
 .lang summary:focus{outline:none}.lang summary:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+.hero .bar details.lang{border:0;padding:0;border-radius:0}
