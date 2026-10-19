@@ -103,10 +103,9 @@
   }
 
   /* ---------- Store marquee: duplicate the row so it loops seamlessly ---------- */
-  var wide = window.matchMedia && window.matchMedia('(min-width: 900px)').matches;
   ['stores-track', 'food-track'].forEach(function (id) {
   var track = document.getElementById(id);
-  if (track && !reduce && wide) {
+  if (track && !reduce) {
     Array.prototype.slice.call(track.children).forEach(function (c) {
       var d = c.cloneNode(true); d.setAttribute('aria-hidden', 'true'); track.appendChild(d);
     });
