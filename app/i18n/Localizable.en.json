@@ -1,0 +1,122 @@
+{
+"%@ %@": "%1$@ %2$@",
+"%@ %@ %@": "%1$@ %2$@ %3$@",
+"%@ %@ · %@": "%1$@ %2$@ · %3$@",
+"%@ less than %@": "%1$@ less than %2$@",
+"%@ of %@": "%1$@ of %2$@",
+"%@ of %@ in the basket": "%1$@ of %2$@ in the basket",
+"%@ per year instead of %@. Cancel anytime.": "%1$@ per year instead of %2$@. Cancel anytime.",
+"%@ prices tracked": "%@ prices tracked",
+"%@ today, then %@/year after %lld days. Cancel anytime.": "%1$@ today, then %2$@/year after %3$lld days. Cancel anytime.",
+"%@ · %@": "%1$@ · %2$@",
+"%@ · %lld min · %lld kcal": "%1$@ · %2$lld min · %3$lld kcal",
+"%lld / %lld": "%1$lld / %2$lld",
+"%lld cups": {
+"plural": {
+"one": "%lld cup",
+"other": "%lld cups"
+}
+},
+"%lld days free": {
+"plural": {
+"one": "%lld day free",
+"other": "%lld days free"
+}
+},
+"%lld days free · then %@ a week": {
+"plural": {
+"one": "%1$lld day free · then %2$@ a week",
+"other": "%1$lld days free · then %2$@ a week"
+}
+},
+"%lld days free, then %@ per year instead of %@. Cancel anytime.": "%1$lld days free, then %2$@ per year instead of %3$@. Cancel anytime.",
+"%lld days free, then %@/year. Renews automatically. Cancel anytime in Settings.": {
+"plural": {
+"one": "%1$lld day free, then %2$@/year. Renews automatically. Cancel anytime in Settings.",
+"other": "%1$lld days free, then %2$@/year. Renews automatically. Cancel anytime in Settings."
+}
+},
+"%lld dinners": {
+"plural": {
+"one": "%lld dinner",
+"other": "%lld dinners"
+}
+},
+"%lld items · sorted by aisle": {
+"plural": {
+"one": "%lld item · sorted by aisle",
+"other": "%lld items · sorted by aisle"
+}
+},
+"%lld meals a week · %@, %@": "%1$lld meals a week · %2$@, %3$@",
+"%lld meals for %lld, priced at %@": "%1$lld meals for %2$lld, priced at %3$@",
+"%lld meals · %@": "%1$lld meals · %2$@",
+"%lld min · %@": "%1$lld min · %2$@",
+"%lld min · %@ · %@ each": "%1$lld min · %2$@ · %3$@ each",
+"%lld min · %lld kcal": "%1$lld min · %2$lld kcal",
+"%lld min · %lld kcal · %lld g protein": "%1$lld min · %2$lld kcal · %3$lld g protein",
+"%lld min · %lld kcal · for 2 · Speedy": "%1$lld min · %2$lld kcal · for 2 · Speedy",
+"%lld min · %lld steps · %lld ingredients": "%1$lld min · %2$lld steps · %3$lld ingredients",
+"%lld of %lld in the basket": "%1$lld of %2$lld in the basket",
+"%lld of %lld meals cooked at home.": "%1$lld of %2$lld meals cooked at home.",
+"%lld of %lld selected · you can change this later": "%1$lld of %2$lld selected · you can change this later",
+"%lld people": {
+"plural": {
+"one": "%lld person",
+"other": "%lld people"
+}
+},
+"A receipt from %@ where impulse buys and wasted food are crossed out, saving %@ a week": "A receipt from %1$@ where impulse buys and wasted food are crossed out, saving %2$@ a week",
+"Add": "Add",
+"Add a meal": "Add a meal",
+"Add a recipe or scan your fridge": "Add a recipe or scan your fridge",
+"Add to your week": "Add to your week",
+"Carbs": "Carbs",
+"Continue · %lld of %lld": "Continue · %1$lld of %2$lld",
+"Energy": "Energy",
+"Estimate for %lld people, a %@ weekly budget and %lld meals at %@. Most of it is food thrown away and impulse buys.": {
+"plural": {
+"one": "Estimate for %1$lld person, a %2$@ weekly budget and %3$lld meals at %4$@. Most of it is food thrown away and impulse buys.",
+"other": "Estimate for %1$lld people, a %2$@ weekly budget and %3$lld meals at %4$@. Most of it is food thrown away and impulse buys."
+}
+},
+"Fat": "Fat",
+"Generous": "Generous",
+"I plan my meals with WisprFood and stay on budget. Use my invite code %@ to get 7 days free: %@": "I plan my meals with WisprFood and stay on budget. Use my invite code %1$@ to get 7 days free: %2$@",
+"Matched 1 recipe to your tastes": "Matched 1 recipe to your tastes",
+"My WisprFood week: %@ for %lld meals.": "My WisprFood week: %1$@ for %2$lld meals.",
+"No food spotted. Add what you have by hand.": "No food spotted. Add what you have by hand.",
+"Nothing planned. Tap + to add a meal.": "Nothing planned. Tap + to add a meal.",
+"PRICES TRACKED": "PRICES TRACKED",
+"Paste a link and we'll price the ingredients": "Paste a link and we'll price the ingredients",
+"Photograph what you have and get a recipe for it": "Photograph what you have and get a recipe for it",
+"Room for treats and better cuts": "Room for treats and better cuts",
+"Save %@ at %@": "Save %1$@ at %2$@",
+"Scan your fridge": "Scan your fridge",
+"Sign in to scan your fridge.": "Sign in to scan your fridge.",
+"Skip this meal": "Skip this meal",
+"Step %lld of %lld": "Step %1$lld of %2$lld",
+"Supermarket logos drifting past": "Supermarket logos drifting past",
+"Swap %@": "Swap %@",
+"Swap for something else": "Swap for something else",
+"Swipe or tap Next when you're ready": "Swipe or tap Next when you're ready",
+"The scanner isn't answering. Add what you have by hand.": "The scanner isn't answering. Add what you have by hand.",
+"Today": "Today",
+"Two ways in.": "Two ways in.",
+"WITH A PLAN": "WITH A PLAN",
+"You could save about **%@ a week** at %@": "You could save about **%1$@ a week** at %2$@",
+"You've earned %lld free months so far": {
+"plural": {
+"one": "You've earned %lld free month so far",
+"other": "You've earned %lld free months so far"
+}
+},
+"You've used your scan for now. Try again later.": "You've used your scan for now. Try again later.",
+"You've used your scan. The next one is ready %@.": "You've used your scan. The next one is ready %@.",
+"Your shop, %@": "Your shop, %@",
+"at %@ · %@ each": "at %1$@ · %2$@ each",
+"at %@ · %lld items": "at %1$@ · %2$lld items",
+"for %lld at %@": "for %1$lld at %2$@",
+"for %lld · priced from %lld of %lld ingredients": "for %1$lld · priced from %2$lld of %3$lld ingredients",
+"supermarkets in %lld countries": "supermarkets in %lld countries"
+}
