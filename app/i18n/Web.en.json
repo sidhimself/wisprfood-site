@@ -1,1 +1,14 @@
-{}
+{
+ "%lld items": {
+  "plural": {
+   "one": "%lld item",
+   "other": "%lld items"
+  }
+ },
+ "%lld meals for %@": {
+  "plural": {
+   "one": "%lld meal for %@",
+   "other": "%lld meals for %@"
+  }
+ }
+}

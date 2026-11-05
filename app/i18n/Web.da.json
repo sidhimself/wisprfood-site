@@ -1,26 +1,53 @@
 {
+ "%lld items": {
+  "plural": {
+   "one": "%lld vare",
+   "other": "%lld varer"
+  }
+ },
+ "%lld meals for %@": {
+  "plural": {
+   "one": "%lld måltid for %@",
+   "other": "%lld måltider for %@"
+  }
+ },
  "Answer a few questions and we plan it, priced at your shop.": "Svar på et par spørgsmål, så planlægger vi den med priserne fra din butik.",
+ "Budget %@": "Budget %@",
  "By continuing, you agree to the {terms} and the {privacy}.": "Ved at fortsætte accepterer du {terms} og {privacy}.",
  "Checkout opens here very soon. Please come back in a few days.": "Betaling åbner her meget snart. Kom tilbage om et par dage.",
  "Clear": "Ryd",
+ "Close menu": "Luk menu",
  "Code": "Kode",
+ "Compare": "Sammenlign",
+ "Compare shops": "Sammenlign butikker",
  "Couldn't complete the purchase. Please try again.": "Købet kunne ikke gennemføres. Prøv igen.",
  "Couldn't send the code. Check the address and try again.": "Koden kunne ikke sendes. Tjek adressen, og prøv igen.",
  "Enter the %lld-digit code we sent to": "Indtast den %lld-cifrede kode, vi har sendt til",
  "Free months are claimed in the iPhone app.": "Gratis måneder indløses i iPhone-appen.",
+ "Help & support": "Hjælp og support",
  "List copied": "Listen er kopieret",
+ "Meal skipped": "Måltid sprunget over",
+ "Menu": "Menu",
  "Mon – Sun": "Man – Søn",
  "More": "Mere",
+ "My week": "Min uge",
  "New code in %lld s": "Ny kode om %lld s",
  "Next": "Næste",
+ "Open menu": "Åbn menu",
+ "Over budget": "Over budget",
+ "Preferences": "Præferencer",
  "Remove": "Fjern",
+ "See my grocery list": "Se min indkøbsliste",
  "Send a new code": "Send en ny kode",
  "Send my code": "Send min kode",
+ "Snap your fridge": "Tag et billede af køleskabet",
  "Support": "Hjælp",
  "That code didn't work. Check it or ask for a new one.": "Koden virkede ikke. Tjek den, eller bed om en ny.",
+ "This week's cost": "Ugens pris",
  "Too many codes asked for. Please wait a minute and try again.": "For mange koder bestilt. Vent et minut, og prøv igen.",
  "Use another email": "Brug en anden e-mail",
  "Your email": "Din e-mail",
+ "Your household": "Din husstand",
  "Your household, meal plans and saved recipes are deleted for good. This can't be undone. A subscription bought on the web is cancelled in the billing page; one bought in the iPhone app is cancelled in Settings → Apple Account → Subscriptions.": "Din husstand, dine madplaner og gemte opskrifter slettes for altid. Det kan ikke fortrydes. Et abonnement købt på nettet opsiges på betalingssiden; et købt i iPhone-appen opsiges under Indstillinger → Apple-konto → Abonnementer.",
  "Your plan was bought in the iPhone app. Manage or cancel it in Settings → Apple Account → Subscriptions on your iPhone.": "Dit abonnement er købt i iPhone-appen. Administrer eller opsig det under Indstillinger → Apple-konto → Abonnementer på din iPhone.",
  "Your week of meals is waiting": "Din uges madplan venter",

@@ -1,26 +1,53 @@
 {
+ "%lld items": {
+  "plural": {
+   "one": "%lld article",
+   "other": "%lld articles"
+  }
+ },
+ "%lld meals for %@": {
+  "plural": {
+   "one": "%lld repas pour %@",
+   "other": "%lld repas pour %@"
+  }
+ },
  "Answer a few questions and we plan it, priced at your shop.": "Réponds à quelques questions et on le planifie, aux prix de ton magasin.",
+ "Budget %@": "Budget %@",
  "By continuing, you agree to the {terms} and the {privacy}.": "En continuant, tu acceptes les {terms} et la {privacy}.",
  "Checkout opens here very soon. Please come back in a few days.": "Le paiement arrive très bientôt. Revenez dans quelques jours.",
  "Clear": "Effacer",
+ "Close menu": "Fermer le menu",
  "Code": "Code",
+ "Compare": "Comparer",
+ "Compare shops": "Comparer les magasins",
  "Couldn't complete the purchase. Please try again.": "L’achat n’a pas pu aboutir. Réessayez.",
  "Couldn't send the code. Check the address and try again.": "Impossible d’envoyer le code. Vérifie l’adresse et réessaie.",
  "Enter the %lld-digit code we sent to": "Saisis le code à %lld chiffres envoyé à",
  "Free months are claimed in the iPhone app.": "Les mois offerts se récupèrent dans l’app iPhone.",
+ "Help & support": "Aide et assistance",
  "List copied": "Liste copiée",
+ "Meal skipped": "Repas sauté",
+ "Menu": "Menu",
  "Mon – Sun": "Lun – Dim",
  "More": "Plus",
+ "My week": "Ma semaine",
  "New code in %lld s": "Nouveau code dans %lld s",
  "Next": "Suivant",
+ "Open menu": "Ouvrir le menu",
+ "Over budget": "Budget dépassé",
+ "Preferences": "Préférences",
  "Remove": "Retirer",
+ "See my grocery list": "Voir ma liste de courses",
  "Send a new code": "Renvoyer un code",
  "Send my code": "Recevoir mon code",
+ "Snap your fridge": "Photographie ton frigo",
  "Support": "Aide",
  "That code didn't work. Check it or ask for a new one.": "Ce code ne fonctionne pas. Vérifie-le ou demandes-en un nouveau.",
+ "This week's cost": "Coût de la semaine",
  "Too many codes asked for. Please wait a minute and try again.": "Trop de codes demandés. Patiente une minute et réessaie.",
  "Use another email": "Utiliser un autre e-mail",
  "Your email": "Ton adresse e-mail",
+ "Your household": "Ton foyer",
  "Your household, meal plans and saved recipes are deleted for good. This can't be undone. A subscription bought on the web is cancelled in the billing page; one bought in the iPhone app is cancelled in Settings → Apple Account → Subscriptions.": "Votre foyer, vos menus et vos recettes enregistrées sont supprimés définitivement. C’est irréversible. Un abonnement acheté sur le web se résilie sur la page de facturation ; un abonnement acheté dans l’app iPhone, dans Réglages → Compte Apple → Abonnements.",
  "Your plan was bought in the iPhone app. Manage or cancel it in Settings → Apple Account → Subscriptions on your iPhone.": "Votre abonnement a été acheté dans l’app iPhone. Gérez-le ou résiliez-le dans Réglages → Compte Apple → Abonnements sur votre iPhone.",
  "Your week of meals is waiting": "Tes repas de la semaine t’attendent",
