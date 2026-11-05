@@ -42,7 +42,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="/home.css?v=2">
+<link rel="stylesheet" href="/home.css?v=3">
 
 <script type="application/ld+json">
 {
@@ -221,14 +221,14 @@
         <div><b>Din uge</b><small>Eksempel · 2 personer</small></div>
         <span class="pill-lime">Man – Søn</span>
       </div>
-      <ul class="wc-list">
-        <li><span class="day">Man</span><img src="/images/recipes/lentil-bolognese-sm.webp" alt="" width="44" height="44"><span class="dish">Linsebolognese<small>35 min</small></span><b>0,92 €</b></li>
-        <li><span class="day">Tir</span><img src="/images/recipes/chicken-fajitas-sm.webp" alt="" width="44" height="44"><span class="dish">Fajitas med kylling<small>25 min</small></span><b>2,17 €</b></li>
-        <li><span class="day">Ons</span><img src="/images/recipes/thai-chickpea-curry-sm.webp" alt="" width="44" height="44"><span class="dish">Thailandsk kikærtecurry med kokos<small>30 min</small></span><b>1,38 €</b></li>
-        <li><span class="day">Tor</span><img src="/images/recipes/tuna-tomato-pasta-sm.webp" alt="" width="44" height="44"><span class="dish">Pasta med tun og tomat<small>20 min</small></span><b>1,14 €</b></li>
-        <li><span class="day">Fre</span><img src="/images/recipes/pollo-al-chilindron-sm.webp" alt="" width="44" height="44"><span class="dish">Pollo al chilindrón<small>45 min</small></span><b>2,22 €</b></li>
-        <li><span class="day">Lør</span><img src="/images/recipes/chicken-tikka-masala-sm.webp" alt="" width="44" height="44"><span class="dish">Kylling tikka masala<small>45 min</small></span><b>2,38 €</b></li>
-        <li><span class="day">Søn</span><img src="/images/recipes/spanish-potato-omelette-sm.webp" alt="" width="44" height="44"><span class="dish">Spansk kartoffelomelet<small>25 min</small></span><b>1,35 €</b></li>
+      <ul class="wc-list snap" data-auto="3200">
+        <li><span class="day">Man</span><img src="/images/recipes/lentil-bolognese-sm.webp" srcset="/images/recipes/lentil-bolognese-sm.webp 160w, /images/recipes/lentil-bolognese.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Linsebolognese<small>35 min</small></span><b>0,92 €</b></li>
+        <li><span class="day">Tir</span><img src="/images/recipes/chicken-fajitas-sm.webp" srcset="/images/recipes/chicken-fajitas-sm.webp 160w, /images/recipes/chicken-fajitas.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Fajitas med kylling<small>25 min</small></span><b>2,17 €</b></li>
+        <li><span class="day">Ons</span><img src="/images/recipes/thai-chickpea-curry-sm.webp" srcset="/images/recipes/thai-chickpea-curry-sm.webp 160w, /images/recipes/thai-chickpea-curry.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Thailandsk kikærtecurry med kokos<small>30 min</small></span><b>1,38 €</b></li>
+        <li><span class="day">Tor</span><img src="/images/recipes/tuna-tomato-pasta-sm.webp" srcset="/images/recipes/tuna-tomato-pasta-sm.webp 160w, /images/recipes/tuna-tomato-pasta.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Pasta med tun og tomat<small>20 min</small></span><b>1,14 €</b></li>
+        <li><span class="day">Fre</span><img src="/images/recipes/pollo-al-chilindron-sm.webp" srcset="/images/recipes/pollo-al-chilindron-sm.webp 160w, /images/recipes/pollo-al-chilindron.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Pollo al chilindrón<small>45 min</small></span><b>2,22 €</b></li>
+        <li><span class="day">Lør</span><img src="/images/recipes/chicken-tikka-masala-sm.webp" srcset="/images/recipes/chicken-tikka-masala-sm.webp 160w, /images/recipes/chicken-tikka-masala.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Kylling tikka masala<small>45 min</small></span><b>2,38 €</b></li>
+        <li><span class="day">Søn</span><img src="/images/recipes/spanish-potato-omelette-sm.webp" srcset="/images/recipes/spanish-potato-omelette-sm.webp 160w, /images/recipes/spanish-potato-omelette.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Spansk kartoffelomelet<small>25 min</small></span><b>1,35 €</b></li>
       </ul>
       <div class="wc-foot"><span>Pris pr. portion</span><span>Uge for 2: <b>23,12 €</b></span></div>
     </figure>
@@ -238,7 +238,7 @@
 <section class="shops-strip" id="shops-strip" aria-labelledby="strip-title">
   <div class="wrap">
     <p class="strip-title" id="strip-title">Priser fra 82 supermarkeder i 10 lande</p>
-    <ul class="logos">
+    <div class="marquee"><ul class="logos">
       <li><img src="/images/stores/walmart.webp" alt="Walmart" height="30"></li>
       <li><img src="/images/stores/target.svg" alt="Target" height="30"></li>
       <li><img src="/images/stores/aldi.webp" alt="Aldi" height="30"></li>
@@ -248,7 +248,7 @@
       <li><img src="/images/stores/carrefour.webp" alt="Carrefour" height="30"></li>
       <li><img src="/images/stores/mercadona.webp" alt="Mercadona" height="30"></li>
       <li><img src="/images/stores/eroski.webp" alt="Eroski" height="30"></li>
-    </ul>
+    </ul></div>
   </div>
 </section>
 
@@ -283,7 +283,7 @@
   <div class="wrap">
     <p class="eyebrow center">Sådan virker det</p>
     <h2 id="how-title" class="center">Din uge, planlagt i <em>tre trin.</em></h2>
-    <ol class="steps">
+    <ol class="steps snap mslide">
       <li class="reveal">
         <span class="num">1</span>
         <h3>Fortæl os om dit bord</h3>
@@ -308,7 +308,7 @@
   <div class="wrap">
     <p class="eyebrow center">Hvad der ændrer sig</p>
     <h2 id="change-title" class="center">Færre beslutninger. <em>Mere god mad.</em></h2>
-    <div class="cards3">
+    <div class="cards3 snap mslide">
       <article class="card reveal">
         <span class="emoji" aria-hidden="true">🕕</span>
         <h3>Slut med panik klokken 18</h3>
@@ -355,7 +355,7 @@
     <h2 id="recipes-title" class="center">165 opskrifter, <em>alle testet i køkkenet.</em></h2>
     <p class="sub center">Hjemmelavet mad fra Spanien, Italien, Mexico, Indien, Asien, Middelhavet og køkkener fra hele verden. Hurtig hverdagsaftensmad, nem morgenmad og frokost, der kan holde.</p>
   </div>
-  <div class="rail" tabindex="0" aria-label="Eksempler på opskrifter">
+  <div class="rail snap" data-auto="2600" tabindex="0" aria-label="Eksempler på opskrifter">
     <ul>
       <li><img src="/images/recipes/pollo-al-chilindron.webp" alt="" width="240" height="240"><b>Pollo al chilindrón</b><small>Spansk · 45 min</small></li>
       <li><img src="/images/recipes/cacio-e-pepe.webp" alt="" width="240" height="240"><b>Cacio e pepe</b><small>Italiensk · 20 min</small></li>
@@ -410,13 +410,13 @@
   <div class="wrap">
     <p class="eyebrow center">Og et par ting mere</p>
     <h2 id="more-title" class="center">Små ting, der <em>gør ugen lettere.</em></h2>
-    <div class="cards3 cards-sm">
-      <article class="card reveal"><span class="emoji" aria-hidden="true">📸</span><h3>Tag et billede af køleskabet</h3><p>Tag et billede af indholdet, og få en aftensmad af det, du allerede har.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">⏱️</span><h3>Madlavningstilstand</h3><p>Store trin, ét ad gangen, med indbyggede timere.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🔗</span><h3>Tilføj dine egne opskrifter</h3><p>Indsæt et link fra en opskriftsside, så kommer den med i din uge, prissat som resten.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🔁</span><h3>Skift eller spring over</h3><p>Skift et måltid, eller spring en aften over, med ét tryk.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">📊</span><h3>Ugens opsummering</h3><p>Se, hvordan ugen gik i forhold til dit budget.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🌍</span><h3>Seks sprog</h3><p>Engelsk, spansk, fransk, tysk, dansk og polsk.</p></article>
+    <div class="cards3 cards-sm reveal-group">
+      <article class="card"><span class="emoji" aria-hidden="true">📸</span><h3>Tag et billede af køleskabet</h3><p>Tag et billede af indholdet, og få en aftensmad af det, du allerede har.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">⏱️</span><h3>Madlavningstilstand</h3><p>Store trin, ét ad gangen, med indbyggede timere.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🔗</span><h3>Tilføj dine egne opskrifter</h3><p>Indsæt et link fra en opskriftsside, så kommer den med i din uge, prissat som resten.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🔁</span><h3>Skift eller spring over</h3><p>Skift et måltid, eller spring en aften over, med ét tryk.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">📊</span><h3>Ugens opsummering</h3><p>Se, hvordan ugen gik i forhold til dit budget.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🌍</span><h3>Seks sprog</h3><p>Engelsk, spansk, fransk, tysk, dansk og polsk.</p></article>
     </div>
   </div>
 </section>
@@ -449,10 +449,17 @@
   <div class="wrap">
     <p class="eyebrow center">Fra vores testere</p>
     <h2 id="reviews-title" class="center">Hvad folk <em>siger.</em></h2>
-    <div class="reviews">
-      <blockquote class="review reveal"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Slut med min krise klokken 18</b><p>Hver aften den samme samtale med mig selv: »Hvad skal vi spise?« »Det ved jeg ikke, hvad vil DU have?« Gentag, indtil jeg bestiller overpriset takeaway. At have mine måltider planlagt på forhånd har virkelig reddet mig.</p><cite>Olivia</cite></blockquote>
-      <blockquote class="review reveal"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Min bankkonto siger tak</b><p>Min indkøbsregning var ved at løbe løbsk, og ærligt talt begyndte jeg at tage det personligt 😭 Nu sammenligner jeg priser, før jeg handler, og ved faktisk, hvor mine penge bliver af. Min bankkonto er endelig ved at komme sig.</p><cite>Sophie</cite></blockquote>
-      <blockquote class="review reveal"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Slut med at stirre ind i køleskabet</b><p>Mig, der åbner køleskabet 17 gange i håb om, at der magisk dukker ny mad op 💀 Den her app fortæller mig faktisk, hvad jeg kan lave med det, der allerede er derinde. Livsændrende for en, hvis madlavning mest er på fornemmelsen.</p><cite>Emily</cite></blockquote>
+    <div class="reviews snap" data-auto="4500">
+      <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Min bankkonto siger tak</b><p>Min indkøbsregning var ved at løbe løbsk, og ærligt talt begyndte jeg at tage det personligt 😭 Nu sammenligner jeg priser, før jeg handler, og ved faktisk, hvor mine penge bliver af. Min bankkonto er endelig ved at komme sig.</p><cite>Sophie</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Slut med at stirre ind i køleskabet</b><p>Mig, der åbner køleskabet 17 gange i håb om, at der magisk dukker ny mad op 💀 Den her app fortæller mig faktisk, hvad jeg kan lave med det, der allerede er derinde. Livsændrende for en, hvis madlavning mest er på fornemmelsen.</p><cite>Emily</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Hvorfor sagde ingen det til mig før?</b><p>Jeg har købt de samme varer i det samme supermarked i årevis som en loyal medarbejder, der ikke engang får løn 💀 At sammenligne priser i nærheden er virkelig brugbart. Eneste minus er, at nogle priser ikke altid er opdaterede, så jeg dobbelttjekker stadig nogle gange!</p><cite>Chloe</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Min airfryer har endelig et formål</b><p>Købte en airfryer, fordi TikTok overbeviste mig om, at jeg ville blive kok. Tre måneder senere lavede jeg stadig frosne pommes frites 😂 Nu kan jeg faktisk finde opskrifter, der passer til mit udstyr. Karakterudvikling.</p><cite>Jessica</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Slut med min krise klokken 18</b><p>Hver aften den samme samtale med mig selv: »Hvad skal vi spise?« »Det ved jeg ikke, hvad vil DU have?« Gentag, indtil jeg bestiller overpriset takeaway. At have mine måltider planlagt på forhånd har virkelig reddet mig.</p><cite>Olivia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Endelig en app, der forstår mig</b><p>Jeg har kostrestriktioner, og det kan være hovedpine at finde opskrifter, der faktisk passer til mig. Jeg elsker, at jeg kan tilpasse mine måltider i stedet for at scrolle gennem 400 opskrifter, jeg ikke kan spise. Min slags teknologi 🤝</p><cite>Daniel</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Jeg er holdt op med at købe madvarer som pynt</b><p>Mit køleskab var en kirkegård for grøntsager, jeg købte med de bedste intentioner 🥲 Nu kan jeg planlægge måltider ud fra det, jeg allerede har, i stedet for at lade det hele blive for gammelt. Jeg elsker det! Jeg ville bare ønske, det gik lidt hurtigere at tilføje alle ingredienserne i mit køkken.</p><cite>Mia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Indkøb uden det økonomiske traume</b><p>Man går ind efter mælk og æg og kommer på en eller anden måde ud 70 € fattigere. HVORDAN?? 😂 At planlægge min indkøbsliste efter et budget gør alt så meget nemmere. Færre tilfældige køb, flere penge til bogstaveligt talt alt andet.</p><cite>Amelia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Dovne mennesker, den her er til os</b><p>Jeg vil gerne spise godt, spare penge og være organiseret. Jeg gider bare ikke bruge to timer på at planlægge det hele 😂 At have mine opskrifter, ugens madplan og indkøbslisten samlet ét sted er præcis, hvad jeg havde brug for. Det tog mig dog lidt tid at finde ud af indstillingerne!</p><cite>Hannah</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Mit giftige forhold til takeaway er slut</b><p>Køleskabsscanningen har seriøst reddet mit liv!! Der er altid mad i mit køleskab, som jeg ender med at smide ud, fordi det bliver for gammelt.</p><cite>Lucas</cite></blockquote>
     </div>
   </div>
 </section>
@@ -512,6 +519,6 @@
 
 <div class="sticky-cta"><a class="btn" href="/app/?lang=da">Planlæg min uge <svg class="ic"><use href="#i-arrow"/></svg></a></div>
 
-<script src="/home.js?v=1" defer></script>
+<script src="/home.js?v=2" defer></script>
 </body>
 </html>

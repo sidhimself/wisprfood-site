@@ -42,7 +42,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="/home.css?v=2">
+<link rel="stylesheet" href="/home.css?v=3">
 
 <script type="application/ld+json">
 {
@@ -221,14 +221,14 @@
         <div><b>Votre semaine</b><small>Exemple · 2 personnes</small></div>
         <span class="pill-lime">Lun – Dim</span>
       </div>
-      <ul class="wc-list">
-        <li><span class="day">Lun</span><img src="/images/recipes/lentil-bolognese-sm.webp" alt="" width="44" height="44"><span class="dish">Bolognaise aux lentilles<small>35 min</small></span><b>0,92 €</b></li>
-        <li><span class="day">Mar</span><img src="/images/recipes/chicken-fajitas-sm.webp" alt="" width="44" height="44"><span class="dish">Fajitas au poulet<small>25 min</small></span><b>2,17 €</b></li>
-        <li><span class="day">Mer</span><img src="/images/recipes/thai-chickpea-curry-sm.webp" alt="" width="44" height="44"><span class="dish">Curry thaï de pois chiches au coco<small>30 min</small></span><b>1,38 €</b></li>
-        <li><span class="day">Jeu</span><img src="/images/recipes/tuna-tomato-pasta-sm.webp" alt="" width="44" height="44"><span class="dish">Pâtes thon &amp; tomate<small>20 min</small></span><b>1,14 €</b></li>
-        <li><span class="day">Ven</span><img src="/images/recipes/pollo-al-chilindron-sm.webp" alt="" width="44" height="44"><span class="dish">Pollo al chilindrón<small>45 min</small></span><b>2,22 €</b></li>
-        <li><span class="day">Sam</span><img src="/images/recipes/chicken-tikka-masala-sm.webp" alt="" width="44" height="44"><span class="dish">Poulet tikka masala<small>45 min</small></span><b>2,38 €</b></li>
-        <li><span class="day">Dim</span><img src="/images/recipes/spanish-potato-omelette-sm.webp" alt="" width="44" height="44"><span class="dish">Tortilla espagnole<small>25 min</small></span><b>1,35 €</b></li>
+      <ul class="wc-list snap" data-auto="3200">
+        <li><span class="day">Lun</span><img src="/images/recipes/lentil-bolognese-sm.webp" srcset="/images/recipes/lentil-bolognese-sm.webp 160w, /images/recipes/lentil-bolognese.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Bolognaise aux lentilles<small>35 min</small></span><b>0,92 €</b></li>
+        <li><span class="day">Mar</span><img src="/images/recipes/chicken-fajitas-sm.webp" srcset="/images/recipes/chicken-fajitas-sm.webp 160w, /images/recipes/chicken-fajitas.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Fajitas au poulet<small>25 min</small></span><b>2,17 €</b></li>
+        <li><span class="day">Mer</span><img src="/images/recipes/thai-chickpea-curry-sm.webp" srcset="/images/recipes/thai-chickpea-curry-sm.webp 160w, /images/recipes/thai-chickpea-curry.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Curry thaï de pois chiches au coco<small>30 min</small></span><b>1,38 €</b></li>
+        <li><span class="day">Jeu</span><img src="/images/recipes/tuna-tomato-pasta-sm.webp" srcset="/images/recipes/tuna-tomato-pasta-sm.webp 160w, /images/recipes/tuna-tomato-pasta.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Pâtes thon &amp; tomate<small>20 min</small></span><b>1,14 €</b></li>
+        <li><span class="day">Ven</span><img src="/images/recipes/pollo-al-chilindron-sm.webp" srcset="/images/recipes/pollo-al-chilindron-sm.webp 160w, /images/recipes/pollo-al-chilindron.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Pollo al chilindrón<small>45 min</small></span><b>2,22 €</b></li>
+        <li><span class="day">Sam</span><img src="/images/recipes/chicken-tikka-masala-sm.webp" srcset="/images/recipes/chicken-tikka-masala-sm.webp 160w, /images/recipes/chicken-tikka-masala.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Poulet tikka masala<small>45 min</small></span><b>2,38 €</b></li>
+        <li><span class="day">Dim</span><img src="/images/recipes/spanish-potato-omelette-sm.webp" srcset="/images/recipes/spanish-potato-omelette-sm.webp 160w, /images/recipes/spanish-potato-omelette.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Tortilla espagnole<small>25 min</small></span><b>1,35 €</b></li>
       </ul>
       <div class="wc-foot"><span>Prix par portion</span><span>Semaine pour 2 : <b>23,12 €</b></span></div>
     </figure>
@@ -238,7 +238,7 @@
 <section class="shops-strip" id="shops-strip" aria-labelledby="strip-title">
   <div class="wrap">
     <p class="strip-title" id="strip-title">Les prix de 82 supermarchés dans 10 pays</p>
-    <ul class="logos">
+    <div class="marquee"><ul class="logos">
       <li><img src="/images/stores/walmart.webp" alt="Walmart" height="30"></li>
       <li><img src="/images/stores/target.svg" alt="Target" height="30"></li>
       <li><img src="/images/stores/aldi.webp" alt="Aldi" height="30"></li>
@@ -248,7 +248,7 @@
       <li><img src="/images/stores/carrefour.webp" alt="Carrefour" height="30"></li>
       <li><img src="/images/stores/mercadona.webp" alt="Mercadona" height="30"></li>
       <li><img src="/images/stores/eroski.webp" alt="Eroski" height="30"></li>
-    </ul>
+    </ul></div>
   </div>
 </section>
 
@@ -283,7 +283,7 @@
   <div class="wrap">
     <p class="eyebrow center">Comment ça marche</p>
     <h2 id="how-title" class="center">Ta semaine, planifiée en <em>trois étapes.</em></h2>
-    <ol class="steps">
+    <ol class="steps snap mslide">
       <li class="reveal">
         <span class="num">1</span>
         <h3>Parle-nous de ta tablée</h3>
@@ -308,7 +308,7 @@
   <div class="wrap">
     <p class="eyebrow center">Ce qui change</p>
     <h2 id="change-title" class="center">Moins de décisions. <em>Plus de bons repas.</em></h2>
-    <div class="cards3">
+    <div class="cards3 snap mslide">
       <article class="card reveal">
         <span class="emoji" aria-hidden="true">🕕</span>
         <h3>Fini la panique de 18 h</h3>
@@ -355,7 +355,7 @@
     <h2 id="recipes-title" class="center">165 recettes, <em>toutes testées en cuisine.</em></h2>
     <p class="sub center">Cuisine maison d’Espagne, d’Italie, du Mexique, d’Inde, d’Asie, de Méditerranée et du monde entier. Dîners rapides en semaine, petits-déjeuners faciles et déjeuners qui se conservent.</p>
   </div>
-  <div class="rail" tabindex="0" aria-label="Exemples de recettes">
+  <div class="rail snap" data-auto="2600" tabindex="0" aria-label="Exemples de recettes">
     <ul>
       <li><img src="/images/recipes/pollo-al-chilindron.webp" alt="" width="240" height="240"><b>Pollo al chilindrón</b><small>Espagnole · 45 min</small></li>
       <li><img src="/images/recipes/cacio-e-pepe.webp" alt="" width="240" height="240"><b>Cacio e pepe</b><small>Italienne · 20 min</small></li>
@@ -410,13 +410,13 @@
   <div class="wrap">
     <p class="eyebrow center">Et quelques petits plus</p>
     <h2 id="more-title" class="center">Des petits détails qui <em>simplifient la semaine.</em></h2>
-    <div class="cards3 cards-sm">
-      <article class="card reveal"><span class="emoji" aria-hidden="true">📸</span><h3>Photographie ton frigo</h3><p>Prends en photo ce qu’il y a dedans et obtiens un dîner avec ce que tu as déjà.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">⏱️</span><h3>Mode cuisine</h3><p>De grandes étapes, une à la fois, avec minuteurs intégrés.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🔗</span><h3>Ajoute tes propres recettes</h3><p>Colle le lien de n’importe quel site de recettes et elle rejoint ta semaine, chiffrée comme les autres.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🔁</span><h3>Change ou saute</h3><p>Change un repas ou saute une soirée au restaurant, d’un seul geste.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">📊</span><h3>Bilan de la semaine</h3><p>Vois comment s’est passée la semaine par rapport à ton budget.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🌍</span><h3>Six langues</h3><p>Anglais, espagnol, français, allemand, danois et polonais.</p></article>
+    <div class="cards3 cards-sm reveal-group">
+      <article class="card"><span class="emoji" aria-hidden="true">📸</span><h3>Photographie ton frigo</h3><p>Prends en photo ce qu’il y a dedans et obtiens un dîner avec ce que tu as déjà.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">⏱️</span><h3>Mode cuisine</h3><p>De grandes étapes, une à la fois, avec minuteurs intégrés.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🔗</span><h3>Ajoute tes propres recettes</h3><p>Colle le lien de n’importe quel site de recettes et elle rejoint ta semaine, chiffrée comme les autres.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🔁</span><h3>Change ou saute</h3><p>Change un repas ou saute une soirée au restaurant, d’un seul geste.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">📊</span><h3>Bilan de la semaine</h3><p>Vois comment s’est passée la semaine par rapport à ton budget.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🌍</span><h3>Six langues</h3><p>Anglais, espagnol, français, allemand, danois et polonais.</p></article>
     </div>
   </div>
 </section>
@@ -449,10 +449,17 @@
   <div class="wrap">
     <p class="eyebrow center">De nos testeurs</p>
     <h2 id="reviews-title" class="center">Ce que disent <em>les gens.</em></h2>
-    <div class="reviews">
-      <blockquote class="review reveal"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Fini la crise de 18 h</b><p>Chaque soir, la même conversation avec moi-même : « On mange quoi ? » « Je sais pas, TOI tu veux quoi ? » À répéter jusqu'à commander un plat à emporter hors de prix. Avoir mes repas planifiés à l'avance m'a vraiment sauvée.</p><cite>Olivia</cite></blockquote>
-      <blockquote class="review reveal"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Mon compte en banque dit merci</b><p>Mes courses devenaient incontrôlables et franchement, je commençais à le prendre personnellement 😭 Maintenant je compare les prix avant de faire les courses et je sais enfin où passe mon argent. Mon compte en banque guérit enfin.</p><cite>Sophie</cite></blockquote>
-      <blockquote class="review reveal"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Fini de fixer le frigo</b><p>Moi qui ouvre le frigo 17 fois en espérant que de la nourriture apparaisse comme par magie 💀 Cette appli me dit vraiment ce que je peux cuisiner avec ce qu'il y a déjà dedans. Ça change la vie quand on cuisine surtout au feeling.</p><cite>Emily</cite></blockquote>
+    <div class="reviews snap" data-auto="4500">
+      <blockquote class="review"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Mon compte en banque dit merci</b><p>Mes courses devenaient incontrôlables et franchement, je commençais à le prendre personnellement 😭 Maintenant je compare les prix avant de faire les courses et je sais enfin où passe mon argent. Mon compte en banque guérit enfin.</p><cite>Sophie</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Fini de fixer le frigo</b><p>Moi qui ouvre le frigo 17 fois en espérant que de la nourriture apparaisse comme par magie 💀 Cette appli me dit vraiment ce que je peux cuisiner avec ce qu'il y a déjà dedans. Ça change la vie quand on cuisine surtout au feeling.</p><cite>Emily</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Pourquoi personne ne me l'a dit plus tôt ?</b><p>J'achète les mêmes courses au même supermarché depuis des années, comme une employée fidèle qui n'est même pas payée 💀 Comparer les prix autour de chez moi, c'est vraiment super utile. Seul bémol : certains prix ne sont pas toujours à jour, alors je vérifie encore de temps en temps !</p><cite>Chloe</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Mon air fryer sert enfin à quelque chose</b><p>J'ai acheté un air fryer parce que TikTok m'avait convaincue que j'allais devenir cheffe. Trois mois plus tard, je faisais toujours des frites surgelées 😂 Maintenant je trouve enfin des recettes adaptées à mon équipement. Belle évolution du personnage.</p><cite>Jessica</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Fini la crise de 18 h</b><p>Chaque soir, la même conversation avec moi-même : « On mange quoi ? » « Je sais pas, TOI tu veux quoi ? » À répéter jusqu'à commander un plat à emporter hors de prix. Avoir mes repas planifiés à l'avance m'a vraiment sauvée.</p><cite>Olivia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Enfin une appli qui me comprend</b><p>J'ai des restrictions alimentaires, et trouver des recettes qui me conviennent vraiment peut être un casse-tête. J'adore pouvoir personnaliser mes repas au lieu de faire défiler 400 recettes que je ne peux pas manger. La technologie comme je l'aime 🤝</p><cite>Daniel</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>J'ai arrêté d'acheter des courses pour la déco</b><p>Mon frigo était un cimetière de légumes achetés avec de bonnes intentions 🥲 Maintenant je peux prévoir mes repas avec ce que j'ai déjà au lieu de tout laisser périmer. J'adore ! J'aimerais juste qu'ajouter tous les ingrédients de ma cuisine soit un peu plus rapide.</p><cite>Mia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Les courses sans le traumatisme financier</b><p>Tu entres pour du lait et des œufs et tu ressors on ne sait comment avec 70 € de moins. COMMENT ?? 😂 Prévoir ma liste de courses autour d'un budget, ça simplifie tellement les choses. Moins d'achats au hasard, plus d'argent pour absolument tout le reste.</p><cite>Amelia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Les flemmards, celle-ci est pour nous</b><p>Je veux bien manger, faire des économies et être organisée. Je ne veux juste pas passer deux heures à tout planifier 😂 Avoir mes recettes, mon menu de la semaine et ma liste de courses au même endroit, c'est exactement ce qu'il me fallait. J'ai quand même mis un petit moment à comprendre les réglages !</p><cite>Hannah</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 étoiles"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Ma relation toxique avec les plats à emporter, c'est fini</b><p>La fonction scan du frigo m'a vraiment sauvé la vie !! Il y a toujours de la nourriture dans mon frigo que je finis par jeter parce qu'elle a fini par périmer.</p><cite>Lucas</cite></blockquote>
     </div>
   </div>
 </section>
@@ -512,6 +519,6 @@
 
 <div class="sticky-cta"><a class="btn" href="/app/?lang=fr">Planifier ma semaine <svg class="ic"><use href="#i-arrow"/></svg></a></div>
 
-<script src="/home.js?v=1" defer></script>
+<script src="/home.js?v=2" defer></script>
 </body>
 </html>

@@ -274,3 +274,119 @@ h2 { font-size: clamp(30px, 6vw, 46px); }
 .section.deep .tag { color: var(--deep); }
 .plan .price { color: var(--deep); font-size: 40px; }
 .plan-best .price { color: var(--ivory); }
+
+/* ---------- Sliders, logo band and the phone layout ---------- */
+.snap { scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
+.dots { display: flex; justify-content: center; align-items: center; gap: 6px; margin-top: 16px; min-height: 8px; }
+.dots[hidden] { display: none; }
+.dots button { width: 7px; height: 7px; border-radius: 999px; background: var(--line); border: 0; padding: 0; cursor: pointer; transition: width .35s cubic-bezier(.2, .8, .25, 1), background .35s; }
+.dots button.on { width: 24px; background: var(--deep); }
+.dots button:focus-visible { outline-offset: 2px; }
+
+.marquee { margin-top: 18px; overflow: hidden; -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent); }
+.marquee .logos { margin: 0; flex-wrap: nowrap; justify-content: flex-start; gap: 0; width: max-content; animation: band 34s linear infinite; }
+.marquee .logos li { margin-right: 12px; }
+.marquee:hover .logos { animation-play-state: paused; }
+@keyframes band { to { transform: translateX(-50%); } }
+
+/* Staggered arrival inside groups */
+.js .reveal-group > * { opacity: 0; transform: translateY(16px); transition: opacity .55s ease, transform .55s cubic-bezier(.2, .8, .25, 1); }
+.js .reveal-group.in > * { opacity: 1; transform: none; }
+.js .reveal-group.in > *:nth-child(2) { transition-delay: .07s; }
+.js .reveal-group.in > *:nth-child(3) { transition-delay: .14s; }
+.js .reveal-group.in > *:nth-child(4) { transition-delay: .21s; }
+.js .reveal-group.in > *:nth-child(5) { transition-delay: .28s; }
+.js .reveal-group.in > *:nth-child(6) { transition-delay: .35s; }
+.js .reveal-group.in > *:nth-child(7) { transition-delay: .42s; }
+
+/* Hero arrives on load */
+.js .hero-copy > * { animation: rise .7s cubic-bezier(.2, .8, .25, 1) both; }
+.js .hero-copy > :nth-child(2) { animation-delay: .06s; }
+.js .hero-copy > :nth-child(3) { animation-delay: .12s; }
+.js .hero-copy > :nth-child(4) { animation-delay: .18s; }
+.js .hero-copy > :nth-child(5) { animation-delay: .24s; }
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.js .wc-list li { animation: rise .6s cubic-bezier(.2, .8, .25, 1) both; }
+.js .wc-list li:nth-child(1) { animation-delay: .25s; } .js .wc-list li:nth-child(2) { animation-delay: .32s; }
+.js .wc-list li:nth-child(3) { animation-delay: .39s; } .js .wc-list li:nth-child(4) { animation-delay: .46s; }
+.js .wc-list li:nth-child(5) { animation-delay: .53s; } .js .wc-list li:nth-child(6) { animation-delay: .6s; }
+.js .wc-list li:nth-child(7) { animation-delay: .67s; }
+
+/* Recipe slider */
+.rail { scroll-snap-type: x mandatory; scroll-padding: 0 20px; }
+@media (min-width: 1160px) { .rail { scroll-padding: 0 calc((100vw - 1080px) / 2); } }
+.rail li { transition: transform .3s ease; }
+.rail img { transition: transform .5s ease; }
+.rail li:hover img { transform: scale(1.03); }
+.rail + .dots { margin-top: 10px; }
+
+@media (max-width: 899px) {
+  .section { padding: 52px 0; }
+  h2 { font-size: 31px; }
+  .sub { font-size: 16px; }
+  .hero { padding: 22px 0 26px; }
+  .hero h1 { font-size: 41px; margin-top: 14px; }
+  .lead { font-size: 16.5px; margin-top: 14px; }
+  .cta-row { margin-top: 22px; }
+  .cta-row .btn { width: 100%; }
+  .fine { text-align: center; }
+  .hero-copy .fine { text-align: left; }
+
+  /* The week as swipeable day cards */
+  .week-card { padding: 14px 0 14px; border-radius: 24px; }
+  .week-card::before { display: none; }
+  .wc-head { padding: 0 16px 12px; }
+  .wc-list { flex-direction: row; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 16px; padding: 0 16px 2px; scrollbar-width: none; }
+  .wc-list::-webkit-scrollbar { display: none; }
+  .wc-list li { position: relative; flex: 0 0 140px; flex-direction: column; align-items: stretch; gap: 8px; padding: 0; background: none !important; scroll-snap-align: start; }
+  .wc-list img { width: 140px; height: 140px; border-radius: 18px; order: -1; }
+  .wc-list .day { position: absolute; top: 8px; left: 8px; width: auto; padding: 3px 8px; border-radius: 999px; background: rgba(255, 255, 255, .94); color: var(--deep); font-size: 11px; }
+  .wc-list b { position: absolute; top: 8px; right: 8px; padding: 3px 8px; border-radius: 999px; background: var(--lime); font-size: 12px; }
+  .wc-list .dish { font-size: 13.5px; }
+  .week-card .dots { margin-top: 12px; }
+  .wc-foot { margin: 10px 16px 0; padding: 12px 0 0; }
+
+  /* Groups that become sliders */
+  .mslide { display: flex !important; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 20px; margin-left: -20px; margin-right: -20px; padding: 4px 20px 6px; scrollbar-width: none; }
+  .mslide::-webkit-scrollbar { display: none; }
+  .mslide > * { flex: 0 0 84%; scroll-snap-align: start; }
+  .steps.mslide { margin-top: 30px; margin-bottom: 0; }
+  .steps.mslide + .dots { margin-bottom: 26px; }
+  .cards3.mslide, .reviews.mslide { margin-top: 30px; }
+
+  /* Six small extras in two columns */
+  .cards-sm { grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 28px; }
+  .cards-sm .card { padding: 16px; }
+  .cards-sm .emoji { font-size: 24px; }
+  .cards-sm .card h3 { font-size: 15px; margin-top: 10px; }
+  .cards-sm .card p { font-size: 13px; line-height: 1.45; }
+
+  .rail li { width: 68vw; max-width: 260px; }
+  .rail img { width: 100%; height: auto; aspect-ratio: 1; }
+  .meal-card > img { aspect-ratio: 4 / 3; }
+  .split { gap: 30px; }
+  .split .btn { width: 100%; }
+  .plans { margin-top: 30px; }
+  .plan .btn { width: 100%; }
+  .faq summary { font-size: 15px; }
+  .closing .btn-lg { width: 100%; }
+  .logos li { height: 50px; padding: 0 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee .logos { animation: none; flex-wrap: wrap; justify-content: center; width: auto; }
+  .js .reveal-group > *, .js .hero-copy > *, .js .wc-list li { opacity: 1; transform: none; transition: none; animation: none; }
+  .snap { scroll-behavior: auto; }
+}
+
+/* Reviews: a slider at every size, sliding on its own */
+.reviews { display: flex !important; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px 2px 6px; }
+.reviews::-webkit-scrollbar { display: none; }
+.reviews .review { flex: 0 0 calc((100% - 32px) / 3); scroll-snap-align: start; }
+@media (max-width: 899px) {
+  .reviews { margin: 30px -20px 0; padding: 4px 20px 6px; scroll-padding: 0 20px; gap: 12px; }
+  .reviews .review { flex-basis: 84%; }
+}
+
+/* Grid and split columns never grow to fit a sideways row inside them */
+.hero-in > *, .split > *, .closing-in > * { min-width: 0; }
+html, body { overflow-x: clip; }

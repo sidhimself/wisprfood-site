@@ -174,6 +174,7 @@ T = {
  'What people': ('Lo que dice', 'Ce que disent', 'Was die Leute', 'Hvad folk', 'Co mówią'),
  'say.': ('la gente.', 'les gens.', 'sagen.', 'siger.', 'ludzie.'),
  '5 stars': ('5 estrellas', '5 étoiles', '5 Sterne', '5 stjerner', '5 gwiazdek'),
+ '4 stars': ('4 estrellas', '4 étoiles', '4 Sterne', '4 stjerner', '4 gwiazdki'),
 
  # FAQ
  'Do I need to download anything?': ('¿Tengo que descargar algo?', 'Faut-il télécharger quelque chose ?', 'Muss ich etwas herunterladen?', 'Skal jeg downloade noget?', 'Czy muszę coś pobierać?'),
@@ -247,5 +248,5 @@ T = {
 }
 
 # Kept as they are in every language (names, brands, codes).
-SAME = ['A', 'S', 'L', 'Alex', 'Sam', 'Olivia', 'Sophie', 'Emily', 'Kroger', 'Target', 'Waitrose', 'Mercadona', 'Eroski',
+SAME = ['A', 'S', 'L', 'Alex', 'Sam', 'Olivia', 'Sophie', 'Emily', 'Amelia', 'Chloe', 'Daniel', 'Hannah', 'Jessica', 'Lucas', 'Mia', 'Kroger', 'Target', 'Waitrose', 'Mercadona', 'Eroski',
         'English', 'Español', 'Français', 'Deutsch', 'Dansk', 'Polski', 'EN', 'info@wisprfood.com']

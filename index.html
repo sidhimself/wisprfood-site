@@ -42,7 +42,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="/home.css?v=2">
+<link rel="stylesheet" href="/home.css?v=3">
 
 <script type="application/ld+json">
 {
@@ -146,14 +146,14 @@
         <div><b>Your week</b><small>Example · 2 people</small></div>
         <span class="pill-lime">Mon – Sun</span>
       </div>
-      <ul class="wc-list">
-        <li><span class="day">Mon</span><img src="/images/recipes/lentil-bolognese-sm.webp" alt="" width="44" height="44"><span class="dish">Lentil bolognese<small>35 min</small></span><b>$0.92</b></li>
-        <li><span class="day">Tue</span><img src="/images/recipes/chicken-fajitas-sm.webp" alt="" width="44" height="44"><span class="dish">Chicken fajitas<small>25 min</small></span><b>$2.17</b></li>
-        <li><span class="day">Wed</span><img src="/images/recipes/thai-chickpea-curry-sm.webp" alt="" width="44" height="44"><span class="dish">Thai coconut chickpea curry<small>30 min</small></span><b>$1.38</b></li>
-        <li><span class="day">Thu</span><img src="/images/recipes/tuna-tomato-pasta-sm.webp" alt="" width="44" height="44"><span class="dish">Tuna &amp; tomato pasta<small>20 min</small></span><b>$1.14</b></li>
-        <li><span class="day">Fri</span><img src="/images/recipes/pollo-al-chilindron-sm.webp" alt="" width="44" height="44"><span class="dish">Pollo al chilindrón<small>45 min</small></span><b>$2.22</b></li>
-        <li><span class="day">Sat</span><img src="/images/recipes/chicken-tikka-masala-sm.webp" alt="" width="44" height="44"><span class="dish">Chicken tikka masala<small>45 min</small></span><b>$2.38</b></li>
-        <li><span class="day">Sun</span><img src="/images/recipes/spanish-potato-omelette-sm.webp" alt="" width="44" height="44"><span class="dish">Spanish potato omelette<small>25 min</small></span><b>$1.35</b></li>
+      <ul class="wc-list snap" data-auto="3200">
+        <li><span class="day">Mon</span><img src="/images/recipes/lentil-bolognese-sm.webp" srcset="/images/recipes/lentil-bolognese-sm.webp 160w, /images/recipes/lentil-bolognese.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Lentil bolognese<small>35 min</small></span><b>$0.92</b></li>
+        <li><span class="day">Tue</span><img src="/images/recipes/chicken-fajitas-sm.webp" srcset="/images/recipes/chicken-fajitas-sm.webp 160w, /images/recipes/chicken-fajitas.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Chicken fajitas<small>25 min</small></span><b>$2.17</b></li>
+        <li><span class="day">Wed</span><img src="/images/recipes/thai-chickpea-curry-sm.webp" srcset="/images/recipes/thai-chickpea-curry-sm.webp 160w, /images/recipes/thai-chickpea-curry.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Thai coconut chickpea curry<small>30 min</small></span><b>$1.38</b></li>
+        <li><span class="day">Thu</span><img src="/images/recipes/tuna-tomato-pasta-sm.webp" srcset="/images/recipes/tuna-tomato-pasta-sm.webp 160w, /images/recipes/tuna-tomato-pasta.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Tuna &amp; tomato pasta<small>20 min</small></span><b>$1.14</b></li>
+        <li><span class="day">Fri</span><img src="/images/recipes/pollo-al-chilindron-sm.webp" srcset="/images/recipes/pollo-al-chilindron-sm.webp 160w, /images/recipes/pollo-al-chilindron.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Pollo al chilindrón<small>45 min</small></span><b>$2.22</b></li>
+        <li><span class="day">Sat</span><img src="/images/recipes/chicken-tikka-masala-sm.webp" srcset="/images/recipes/chicken-tikka-masala-sm.webp 160w, /images/recipes/chicken-tikka-masala.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Chicken tikka masala<small>45 min</small></span><b>$2.38</b></li>
+        <li><span class="day">Sun</span><img src="/images/recipes/spanish-potato-omelette-sm.webp" srcset="/images/recipes/spanish-potato-omelette-sm.webp 160w, /images/recipes/spanish-potato-omelette.webp 480w" sizes="(max-width: 899px) 140px, 44px" alt="" width="44" height="44"><span class="dish">Spanish potato omelette<small>25 min</small></span><b>$1.35</b></li>
       </ul>
       <div class="wc-foot"><span>Price per serving</span><span>Week for 2: <b>$23.12</b></span></div>
     </figure>
@@ -163,7 +163,7 @@
 <section class="shops-strip" id="shops-strip" aria-labelledby="strip-title">
   <div class="wrap">
     <p class="strip-title" id="strip-title">Priced at 82 supermarkets in 10 countries</p>
-    <ul class="logos">
+    <div class="marquee"><ul class="logos">
       <li><img src="/images/stores/walmart.webp" alt="Walmart" height="30"></li>
       <li><img src="/images/stores/target.svg" alt="Target" height="30"></li>
       <li><img src="/images/stores/aldi.webp" alt="Aldi" height="30"></li>
@@ -173,7 +173,7 @@
       <li><img src="/images/stores/carrefour.webp" alt="Carrefour" height="30"></li>
       <li><img src="/images/stores/mercadona.webp" alt="Mercadona" height="30"></li>
       <li><img src="/images/stores/eroski.webp" alt="Eroski" height="30"></li>
-    </ul>
+    </ul></div>
   </div>
 </section>
 
@@ -208,7 +208,7 @@
   <div class="wrap">
     <p class="eyebrow center">How it works</p>
     <h2 id="how-title" class="center">Your week, planned in <em>three steps.</em></h2>
-    <ol class="steps">
+    <ol class="steps snap mslide">
       <li class="reveal">
         <span class="num">1</span>
         <h3>Tell us about your table</h3>
@@ -233,7 +233,7 @@
   <div class="wrap">
     <p class="eyebrow center">What changes</p>
     <h2 id="change-title" class="center">Less deciding. <em>More eating well.</em></h2>
-    <div class="cards3">
+    <div class="cards3 snap mslide">
       <article class="card reveal">
         <span class="emoji" aria-hidden="true">🕕</span>
         <h3>No more 6pm panic</h3>
@@ -280,7 +280,7 @@
     <h2 id="recipes-title" class="center">165 recipes, <em>all cook-tested.</em></h2>
     <p class="sub center">Home cooking from Spain, Italy, Mexico, India, Asia, the Mediterranean and kitchens around the world. Quick weeknight dinners, easy breakfasts and lunches that keep.</p>
   </div>
-  <div class="rail" tabindex="0" aria-label="Recipe examples">
+  <div class="rail snap" data-auto="2600" tabindex="0" aria-label="Recipe examples">
     <ul>
       <li><img src="/images/recipes/pollo-al-chilindron.webp" alt="" width="240" height="240"><b>Pollo al chilindrón</b><small>Spanish · 45 min</small></li>
       <li><img src="/images/recipes/cacio-e-pepe.webp" alt="" width="240" height="240"><b>Cacio e pepe</b><small>Italian · 20 min</small></li>
@@ -335,13 +335,13 @@
   <div class="wrap">
     <p class="eyebrow center">And a few more things</p>
     <h2 id="more-title" class="center">Little things that <em>make the week easier.</em></h2>
-    <div class="cards3 cards-sm">
-      <article class="card reveal"><span class="emoji" aria-hidden="true">📸</span><h3>Snap your fridge</h3><p>Take a photo of what's inside and get a dinner from what you already have.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">⏱️</span><h3>Cooking mode</h3><p>Big steps, one at a time, with timers built in.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🔗</span><h3>Add your own recipes</h3><p>Paste a link from any recipe site and it joins your week, priced like the rest.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🔁</span><h3>Swap or skip</h3><p>Change any meal, or skip a night out, in one tap.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">📊</span><h3>Weekly recap</h3><p>See how the week went against your budget.</p></article>
-      <article class="card reveal"><span class="emoji" aria-hidden="true">🌍</span><h3>Six languages</h3><p>English, Spanish, French, German, Danish and Polish.</p></article>
+    <div class="cards3 cards-sm reveal-group">
+      <article class="card"><span class="emoji" aria-hidden="true">📸</span><h3>Snap your fridge</h3><p>Take a photo of what's inside and get a dinner from what you already have.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">⏱️</span><h3>Cooking mode</h3><p>Big steps, one at a time, with timers built in.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🔗</span><h3>Add your own recipes</h3><p>Paste a link from any recipe site and it joins your week, priced like the rest.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🔁</span><h3>Swap or skip</h3><p>Change any meal, or skip a night out, in one tap.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">📊</span><h3>Weekly recap</h3><p>See how the week went against your budget.</p></article>
+      <article class="card"><span class="emoji" aria-hidden="true">🌍</span><h3>Six languages</h3><p>English, Spanish, French, German, Danish and Polish.</p></article>
     </div>
   </div>
 </section>
@@ -374,10 +374,17 @@
   <div class="wrap">
     <p class="eyebrow center">From our testers</p>
     <h2 id="reviews-title" class="center">What people <em>say.</em></h2>
-    <div class="reviews">
-      <blockquote class="review reveal"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>The end of my 6pm crisis</b><p>Every evening it was the same conversation with myself: "What are we eating?" "I don't know, what do YOU want?" Repeat until I'm ordering overpriced takeaway. Having my meals planned in advance has genuinely saved me.</p><cite>Olivia</cite></blockquote>
-      <blockquote class="review reveal"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>My bank account says thank you</b><p>My grocery bill was getting out of hand and honestly, I was starting to take it personally 😭 Now I compare prices before shopping and actually know where my money is going. My bank account is finally healing.</p><cite>Sophie</cite></blockquote>
-      <blockquote class="review reveal"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>No more staring into the fridge</b><p>Me opening the fridge 17 times hoping new food magically appears 💀 This app actually tells me what I can cook with what's already inside. Life-changing for someone whose cooking skills are mostly vibes.</p><cite>Emily</cite></blockquote>
+    <div class="reviews snap" data-auto="4500">
+      <blockquote class="review"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>My bank account says thank you</b><p>My grocery bill was getting out of hand and honestly, I was starting to take it personally 😭 Now I compare prices before shopping and actually know where my money is going. My bank account is finally healing.</p><cite>Sophie</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>No more staring into the fridge</b><p>Me opening the fridge 17 times hoping new food magically appears 💀 This app actually tells me what I can cook with what's already inside. Life-changing for someone whose cooking skills are mostly vibes.</p><cite>Emily</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Why did nobody tell me sooner?</b><p>I've been buying the same groceries at the same supermarket for years like a loyal employee who doesn't even get paid 💀 Comparing prices nearby is actually so useful. Only downside is that some prices aren't always up to date, so I still double-check sometimes!</p><cite>Chloe</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>My air fryer finally has a purpose</b><p>Bought an air fryer because TikTok convinced me I would become a chef. Three months later, I was still making frozen fries 😂 Now I can actually find recipes that work with my equipment. Character development.</p><cite>Jessica</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>The end of my 6pm crisis</b><p>Every evening it was the same conversation with myself: "What are we eating?" "I don't know, what do YOU want?" Repeat until I'm ordering overpriced takeaway. Having my meals planned in advance has genuinely saved me.</p><cite>Olivia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Finally, an app that gets me</b><p>I have dietary restrictions, and finding recipes that actually work for me can be a headache. I love being able to personalize my meals instead of scrolling through 400 recipes I can't eat. My kind of technology 🤝</p><cite>Daniel</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>I stopped buying groceries for decoration</b><p>My fridge used to be a graveyard of vegetables I bought with good intentions 🥲 Now I can plan meals around what I already have instead of letting everything expire. I love it! I just wish adding all the ingredients in my kitchen was a little faster.</p><cite>Mia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Grocery shopping without the financial trauma</b><p>You go in for milk and eggs and somehow leave €70 poorer. HOW?? 😂 Planning my shopping list around a budget makes things so much easier. Fewer random purchases, more money left for literally anything else.</p><cite>Amelia</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="4 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Lazy people, this one's for us</b><p>I want to eat well, save money, and be organized. I just don't want to spend two hours planning it all 😂 Having my recipes, weekly meal plan, and shopping list in one place is exactly what I needed. Took me a little while to figure out the settings, though!</p><cite>Hannah</cite></blockquote>
+      <blockquote class="review"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>My toxic relationship with takeaway is over</b><p>The fridge scan feature genuinely saved my life!! There is always food in my fridge that I end up throwing because they end getting expired.</p><cite>Lucas</cite></blockquote>
     </div>
   </div>
 </section>
@@ -437,6 +444,6 @@
 
 <div class="sticky-cta"><a class="btn" href="/app/">Plan my week <svg class="ic"><use href="#i-arrow"/></svg></a></div>
 
-<script src="/home.js?v=1" defer></script>
+<script src="/home.js?v=2" defer></script>
 </body>
 </html>
