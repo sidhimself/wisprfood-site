@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>WisprFood · Budget Meal Planner App With Grocery Prices</title>
-<meta name="description" content="Plan a week of meals for your family, priced at your own grocery store. WisprFood builds your meal plan, grocery list and food budget in seconds. Get it on the App Store and Google Play.">
+<title>WisprFood · Weekly Meal Planner Priced at Your Grocery Store</title>
+<meta name="description" content="WisprFood plans your whole week of meals in seconds, around your household, tastes and kitchen, and prices every meal at your supermarket. Works in your browser, on iPhone and on Android.">
 <link rel="alternate" hreflang="en" href="https://wisprfood.com/">
 <link rel="alternate" hreflang="es" href="https://wisprfood.com/es/">
 <link rel="alternate" hreflang="fr" href="https://wisprfood.com/fr/">
@@ -19,17 +19,17 @@
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="WisprFood">
-<meta property="og:title" content="WisprFood · Meal plans priced at your grocery store">
-<meta property="og:description" content="A week of meals for everyone at your table, priced at the store you choose, with one grocery list. On the App Store and Google Play.">
+<meta property="og:title" content="WisprFood · Your week of meals, planned in seconds">
+<meta property="og:description" content="Never wonder what's for dinner again. A week of meals for everyone at your table, priced at your own grocery store.">
 <meta property="og:url" content="https://wisprfood.com/">
 <meta property="og:image" content="https://wisprfood.com/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="WisprFood: good food, every night, within budget">
+<meta property="og:image:alt" content="WisprFood: your week of meals, planned and priced">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="WisprFood · Meal plans priced at your grocery store">
-<meta name="twitter:description" content="A week of meals for everyone at your table, priced at the store you choose. On the App Store and Google Play.">
+<meta name="twitter:title" content="WisprFood · Your week of meals, planned in seconds">
+<meta name="twitter:description" content="Never wonder what's for dinner again. A week of meals for everyone at your table, priced at your own grocery store.">
 <meta name="twitter:image" content="https://wisprfood.com/og-image.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -42,7 +42,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
-<link rel="stylesheet" href="/style.css?v=23">
+<link rel="stylesheet" href="/home.css?v=2">
 
 <script type="application/ld+json">
 {
@@ -55,10 +55,7 @@
       "url": "https://wisprfood.com/",
       "logo": "https://wisprfood.com/apple-touch-icon.png",
       "email": "info@wisprfood.com",
-      "brand": {
-        "@type": "Brand",
-        "name": "WisprFood"
-      }
+      "brand": { "@type": "Brand", "name": "WisprFood" }
     },
     {
       "@type": "WebSite",
@@ -66,96 +63,38 @@
       "url": "https://wisprfood.com/",
       "name": "WisprFood",
       "inLanguage": "en",
-      "publisher": {
-        "@id": "https://wisprfood.com/#org"
-      }
+      "publisher": { "@id": "https://wisprfood.com/#org" }
     },
     {
-      "@type": "MobileApplication",
+      "@type": "WebApplication",
       "@id": "https://wisprfood.com/#app",
       "name": "WisprFood",
       "alternateName": "WisprFood: Meal Plan & Save",
-      "description": "A budget meal planner that plans a week of meals for your household and prices every meal at the grocery store you choose, with one combined grocery list.",
-      "operatingSystem": "iOS, Android",
+      "description": "A weekly meal planner that plans every meal for your household in seconds and prices it at the grocery store you choose, with one combined grocery list.",
+      "url": "https://wisprfood.com/app/",
+      "browserRequirements": "Requires a modern web browser",
+      "operatingSystem": "Web, iOS, Android",
       "applicationCategory": "LifestyleApplication",
       "applicationSubCategory": "Food & Drink",
-      "inLanguage": [
-        "en",
-        "es",
-        "fr",
-        "de",
-        "da",
-        "pl"
-      ],
+      "inLanguage": ["en", "es", "fr", "de", "da", "pl"],
       "image": "https://wisprfood.com/og-image.png",
-      "url": "https://wisprfood.com/",
-      "installUrl": [
-        "https://apps.apple.com/us/search?term=WisprFood",
-        "https://play.google.com/store/search?q=WisprFood&c=apps"
-      ],
-      "publisher": {
-        "@id": "https://wisprfood.com/#org"
-      },
+      "publisher": { "@id": "https://wisprfood.com/#org" },
       "offers": [
-        {
-          "@type": "Offer",
-          "name": "Yearly",
-          "price": "44.99",
-          "priceCurrency": "USD",
-          "description": "3-day free trial, then $44.99 per year"
-        },
-        {
-          "@type": "Offer",
-          "name": "Monthly",
-          "price": "8.99",
-          "priceCurrency": "USD"
-        }
+        { "@type": "Offer", "name": "Yearly", "price": "49.99", "priceCurrency": "USD", "description": "3-day free trial, then $49.99 per year" },
+        { "@type": "Offer", "name": "Monthly", "price": "9.99", "priceCurrency": "USD" }
       ]
     },
     {
       "@type": "FAQPage",
       "@id": "https://wisprfood.com/#faq",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How does WisprFood know grocery prices?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Every ingredient has a price at every supported store: 70 grocery stores across 10 countries. Meal prices are worked out from the exact amounts in each recipe for the people you cook for. Prices are estimates for planning, so your receipt can differ a little."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which grocery stores does WisprFood support?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Seven stores in each of our 10 countries, 70 in all, including Walmart in the US, Tesco in the UK, and Aldi, Lidl, Carrefour and Mercadona in Europe. You can compare your whole week across the stores in your country."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Does it work with allergies and diets?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Tell WisprFood about diets, allergies, proteins you avoid and the equipment in your kitchen. Meals are planned around them, and ingredient swaps can be set per person. Kids get smaller portions, and the grocery list follows."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What happens to my data?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You sign in with Apple or Google, your account data is stored securely in the EU under GDPR, and you can delete your account and everything in it from Profile in the app."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Are the nutrition figures exact?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Calories and macros are rounded grocery-store averages. They are good for planning a balanced week, but they are not medical advice."
-          }
-        }
+        { "@type": "Question", "name": "Do I need to download anything?", "acceptedAnswer": { "@type": "Answer", "text": "No. WisprFood works in your browser on any phone, tablet or computer. There is also an iPhone and Android app, and the same account works everywhere." } },
+        { "@type": "Question", "name": "How does the free trial work?", "acceptedAnswer": { "@type": "Answer", "text": "The yearly plan starts with 3 days free. Cancel before the trial ends and you won't be charged." } },
+        { "@type": "Question", "name": "Do I have to shop at the cheapest store?", "acceptedAnswer": { "@type": "Answer", "text": "No. You pick your favourite shop and every price follows it. The shop comparison is a tip, never a rule." } },
+        { "@type": "Question", "name": "Which countries and shops are covered?", "acceptedAnswer": { "@type": "Answer", "text": "82 supermarkets in 10 countries: the United States, the United Kingdom, Ireland, Spain, France, Germany, Denmark, Poland, Mexico and Colombia." } },
+        { "@type": "Question", "name": "Can one plan handle different diets and allergies?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Each person can be vegetarian, vegan or pescatarian and have their own allergies. WisprFood swaps ingredients per person and gives children smaller portions." } },
+        { "@type": "Question", "name": "How exact are the prices?", "acceptedAnswer": { "@type": "Answer", "text": "They are estimates for each ingredient at each shop and get better over time. They're made for planning a budget, so your receipt may differ a little." } },
+        { "@type": "Question", "name": "How do I cancel or delete my account?", "acceptedAnswer": { "@type": "Answer", "text": "Cancel any time from your profile, or from App Store or Google Play subscriptions if you subscribed there. Profile → Delete account removes your account and everything saved to it." } }
       ]
     }
   ]
@@ -163,380 +102,341 @@
 </script>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><symbol id="i-tag" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" fill-opacity=".2" d="M3 12V4.5A1.5 1.5 0 0 1 4.5 3H12l9 9-9 9z"/><circle fill="none" cx="7.5" cy="7.5" r="1.6"/></symbol><symbol id="i-store" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="none" d="M5 12v9h14v-9"/><path fill="currentColor" fill-opacity=".2" d="M3 9l1.6-5h14.8L21 9v1.2a2.6 2.6 0 0 1-4.5 1.6 2.6 2.6 0 0 1-4.5 0 2.6 2.6 0 0 1-4.5 0A2.6 2.6 0 0 1 3 10.2z"/><path fill="none" d="M10 21v-5h4v5"/></symbol><symbol id="i-shield" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" fill-opacity=".2" d="M12 3l7 3v5c0 5-3.4 8.6-7 10-3.6-1.4-7-5-7-10V6z"/><path fill="none" d="M9 12l2.2 2.2L15.5 10"/></symbol><symbol id="i-swap" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle fill="currentColor" fill-opacity=".2" stroke="none" cx="12" cy="12" r="9"/><path fill="none" d="M6 9.5h11l-3-3"/><path fill="none" d="M18 14.5H7l3 3"/></symbol><symbol id="i-import" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" fill-opacity=".2" d="M6 3h8l4 4v14H6z"/><path fill="none" d="M14 3v4h4"/><path fill="none" d="M12 10v7M9 14l3 3 3-3"/></symbol><symbol id="i-chart" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="none" d="M4 4v16h16"/><rect fill="currentColor" fill-opacity=".2" x="7" y="12" width="3" height="5" rx="1"/><rect fill="currentColor" fill-opacity=".2" x="12" y="7" width="3" height="10" rx="1"/><rect fill="currentColor" fill-opacity=".2" x="17" y="10" width="3" height="7" rx="1"/></symbol><symbol id="i-globe" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle fill="currentColor" fill-opacity=".2" cx="12" cy="12" r="9"/><path fill="none" d="M3 12h18M12 3c3 3.4 3 14.6 0 18M12 3c-3 3.4-3 14.6 0 18"/></symbol><symbol id="i-olive" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="none" d="M4 20C8 13 13 8 20 4"/><ellipse fill="currentColor" fill-opacity=".2" cx="9.5" cy="10" rx="3" ry="4.2" transform="rotate(-35 9.5 10)"/><ellipse fill="currentColor" fill-opacity=".2" cx="15.5" cy="15" rx="3" ry="4.2" transform="rotate(-35 15.5 15)"/></symbol><symbol id="i-paella" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse fill="currentColor" fill-opacity=".2" cx="12" cy="13" rx="8" ry="5"/><path fill="none" d="M2 12.5h2M20 12.5h2"/><circle fill="none" cx="9" cy="12" r="1"/><circle fill="none" cx="13.5" cy="14" r="1"/><path fill="none" d="M14 10.5l2 .8"/></symbol><symbol id="i-taco" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" fill-opacity=".2" d="M3 17a9 9 0 0 1 18 0z"/><path fill="none" d="M6.5 12.5c1.4-1 2.6 1 4 0s2.6 1 4 0 2.6 1 3 .6"/></symbol><symbol id="i-noodles" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" fill-opacity=".2" d="M3 12h18a9 9 0 0 1-18 0z"/><path fill="none" d="M15 3l-3 9M19 4l-5 8"/><path fill="none" d="M7 12c0-2 1.5-2 1.5-4M10 12c0-2 1.5-2 1.5-4"/></symbol><symbol id="i-pasta" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse fill="currentColor" fill-opacity=".2" cx="12" cy="17" rx="9" ry="3.5"/><path fill="none" d="M12 15V9M9 3v4a3 3 0 0 0 6 0V3M12 3v4"/></symbol><symbol id="i-curry" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" fill-opacity=".2" d="M3.5 11h17v2.5a6.5 6.5 0 0 1-6.5 6.5h-4a6.5 6.5 0 0 1-6.5-6.5z"/><path fill="none" d="M9 3.5c-1 1 1 2 0 3.5M13 3.5c-1 1 1 2 0 3.5M17 3.5c-1 1 1 2 0 3.5"/></symbol><symbol id="i-family" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle fill="currentColor" fill-opacity=".2" cx="7" cy="7" r="2.6"/><circle fill="currentColor" fill-opacity=".2" cx="17" cy="7" r="2.6"/><circle fill="currentColor" fill-opacity=".2" cx="12" cy="12.5" r="2"/><path fill="none" d="M2.5 19a4.5 4.5 0 0 1 7-3.7M21.5 19a4.5 4.5 0 0 0-7-3.7M8.5 21a3.5 3.5 0 0 1 7 0"/></symbol><symbol id="i-couple" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle fill="currentColor" fill-opacity=".2" cx="8" cy="8" r="3"/><circle fill="currentColor" fill-opacity=".2" cx="16" cy="8" r="3"/><path fill="none" d="M2.5 20a5.5 5.5 0 0 1 11 0M10.5 20a5.5 5.5 0 0 1 11 0"/></symbol><symbol id="i-person" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle fill="currentColor" fill-opacity=".2" cx="12" cy="8" r="4"/><path fill="none" d="M4 21a8 8 0 0 1 16 0"/></symbol><symbol id="i-leaf" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" fill-opacity=".2" d="M5 19C5 10 10 5 20 4c-1 10-6 15-15 15z"/><path fill="none" d="M5 19l8.5-8.5"/></symbol><symbol id="i-bag" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path fill="currentColor" fill-opacity=".2" d="M5 8h14l-1.2 13H6.2z"/><path fill="none" d="M9 10V6.5a3 3 0 0 1 6 0V10"/></symbol></defs></svg>
-<a class="skip" href="#main">Skip to content</a>
-<div class="topbar" id="topbar" aria-hidden="true">
-  <div class="wrap wide topbar-in">
-    <a class="mark" href="#" tabindex="-1"><img src="/favicon.svg" alt="" width="28" height="28">WisprFood</a>
-    <nav class="spy" aria-label="Sections">
-      <a href="#how" tabindex="-1">How it works</a><a href="#recipes" tabindex="-1">Recipes</a><a href="#features" tabindex="-1">Features</a><a href="#budget" tabindex="-1">Budget</a><a href="#pricing" tabindex="-1">Pricing</a><a href="#faq" tabindex="-1">FAQ</a>
-    </nav>
-    <a class="topbar-cta" href="#download" tabindex="-1">Get the app</a>
-    <details class="lang lang-bar"><summary aria-label="Language"><svg class="ic"><use href="#i-globe"/></svg><span class="lang-code">EN</span></summary><ul><li><a href="/" hreflang="en" lang="en" aria-current="true">English<span class="lc">EN</span></a></li><li><a href="/es/" hreflang="es" lang="es">Español<span class="lc">ES</span></a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français<span class="lc">FR</span></a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch<span class="lc">DE</span></a></li><li><a href="/da/" hreflang="da" lang="da">Dansk<span class="lc">DA</span></a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski<span class="lc">PL</span></a></li></ul></details>
-    <div class="tb-stores"><a class="tb-store" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener" tabindex="-1"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.9-1.1-2.9-4.2zM13.9 5.2c.7-.9 1.2-2 1-3.2-1 0-2.3.7-3 1.6-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.5z"/></svg><span>App Store</span></a><a class="tb-store" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M3.6 2.4 13.7 12 3.6 21.6c-.3-.3-.4-.7-.4-1.2V3.6c0-.5.1-.9.4-1.2z"/><path fill="#34A853" d="M3.6 2.4 16.9 8.9 13.7 12z"/><path fill="#EA4335" d="M3.6 21.6 13.7 12l3.2 3.1z"/><path fill="#FBBC04" d="m16.9 8.9 3.5 2c.9.5.9 1.7 0 2.2l-3.5 2L13.7 12z"/></svg><span>Google Play</span></a></div>
-  </div>
-  <i class="progress"></i>
-</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-fork" viewBox="0 0 512 512"><g transform="rotate(-24 256 256)"><path d="M256 88 C 336 140, 336 232, 256 278 C 176 232, 176 140, 256 88 Z" fill="currentColor"/><path d="M234 66 L234 198 M278 66 L278 198" fill="none" stroke="var(--cut, #12372A)" stroke-width="12" stroke-linecap="round"/><path d="M256 270 L256 426" fill="none" stroke="currentColor" stroke-width="20" stroke-linecap="round"/></g></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></g></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4L2.8 9.5l6.4-.8z" fill="currentColor"/></symbol>
+</svg>
 
-<div class="fbar" id="fbar">
-  <a class="mark" href="#main"><img src="/favicon.svg" alt="" width="26" height="26">WisprFood</a>
-  <div class="fbar-r">
-    <details class="lang lang-f"><summary aria-label="Language"><svg class="ic"><use href="#i-globe"/></svg><span class="lang-code">EN</span></summary><ul><li><a href="/" hreflang="en" lang="en" aria-current="true">English<span class="lc">EN</span></a></li><li><a href="/es/" hreflang="es" lang="es">Español<span class="lc">ES</span></a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français<span class="lc">FR</span></a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch<span class="lc">DE</span></a></li><li><a href="/da/" hreflang="da" lang="da">Dansk<span class="lc">DA</span></a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski<span class="lc">PL</span></a></li></ul></details>
-    <a class="fbar-cta" href="#download" data-get-app>Get app</a>
-    <details class="fmenu"><summary aria-label="Menu"><span class="burger" aria-hidden="true"></span></summary>
-      <div class="fmenu-panel"><nav aria-label="Sections"><a href="#how">How it works</a><a href="#recipes">Recipes</a><a href="#features">Features</a><a href="#budget">Budget</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav><div class="store-btns"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div></div>
-    </details>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap top-in">
+    <a class="logo" href="/" aria-label="WisprFood home"><span class="mark"><svg><use href="#i-fork"/></svg></span>WisprFood</a>
+    <nav class="top-nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#recipes">Recipes</a>
+      <a href="#shops">Shops</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <details class="lang"><summary aria-label="Language"><svg class="ic"><use href="#i-globe"/></svg><span class="lang-code">EN</span></summary><ul><li><a href="/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski</a></li></ul></details>
+    <a class="btn btn-sm" href="/app/">Plan my week</a>
   </div>
-</div>
-<div class="hero">
-<header class="wrap wide bar">
-  <a class="mark" href="/" aria-label="WisprFood home"><img src="/favicon.svg" alt="" width="32" height="32">WisprFood</a>
-  <nav aria-label="Main">
-    <a class="nav-hide" href="#how">How it works</a>
-    <a class="nav-hide" href="#recipes">Recipes</a>
-    <a class="nav-hide" href="#pricing">Pricing</a>
-    <a href="#download">Download</a>
-    <details class="lang lang-hero"><summary aria-label="Language"><svg class="ic"><use href="#i-globe"/></svg><span class="lang-code">EN</span></summary><ul><li><a href="/" hreflang="en" lang="en" aria-current="true">English<span class="lc">EN</span></a></li><li><a href="/es/" hreflang="es" lang="es">Español<span class="lc">ES</span></a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français<span class="lc">FR</span></a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch<span class="lc">DE</span></a></li><li><a href="/da/" hreflang="da" lang="da">Dansk<span class="lc">DA</span></a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski<span class="lc">PL</span></a></li></ul></details>
-  </nav>
 </header>
-<nav class="mnav" aria-label="Sections"><a href="#how">How it works</a><a href="#recipes">Recipes</a><a href="#features">Features</a><a href="#budget">Budget</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
-<section class="wrap wide hero-body">
-  <div>
-        <h1>Good food, every night, <em>within budget.</em></h1>
-    <p class="lede">WisprFood plans a week of meals for everyone at your table, prices each one at the grocery store you choose, and turns it all into one shopping list.</p>
-    <div class="store-btns"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div>
-    <p class="where">Free for 3 days · iPhone, iPad and Android</p>
-  </div>
-  <div class="phone-wrap" aria-hidden="true">
-    <span class="food-bubble b1"><img src="/images/recipes/vegetarian-pad-thai-sm.webp" alt="" width="160" height="160"></span>
-    <span class="food-bubble b2"><img src="/images/recipes/chicken-tikka-masala-sm.webp" alt="" width="160" height="160"></span>
-    
-    <div class="phone" data-parallax>
-      <div class="hi">Your week <small>1 person</small></div>
-      <div class="days"><span class="on">Mon<b>19</b></span><span>Tue<b>20</b></span><span>Wed<b>21</b></span><span>Thu<b>22</b></span><span>Fri<b>23</b></span></div>
-      <div class="budget"><b>$30.71</b><span>$4.29 under budget</span><div class="track"><i style="width:88%"></i></div></div>
-      <div class="meal"><img class="th" src="/images/recipes/porridge-banana-sm.webp" alt="" width="44" height="44"><div><span class="tag">Breakfast</span>Porridge with banana<small>10 min</small></div><b>$0.56</b></div>
-      <div class="meal"><img class="th" src="/images/recipes/chickpeas-spinach-sm.webp" alt="" width="44" height="44"><div><span class="tag">Lunch</span>Chickpeas with spinach<small>25 min</small></div><b>$0.94</b></div>
-      <div class="meal"><img class="th" src="/images/recipes/pollo-al-chilindron-sm.webp" alt="" width="44" height="44"><div><span class="tag">Dinner</span>Pollo al chilindrón<small>45 min</small></div><b>$2.22</b></div>
-    </div>
-  </div>
-</section>
-</div>
 
 <main id="main">
-<div class="wrap wide">
-  <section class="stats" aria-label="WisprFood in numbers">
-    <div class="stat reveal"><b data-count="165">165</b><span>cook-tested recipes</span></div>
-    <div class="stat reveal" style="--d:.08s"><b data-count="70">70</b><span>grocery stores priced</span></div>
-    <div class="stat reveal" style="--d:.16s"><b data-count="10">10</b><span>countries</span></div>
-    <div class="stat reveal" style="--d:.24s"><b data-count="6">6</b><span>languages</span></div>
-  </section>
-</div>
 
-<p class="marquee-label reveal">Priced at the grocery stores you already shop</p>
-<div class="marquee" aria-label="Some of the grocery stores WisprFood prices">
-  <div class="marquee-track" id="stores-track">
-    <span class="logo-chip has-logo"><img src="/images/stores/walmart.webp" alt="Walmart logo" width="360" height="85"></span>
-    <span class="logo-chip has-logo"><img src="/images/stores/tesco.webp" alt="Tesco logo" width="360" height="108"></span>
-    <span class="logo-chip has-logo sq aldi"><img src="/images/stores/aldi.webp" alt="Aldi logo" width="120" height="120"><b>ALDI</b></span>
-    <span class="logo-chip has-logo sq"><img src="/images/stores/lidl.webp" alt="Lidl logo" width="125" height="120"></span>
-    <span class="logo-chip has-logo sq"><img src="/images/stores/carrefour.webp" alt="Carrefour logo" width="174" height="120"></span>
-    <span class="logo-chip has-logo sq"><img src="/images/stores/mercadona.webp" alt="Mercadona logo" width="221" height="120"></span>
-    <span class="logo-chip has-logo"><img src="/images/stores/eroski.webp" alt="Eroski logo" width="360" height="81"></span>
-    <span class="logo-chip has-logo sq"><img src="/images/stores/target.svg" alt="Target logo" width="100" height="126"></span>
-    <span class="logo-chip has-logo"><img src="/images/stores/waitrose.svg" alt="Waitrose logo" width="300" height="30"></span>
-  </div>
-</div>
-
-<div class="wrap wide">
-  <section class="section story" id="how" aria-labelledby="how-title" style="padding-top:56px">
-    <div class="section-head reveal">
-      <p class="kicker">How it works</p>
-      <h2 id="how-title">A whole week of meals, <em>planned in a minute.</em></h2>
-      <p>Answer a few questions once. WisprFood does the planning, the math and the grocery list every week after.</p>
-    </div>
-    <div class="story-grid">
-      <ol class="story-steps">
-        <li class="story-step" data-step="0"><div class="lottie" data-lottie="stopwatch" aria-hidden="true"></div><span class="step-no">Step 1</span><h3>Tell us about your table</h3><p>How many adults and kids, which days you cook, your weekly budget, diets, allergies, the proteins you skip and the store you shop at. It takes about a minute.</p></li>
-        <li class="story-step" data-step="1"><div class="lottie" data-lottie="tick" aria-hidden="true"></div><span class="step-no">Step 2</span><h3>Get your week, priced</h3><p>Breakfast, lunch and dinner on a rolling week, every meal priced at your store for the exact number of people you cook for. Swap, skip or fill any slot with one tap.</p></li>
-        <li class="story-step" data-step="2"><div class="lottie" data-lottie="coins" aria-hidden="true"></div><span class="step-no">Step 3</span><h3>See where it's cheapest</h3><p>Compare your whole week across the grocery stores near you and see exactly how much you'd save by switching. Then shop one list, sorted by aisle.</p></li>
-        <li class="story-step" data-step="3"><div class="lottie" data-lottie="pot" aria-hidden="true"></div><span class="step-no">Step 4</span><h3>Cook it step by step</h3><p>Full-screen steps with big text, built-in timers and the right amounts for your household. No scrolling with floury hands.</p></li>
-      </ol>
-      <div class="story-stage" aria-hidden="true">
-        <div class="story-phone">
-          <div class="story-dots"><i class="on"></i><i></i><i></i><i></i></div>
-          <div class="scr s-setup on" data-screen="0">
-            <div class="scr-top"><span class="scr-back">‹</span><span class="scr-bar"><i style="width:66%"></i></span><span class="scr-count">2/3</span></div>
-            <div class="scr-h">Who's eating?</div>
-            <div class="pick"><span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5+</span></div>
-            <div class="scr-h sm">Where do you shop?</div>
-            <div class="shops">
-              <span class="on"><img src="/images/stores/walmart.webp" alt=""><b>Walmart</b><i></i></span>
-              <span><img src="/images/stores/aldi.webp" alt=""><b>Aldi</b></span>
-              <span><img src="/images/stores/lidl.webp" alt=""><b>Lidl</b></span>
-              <span><img src="/images/stores/tesco.webp" alt=""><b>Tesco</b></span>
-            </div>
-            <div class="scr-h sm">Weekly budget</div>
-            <div class="slider"><span style="width:45%"><i></i></span></div>
-            <div class="slider-val"><b>$45</b> a week</div>
-            <div class="scr-btn">Continue</div>
-          </div>
-          <div class="scr s-week" data-screen="1">
-            <div class="scr-sub">Mon 19 – Sun 25 Oct</div>
-            <div class="scr-h">Your week</div>
-            <div class="wk-budget"><div><small>This week's food</small><b>$30.71</b></div><span>$4.29 under budget</span><div class="track"><i style="width:88%"></i></div></div>
-            <div class="wk-day">Monday <small>$3.72 today</small></div>
-            <div class="wk-meal"><img src="/images/recipes/porridge-banana-sm.webp" alt=""><div><em class="t-b">Breakfast</em>Porridge with banana</div><b>$0.56</b></div>
-            <div class="wk-meal"><img src="/images/recipes/chickpeas-spinach-sm.webp" alt=""><div><em class="t-l">Lunch</em>Chickpeas with spinach</div><b>$0.94</b></div>
-            <div class="wk-meal"><img src="/images/recipes/pollo-al-chilindron-sm.webp" alt=""><div><em class="t-d">Dinner</em>Pollo al chilindrón</div><b>$2.22</b></div>
-            <div class="wk-day">Tuesday <small>$3.06 today</small></div>
-            <div class="wk-meal"><img src="/images/recipes/tomato-toast-sm.webp" alt=""><div><em class="t-b">Breakfast</em>Tomato toast</div><b>$0.55</b></div>
-          </div>
-          <div class="scr s-compare" data-screen="2">
-            <div class="scr-h">Compare stores</div>
-            <div class="scr-sub2">This week's 21 meals · 2 people</div>
-            <div class="cmp best"><img src="/images/stores/aldi.webp" alt=""><div><b>Aldi <em>Cheapest</em></b><span class="cbar"><i style="width:30%"></i></span></div><strong>$59.57</strong></div>
-            <div class="cmp"><img src="/images/stores/lidl.webp" alt=""><div><b>Lidl</b><span class="cbar"><i style="width:40%"></i></span></div><strong>$60.80</strong></div>
-            <div class="cmp you"><img src="/images/stores/walmart.webp" alt=""><div><b>Walmart <em>Your store</em></b><span class="cbar"><i style="width:55%"></i></span></div><strong>$62.64</strong></div>
-            <div class="cmp"><img src="/images/stores/carrefour.webp" alt=""><div><b>Carrefour</b><span class="cbar"><i style="width:66%"></i></span></div><strong>$63.87</strong></div>
-            <div class="cmp"><img src="/images/stores/tesco.webp" alt=""><div><b>Tesco</b><span class="cbar"><i style="width:81%"></i></span></div><strong>$65.71</strong></div>
-            <div class="scr-btn">Switch to Aldi · <span>save $3.07</span></div>
-          </div>
-          <div class="scr s-cook" data-screen="3">
-            <div class="ck-head"><img src="/images/recipes/spanish-potato-omelette-sm.webp" alt=""><div><b>Spanish potato omelette</b><small>Step 2 of 4</small></div></div>
-            <div class="ck-dots"><i class="on"></i><i class="on"></i><i></i><i></i></div>
-            <div class="ck-num">02</div>
-            <div class="ck-text">Cook them gently in the <span>olive oil</span> over medium-low heat until soft, not crispy.</div>
-            <div class="ck-chip">6 tbsp olive oil</div>
-            <div class="ck-timer"><svg viewBox="0 0 62 62"><circle class="bg" cx="31" cy="31" r="26"/><circle class="fg" cx="31" cy="31" r="26"/></svg><div><b>15:00</b><span>Start timer</span></div></div>
-            <div class="ck-next"><span>Back</span><span class="go">Next step →</span></div>
-          </div>
-        </div>
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-copy">
+      <p class="chip">Weekly meal planner · priced at your shop</p>
+      <h1><span>Never wonder what's for dinner</span> <em>again.</em></h1>
+      <p class="lead">WisprFood plans your whole week of meals in seconds, around your household, tastes and kitchen. Every meal is priced at your supermarket, so you also know where it's cheapest.</p>
+      <div class="cta-row">
+        <a class="btn btn-lg" href="/app/">Plan my week <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
+      <p class="fine">Free for 3 days · cancel anytime · works in your browser</p>
     </div>
-    <div class="cta-row reveal"><p>Plan your first week tonight.<small>Free for 3 days on iPhone, iPad and Android.</small></p><div class="store-btns"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div></div>
-  </section>
 
-  <section class="section" id="fridge" aria-labelledby="fridge-title">
-    <div class="show">
-      <div class="reveal from-left">
-        <p class="kicker">Fridge scan</p>
-        <h2 id="fridge-title">Snap your fridge. <em>Get dinner.</em></h2>
-        <p>Take a photo of what's in your fridge and WisprFood suggests meals you can make with it, with only the missing bits to buy. Less food in the trash, more money in your pocket.</p>
+    <figure class="week-card reveal" aria-label="An example week of dinners with prices">
+      <div class="wc-head">
+        <div><b>Your week</b><small>Example · 2 people</small></div>
+        <span class="pill-lime">Mon – Sun</span>
       </div>
-      <div class="visual reveal from-right">
-        <div class="fridge-photo"><img src="/images/fridge.webp" alt="An open fridge with eggs, crushed tomato, red peppers, onions, garlic and chorizo" width="720" height="720" loading="lazy"><span class="beam" aria-hidden="true"></span></div>
-        <div class="found" aria-hidden="true"><span>Eggs</span><span>Crushed tomato</span><span>Red pepper</span><span>Chorizo</span><span>Onion</span><span>Garlic</span></div>
-        <ul class="fridge-ideas">
-          <li><img src="/images/recipes/butter-bean-shakshuka-sm.webp" alt="" width="48" height="48" loading="lazy"><div>Butter bean shakshuka<small>Uses crushed tomato, eggs and red pepper</small></div></li>
-          <li><img src="/images/recipes/lentil-chorizo-stew-sm.webp" alt="" width="48" height="48" loading="lazy"><div>Lentil &amp; chorizo stew<small>Uses chorizo, onion and garlic</small></div></li>
-          <li><img src="/images/recipes/tuna-tomato-pasta-sm.webp" alt="" width="48" height="48" loading="lazy"><div>Tuna &amp; tomato pasta<small>Uses crushed tomato and onion</small></div></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="recipes" aria-labelledby="recipes-title">
-    <div class="section-head reveal">
-      <p class="kicker">Recipes</p>
-      <h2 id="recipes-title">165 recipes, <em>cooked and tested.</em></h2>
-      <p>Weeknight dinners from around the world, each with prices, macros and step-by-step instructions. Every recipe is our own and cooked in a real kitchen before it reaches the app.</p>
-    </div>
-    <div class="cuisines">
-      <div class="cuisine reveal pop"><span class="e ci t-sky" aria-hidden="true"><svg class="ic"><use href="#i-globe"/></svg></span><b>Around the World</b><span>72 recipes</span></div>
-      <div class="cuisine reveal pop" style="--d:.05s"><span class="e ci t-leaf" aria-hidden="true"><svg class="ic"><use href="#i-olive"/></svg></span><b>Mediterranean</b><span>25 recipes</span></div>
-      <div class="cuisine reveal pop" style="--d:.1s"><span class="e ci t-saffron" aria-hidden="true"><svg class="ic"><use href="#i-paella"/></svg></span><b>Spanish</b><span>17 recipes</span></div>
-      <div class="cuisine reveal pop" style="--d:.15s"><span class="e ci t-tomato" aria-hidden="true"><svg class="ic"><use href="#i-taco"/></svg></span><b>Mexican</b><span>15 recipes</span></div>
-      <div class="cuisine reveal pop" style="--d:.2s"><span class="e ci t-berry" aria-hidden="true"><svg class="ic"><use href="#i-noodles"/></svg></span><b>Asian</b><span>15 recipes</span></div>
-      <div class="cuisine reveal pop" style="--d:.25s"><span class="e ci t-saffron" aria-hidden="true"><svg class="ic"><use href="#i-pasta"/></svg></span><b>Italian</b><span>11 recipes</span></div>
-      <div class="cuisine reveal pop" style="--d:.3s"><span class="e ci t-tomato" aria-hidden="true"><svg class="ic"><use href="#i-curry"/></svg></span><b>Indian</b><span>10 recipes</span></div>
-    </div>
-  </section>
-</div>
-  <div class="food-marquee reveal" aria-label="Some of the recipes in WisprFood">
-    <div class="food-track" id="food-track">
-      <figure class="food-card"><img src="/images/recipes/cacio-e-pepe.webp" alt="Cacio e pepe" width="480" height="480" loading="lazy"><figcaption><span class="tag">Budget pick</span><b>Cacio e pepe</b><span>20 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/chicken-tikka-masala.webp" alt="Chicken tikka masala" width="480" height="480" loading="lazy"><figcaption><span class="tag">Takeout favorite</span><b>Chicken tikka masala</b><span>45 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/butter-bean-shakshuka.webp" alt="Butter bean shakshuka" width="480" height="480" loading="lazy"><figcaption><b>Butter bean shakshuka</b></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/vegetarian-pad-thai.webp" alt="Vegetarian pad thai" width="480" height="480" loading="lazy"><figcaption><span class="tag">Takeout favorite</span><b>Vegetarian pad thai</b><span>25 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/pollo-al-chilindron.webp" alt="Pollo al chilindrón" width="480" height="480" loading="lazy"><figcaption><span class="tag">Dinner</span><b>Pollo al chilindrón</b><span>45 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/chicken-fajitas.webp" alt="Chicken fajitas" width="480" height="480" loading="lazy"><figcaption><b>Chicken fajitas</b><span>25 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/lentil-bolognese.webp" alt="Lentil bolognese" width="480" height="480" loading="lazy"><figcaption><span class="tag">Budget pick</span><b>Lentil bolognese</b><span>35 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/egg-fried-rice.webp" alt="Egg fried rice" width="480" height="480" loading="lazy"><figcaption><b>Egg fried rice</b><span>20 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/spanish-potato-omelette.webp" alt="Spanish potato omelette" width="480" height="480" loading="lazy"><figcaption><b>Spanish potato omelette</b></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/thai-chickpea-curry.webp" alt="Thai chickpea curry" width="480" height="480" loading="lazy"><figcaption><b>Thai chickpea curry</b><span>30 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/porridge-banana.webp" alt="Porridge with banana" width="480" height="480" loading="lazy"><figcaption><span class="tag">Breakfast</span><b>Porridge with banana</b><span>10 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/cashew-chicken.webp" alt="Cashew chicken" width="480" height="480" loading="lazy"><figcaption><b>Cashew chicken</b><span>25 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/tomato-basil-pasta.webp" alt="Tomato &amp; basil pasta" width="480" height="480" loading="lazy"><figcaption><span class="tag">Budget pick</span><b>Tomato &amp; basil pasta</b><span>25 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/chickpeas-spinach.webp" alt="Chickpeas with spinach" width="480" height="480" loading="lazy"><figcaption><span class="tag">Budget pick</span><b>Chickpeas with spinach</b><span>25 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/teriyaki-chicken-bowl.webp" alt="Teriyaki chicken bowl" width="480" height="480" loading="lazy"><figcaption><b>Teriyaki chicken bowl</b></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/tomato-toast.webp" alt="Tomato toast" width="480" height="480" loading="lazy"><figcaption><span class="tag">Breakfast</span><b>Tomato toast</b><span>10 min</span></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/lentil-chorizo-stew.webp" alt="Lentil &amp; chorizo stew" width="480" height="480" loading="lazy"><figcaption><b>Lentil &amp; chorizo stew</b></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/tuna-tomato-pasta.webp" alt="Tuna &amp; tomato pasta" width="480" height="480" loading="lazy"><figcaption><b>Tuna &amp; tomato pasta</b></figcaption></figure>
-      <figure class="food-card"><img src="/images/recipes/scrambled-eggs-toast.webp" alt="Scrambled eggs on toast" width="480" height="480" loading="lazy"><figcaption><span class="tag">Breakfast</span><b>Scrambled eggs on toast</b></figcaption></figure>
-    </div>
-  </div>
-  <div class="wrap wide">
-
-</div>
-<div class="sec-band deep" data-band>
-<div class="wrap wide">
-  <section class="section" id="features" aria-labelledby="features-title">
-    <div class="section-head reveal">
-      <p class="kicker">Features</p>
-      <h2 id="features-title">Everything a weekly meal plan <em>should do.</em></h2>
-      <p>Built for real households: busy weeknights, picky eaters, tight budgets and small kitchens.</p>
-    </div>
-    <div class="features">
-      <article class="feature reveal"><div class="dot t-green" aria-hidden="true"><svg class="ic"><use href="#i-tag"/></svg></div><h3>Priced at your store</h3><p>Every meal shows what it costs at your own grocery store, for the exact number of people you cook for.</p></article>
-      <article class="feature reveal" style="--d:.08s"><div class="dot t-sky" aria-hidden="true"><svg class="ic"><use href="#i-store"/></svg></div><h3>Compare stores</h3><p>See what your whole week would cost at each grocery store near you, and how much you'd save by switching.</p></article>
-      <article class="feature reveal" style="--d:.16s"><div class="dot t-tomato" aria-hidden="true"><svg class="ic"><use href="#i-shield"/></svg></div><h3>Allergies and diets</h3><p>Vegetarian, gluten-free, dairy-free and more. Allergens are kept out, and ingredient swaps can be set per person.</p></article>
-      <article class="feature reveal"><div class="dot t-saffron" aria-hidden="true"><svg class="ic"><use href="#i-swap"/></svg></div><h3>Swap anything</h3><p>Don't fancy Thursday's dinner? Swap it, skip it, or pick from Browse. Your hand-picked meals always stay put.</p></article>
-      <article class="feature reveal" style="--d:.08s"><div class="dot t-green" aria-hidden="true"><svg class="ic"><use href="#i-import"/></svg></div><h3>Import a recipe</h3><p>Bring in a favorite recipe and WisprFood prices it and adds it to your week like any other meal.</p></article>
-      <article class="feature reveal" style="--d:.16s"><div class="dot t-berry" aria-hidden="true"><svg class="ic"><use href="#i-chart"/></svg></div><h3>Weekly recap</h3><p>See what you cooked, what you spent and how you tracked against your budget, week after week.</p></article>
-    </div>
-    <div class="cta-row reveal"><p>Ready when you are.<small>Download WisprFood and get your week priced in a minute.</small></p><div class="store-btns"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div></div>
-  </section>
-</div>
-</div>
-<div class="wrap wide">
-
-  <section class="section" id="budget" aria-labelledby="budget-title">
-    <div class="show">
-      <div class="reveal from-left">
-        <div class="lottie" data-lottie="coins" style="width:96px;height:96px;margin:-10px 0 6px -8px"></div>
-        <p class="kicker">Fit to budget</p>
-        <h2 id="budget-title">Set a budget. <em>We plan around it.</em></h2>
-        <p>Tell WisprFood what you want to spend each week. If the plan runs over, one tap swaps the priciest meals for cheaper ones you'll still love.</p>
-        <ul class="checks">
-          <li>Only meals the app chose are changed</li>
-          <li>Meals you picked or already cooked stay put</li>
-          <li>See the new total before you shop</li>
-        </ul>
-      </div>
-      <div class="visual bdemo reveal from-right" aria-hidden="true">
-        <p class="kicker" style="margin-bottom:12px">Example week · 2 people</p>
-        <div class="row"><span>This week</span><b data-budget>$49.80</b></div>
-        <div class="bar"><i></i></div>
-        <div class="limit"><span>Budget $45.00</span><span class="ok">Within budget</span></div>
-        <ul class="swaps">
-          <li><span class="from">Cashew chicken</span><span class="arrow">→</span><span class="to"><img src="/images/recipes/egg-fried-rice-sm.webp" alt="" width="34" height="34">Egg fried rice</span><b>−$2.46</b></li>
-          <li><span class="from">Chicken fajitas</span><span class="arrow">→</span><span class="to"><img src="/images/recipes/chickpeas-spinach-sm.webp" alt="" width="34" height="34">Chickpeas with spinach</span><b>−$2.46</b></li>
-          <li><span class="from">Tikka masala</span><span class="arrow">→</span><span class="to"><img src="/images/recipes/lentil-bolognese-sm.webp" alt="" width="34" height="34">Lentil bolognese</span><b>−$2.92</b></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="section" id="grocery-list" aria-labelledby="list-title">
-    <div class="band">
-      <div class="reveal">
-        <div class="lottie lottie-inline" data-lottie="cart" aria-hidden="true"></div>
-        <p class="kicker" style="color:var(--lime)">Grocery list</p>
-        <h2 id="list-title">One list. One total. <em>No surprises at checkout.</em></h2>
-        <p>Your week's ingredients land in a single shopping list, grouped by aisle and priced at your store.</p>
-        <ul class="checks">
-          <li>Sorted by aisle, so you walk the store once</li>
-          <li>A running total as you check things off</li>
-          <li>Share the list with whoever is doing the shopping</li>
-          <li>Cups and ounces or grams, in your language and currency</li>
-        </ul>
-      </div>
-      <div class="list-card reveal pop" aria-hidden="true">
-        <div class="aisle">Fruit &amp; veg</div>
-        <div class="row done"><span><i class="box"></i>Red peppers</span><span class="muted">6</span></div>
-        <div class="row"><span><i class="box"></i>Tomatoes</span><span class="muted">7</span></div>
-        <div class="row"><span><i class="box"></i>Onions</span><span class="muted">8</span></div>
-        <div class="aisle">Dairy &amp; eggs</div>
-        <div class="row done"><span><i class="box"></i>Eggs</span><span class="muted">20</span></div>
-        <div class="row"><span><i class="box"></i>Milk</span><span class="muted">1 qt</span></div>
-        <div class="total"><span>In the basket</span><b data-basket>$15.51</b></div>
-      </div>
-    </div>
-  </section>
-
-</div>
-<div class="sec-band mint" data-band>
-<div class="wrap wide">
-  <section class="section" id="for" aria-labelledby="for-title">
-    <div class="section-head center reveal">
-      <p class="kicker">Made for</p>
-      <h2 id="for-title">Whoever is <em>at your table.</em></h2>
-    </div>
-    <div class="audience">
-      <div class="who reveal pop"><span class="e ci t-sky" aria-hidden="true"><svg class="ic"><use href="#i-family"/></svg></span><h3>Families</h3><p>Kids get smaller portions, and picky eaters get per-person swaps.</p></div>
-      <div class="who reveal pop" style="--d:.08s"><span class="e ci t-berry" aria-hidden="true"><svg class="ic"><use href="#i-couple"/></svg></span><h3>Couples</h3><p>Dinner for two without the nightly "what do you feel like?"</p></div>
-      <div class="who reveal pop" style="--d:.16s"><span class="e ci t-saffron" aria-hidden="true"><svg class="ic"><use href="#i-person"/></svg></span><h3>Just you</h3><p>Cook for one on a student or first-job budget, with less waste.</p></div>
-      <div class="who reveal pop" style="--d:.24s"><span class="e ci t-leaf" aria-hidden="true"><svg class="ic"><use href="#i-leaf"/></svg></span><h3>Veggie and allergy-aware</h3><p>Vegetarian weeks, allergens kept out, proteins you skip left off.</p></div>
-    </div>
-  </section>
-</div>
-</div>
-<div class="wrap wide">
-
-</div>
-<div class="sec-band deep" data-band>
-<div class="wrap wide">
-  <section class="section" id="pricing" aria-labelledby="pricing-title">
-    <div class="section-head center reveal">
-      <p class="kicker">Pricing</p>
-      <h2 id="pricing-title">Try it free for <em>3 days.</em></h2>
-      <p>One plan, every feature. We remind you before your trial ends, and you can cancel any time.</p>
-    </div>
-    <div class="plans">
-      <div class="plan best reveal pop">
-        <span class="badge">Best value</span>
-        <div class="lottie lottie-bell" data-lottie="bell" aria-hidden="true"></div>
-        <h3>Yearly</h3>
-        <div class="price">$44.99<small> / year</small></div>
-        <p class="per">3 days free, then about $3.75 a month</p>
-        <ul><li>Unlimited weekly meal plans</li><li>Prices at every supported store</li><li>Grocery list, cooking mode, fridge scan</li></ul>
-      </div>
-      <div class="plan reveal pop" style="--d:.1s">
-        <h3>Monthly</h3>
-        <div class="price">$8.99<small> / month</small></div>
-        <p class="per">Pay month to month</p>
-        <ul><li>Every feature included</li><li>Switch or cancel any time</li><li>Billed through the App Store or Google Play</li></ul>
-      </div>
-    </div>
-    <p class="plans-note">US prices. In other countries the store shows the price in your local currency.</p>
-    <div class="cta-row reveal center"><p>Start your 3-day free trial<small>Cancel any time. We remind you before it ends.</small></p><div class="store-btns"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div></div>
-  </section>
-</div>
-</div>
-<div class="wrap wide">
-
-  <section class="section" id="faq" aria-labelledby="faq-title">
-    <div class="section-head center reveal">
-      <p class="kicker">FAQ</p>
-      <h2 id="faq-title">Questions, <em>answered.</em></h2>
-    </div>
-    <div class="faq reveal">
-      <details><summary>How does WisprFood know grocery prices?</summary><p>Every ingredient has a price at every supported store: 70 grocery stores across 10 countries. Meal prices are worked out from the exact amounts in each recipe for the people you cook for. Prices are estimates for planning, so your receipt can differ a little.</p></details>
-      <details><summary>Which grocery stores does WisprFood support?</summary><p>Seven stores in each of our 10 countries, 70 in all, including Walmart in the US, Tesco in the UK, and Aldi, Lidl, Carrefour and Mercadona in Europe. You can compare your whole week across the stores in your country.</p></details>
-      <details><summary>Does it work with allergies and diets?</summary><p>Yes. Tell WisprFood about diets, allergies, proteins you avoid and the equipment in your kitchen. Meals are planned around them, and ingredient swaps can be set per person. Kids get smaller portions, and the grocery list follows.</p></details>
-      <details><summary>What happens to my data?</summary><p>You sign in with Apple or Google, your account data is stored securely in the EU under GDPR, and you can delete your account and everything in it from Profile in the app. Read the <a href="/privacy">privacy policy</a>.</p></details>
-      <details><summary>Are the nutrition figures exact?</summary><p>Calories and macros are rounded grocery-store averages. They are good for planning a balanced week, but they are not medical advice.</p></details>
-    </div>
-  </section>
-</div>
-
-<section class="wrap wide section closing" id="download" aria-labelledby="closing-title">
-  <div class="band reveal pop">
-    <div class="lottie lottie-confetti" data-lottie="confetti" data-once aria-hidden="true"></div>
-    <h2 id="closing-title">Eat well. Spend less. <em>Think about it once.</em></h2>
-    <p>Download WisprFood and get your first week planned tonight. Free for 3 days. </p>
-    <div class="store-btns" style="justify-content:center"><a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a><a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="183" height="71"></a></div>
+      <ul class="wc-list">
+        <li><span class="day">Mon</span><img src="/images/recipes/lentil-bolognese-sm.webp" alt="" width="44" height="44"><span class="dish">Lentil bolognese<small>35 min</small></span><b>$0.92</b></li>
+        <li><span class="day">Tue</span><img src="/images/recipes/chicken-fajitas-sm.webp" alt="" width="44" height="44"><span class="dish">Chicken fajitas<small>25 min</small></span><b>$2.17</b></li>
+        <li><span class="day">Wed</span><img src="/images/recipes/thai-chickpea-curry-sm.webp" alt="" width="44" height="44"><span class="dish">Thai coconut chickpea curry<small>30 min</small></span><b>$1.38</b></li>
+        <li><span class="day">Thu</span><img src="/images/recipes/tuna-tomato-pasta-sm.webp" alt="" width="44" height="44"><span class="dish">Tuna &amp; tomato pasta<small>20 min</small></span><b>$1.14</b></li>
+        <li><span class="day">Fri</span><img src="/images/recipes/pollo-al-chilindron-sm.webp" alt="" width="44" height="44"><span class="dish">Pollo al chilindrón<small>45 min</small></span><b>$2.22</b></li>
+        <li><span class="day">Sat</span><img src="/images/recipes/chicken-tikka-masala-sm.webp" alt="" width="44" height="44"><span class="dish">Chicken tikka masala<small>45 min</small></span><b>$2.38</b></li>
+        <li><span class="day">Sun</span><img src="/images/recipes/spanish-potato-omelette-sm.webp" alt="" width="44" height="44"><span class="dish">Spanish potato omelette<small>25 min</small></span><b>$1.35</b></li>
+      </ul>
+      <div class="wc-foot"><span>Price per serving</span><span>Week for 2: <b>$23.12</b></span></div>
+    </figure>
   </div>
 </section>
+
+<section class="shops-strip" id="shops-strip" aria-labelledby="strip-title">
+  <div class="wrap">
+    <p class="strip-title" id="strip-title">Priced at 82 supermarkets in 10 countries</p>
+    <ul class="logos">
+      <li><img src="/images/stores/walmart.webp" alt="Walmart" height="30"></li>
+      <li><img src="/images/stores/target.svg" alt="Target" height="30"></li>
+      <li><img src="/images/stores/aldi.webp" alt="Aldi" height="30"></li>
+      <li><img src="/images/stores/lidl.webp" alt="Lidl" height="30"></li>
+      <li><img src="/images/stores/tesco.webp" alt="Tesco" height="30"></li>
+      <li><img src="/images/stores/waitrose.svg" alt="Waitrose" height="30"></li>
+      <li><img src="/images/stores/carrefour.webp" alt="Carrefour" height="30"></li>
+      <li><img src="/images/stores/mercadona.webp" alt="Mercadona" height="30"></li>
+      <li><img src="/images/stores/eroski.webp" alt="Eroski" height="30"></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="features" aria-labelledby="table-title">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow">One plan for the whole table</p>
+      <h2 id="table-title">Meals that suit <em>everyone at your table.</em></h2>
+      <p class="sub">Tell WisprFood who's eating and it plans around all of them, without cooking three different dinners.</p>
+      <ul class="ticks">
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Per-person swaps.</b> Vegetarian, vegan, pescatarian and allergies, handled inside the same recipe.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Smaller portions for kids.</b> The shopping list buys exactly what's needed.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Only the days you cook.</b> Breakfast, lunch and dinner, or just dinner.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Made for your kitchen.</b> No oven? No air fryer? Recipes follow what you have.</span></li>
+      </ul>
+    </div>
+    <figure class="meal-card reveal" aria-label="One dinner adjusted for three people">
+      <img src="/images/recipes/chicken-fajitas.webp" alt="Chicken fajitas, seen from above" width="480" height="480">
+      <div class="mc-body">
+        <div class="mc-top"><b>Chicken fajitas</b><span>Tonight · 25 min</span></div>
+        <ul class="people">
+          <li><span class="av">A</span><span>Alex</span><em>Full recipe</em></li>
+          <li><span class="av av2">S</span><span>Sam</span><em>Vegetarian: chickpeas instead of chicken</em></li>
+          <li><span class="av av3">L</span><span>Leo, 6</span><em>Kid's portion</em></li>
+        </ul>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<section class="section tint" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <p class="eyebrow center">How it works</p>
+    <h2 id="how-title" class="center">Your week, planned in <em>three steps.</em></h2>
+    <ol class="steps">
+      <li class="reveal">
+        <span class="num">1</span>
+        <h3>Tell us about your table</h3>
+        <p>People, diets, allergies, budget, your shop and the kitchen you have. It takes about two minutes.</p>
+      </li>
+      <li class="reveal">
+        <span class="num">2</span>
+        <h3>Get your week</h3>
+        <p>Every meal for the days you cook, priced at your shop. Swap anything you don't fancy and the total updates.</p>
+      </li>
+      <li class="reveal">
+        <span class="num">3</span>
+        <h3>Shop once, cook calmly</h3>
+        <p>One grocery list sorted by aisle, then step-by-step cooking mode with built-in timers.</p>
+      </li>
+    </ol>
+    <div class="center"><a class="btn" href="/app/">Plan my week <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+  </div>
+</section>
+
+<section class="section" id="budget" aria-labelledby="change-title">
+  <div class="wrap">
+    <p class="eyebrow center">What changes</p>
+    <h2 id="change-title" class="center">Less deciding. <em>More eating well.</em></h2>
+    <div class="cards3">
+      <article class="card reveal">
+        <span class="emoji" aria-hidden="true">🕕</span>
+        <h3>No more 6pm panic</h3>
+        <p>Dinner is decided before the week starts, so the daily “what do we eat?” is gone.</p>
+      </article>
+      <article class="card reveal">
+        <span class="emoji" aria-hidden="true">🛒</span>
+        <h3>One shop, one list</h3>
+        <p>Everything for the week in one trip, with the same amounts as the recipes. Less food thrown away.</p>
+      </article>
+      <article class="card reveal">
+        <span class="emoji" aria-hidden="true">🧾</span>
+        <h3>No surprises at the till</h3>
+        <p>You see the week's total next to your budget before you shop, and every swap shows what it changes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section deep" id="shops" aria-labelledby="shops-title">
+  <div class="wrap split">
+    <div>
+      <p class="eyebrow on-deep">Compare shops</p>
+      <h2 id="shops-title">See where your week <em>costs least.</em></h2>
+      <p class="sub">WisprFood prices your whole week at each supermarket in your country. It's a tip, never a rule: your shop stays your choice, and the plan follows it.</p>
+      <a class="btn btn-lime" href="/app/">Compare my shops <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <figure class="compare reveal" aria-label="An example of one week priced at five shops">
+      <div class="cp-head"><b>This week at</b><small>Example · 2 people</small></div>
+      <ul>
+        <li><span class="shop">Aldi <em class="tag">Cheapest</em></span><span class="bar"><i style="width:62%"></i></span><b>$59.57</b></li>
+        <li><span class="shop">Lidl</span><span class="bar"><i style="width:68%"></i></span><b>$60.80</b></li>
+        <li class="mine"><span class="shop">Walmart <em class="tag tag-mine">Your shop</em></span><span class="bar"><i style="width:76%"></i></span><b>$62.64</b></li>
+        <li><span class="shop">Target</span><span class="bar"><i style="width:84%"></i></span><b>$63.87</b></li>
+        <li><span class="shop">Kroger</span><span class="bar"><i style="width:92%"></i></span><b>$65.71</b></li>
+      </ul>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="recipes" aria-labelledby="recipes-title">
+  <div class="wrap">
+    <p class="eyebrow center">The recipes</p>
+    <h2 id="recipes-title" class="center">165 recipes, <em>all cook-tested.</em></h2>
+    <p class="sub center">Home cooking from Spain, Italy, Mexico, India, Asia, the Mediterranean and kitchens around the world. Quick weeknight dinners, easy breakfasts and lunches that keep.</p>
+  </div>
+  <div class="rail" tabindex="0" aria-label="Recipe examples">
+    <ul>
+      <li><img src="/images/recipes/pollo-al-chilindron.webp" alt="" width="240" height="240"><b>Pollo al chilindrón</b><small>Spanish · 45 min</small></li>
+      <li><img src="/images/recipes/cacio-e-pepe.webp" alt="" width="240" height="240"><b>Cacio e pepe</b><small>Italian · 20 min</small></li>
+      <li><img src="/images/recipes/chicken-fajitas.webp" alt="" width="240" height="240" loading="lazy"><b>Chicken fajitas</b><small>Mexican · 25 min</small></li>
+      <li><img src="/images/recipes/chicken-tikka-masala.webp" alt="" width="240" height="240" loading="lazy"><b>Chicken tikka masala</b><small>Indian · 45 min</small></li>
+      <li><img src="/images/recipes/teriyaki-chicken-bowl.webp" alt="" width="240" height="240" loading="lazy"><b>Teriyaki chicken rice bowl</b><small>Asian · 25 min</small></li>
+      <li><img src="/images/recipes/butter-bean-shakshuka.webp" alt="" width="240" height="240" loading="lazy"><b>Butter bean shakshuka</b><small>Mediterranean · 30 min</small></li>
+      <li><img src="/images/recipes/vegetarian-pad-thai.webp" alt="" width="240" height="240" loading="lazy"><b>Vegetarian pad thai</b><small>Asian · 25 min</small></li>
+      <li><img src="/images/recipes/lentil-chorizo-stew.webp" alt="" width="240" height="240" loading="lazy"><b>Lentil &amp; chorizo stew</b><small>Spanish · 40 min</small></li>
+      <li><img src="/images/recipes/tomato-basil-pasta.webp" alt="" width="240" height="240" loading="lazy"><b>Tomato &amp; basil pasta</b><small>Italian · 25 min</small></li>
+      <li><img src="/images/recipes/porridge-banana.webp" alt="" width="240" height="240" loading="lazy"><b>Porridge with banana</b><small>Breakfast · 10 min</small></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section tint" id="grocery-list" aria-labelledby="list-title">
+  <div class="wrap split rev">
+    <figure class="list-card reveal" aria-label="A grocery list sorted by aisle">
+      <div class="lc-head"><b>Grocery list</b><small>23 items · sorted by aisle</small></div>
+      <p class="aisle">Produce</p>
+      <ul>
+        <li class="done"><span class="box"><svg class="ic"><use href="#i-check"/></svg></span>Red peppers<small>3</small></li>
+        <li class="done"><span class="box"><svg class="ic"><use href="#i-check"/></svg></span>Onions<small>4</small></li>
+        <li><span class="box"></span>Fresh spinach<small>200 g</small></li>
+      </ul>
+      <p class="aisle">Meat &amp; fish</p>
+      <ul>
+        <li><span class="box"></span>Chicken thighs<small>800 g</small></li>
+        <li><span class="box"></span>Tuna in olive oil<small>2 cans</small></li>
+      </ul>
+      <p class="aisle">Pantry</p>
+      <ul>
+        <li><span class="box"></span>Red lentils<small>250 g</small></li>
+        <li><span class="box"></span>Coconut milk<small>1 can</small></li>
+      </ul>
+      <div class="lc-foot"><span>In the basket</span><b>$15.51</b></div>
+    </figure>
+    <div>
+      <p class="eyebrow">The grocery list</p>
+      <h2 id="list-title">One list. <em>One total.</em></h2>
+      <p class="sub">Every ingredient for the week in one list, sorted by aisle, with the same amounts as the recipes. Tick things off as you go and watch the basket add up.</p>
+      <ul class="ticks">
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Share it</b> with whoever does the shopping.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Swap a meal</b> and the list updates on its own.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Metric or imperial,</b> in six languages.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="fridge" aria-labelledby="more-title">
+  <div class="wrap">
+    <p class="eyebrow center">And a few more things</p>
+    <h2 id="more-title" class="center">Little things that <em>make the week easier.</em></h2>
+    <div class="cards3 cards-sm">
+      <article class="card reveal"><span class="emoji" aria-hidden="true">📸</span><h3>Snap your fridge</h3><p>Take a photo of what's inside and get a dinner from what you already have.</p></article>
+      <article class="card reveal"><span class="emoji" aria-hidden="true">⏱️</span><h3>Cooking mode</h3><p>Big steps, one at a time, with timers built in.</p></article>
+      <article class="card reveal"><span class="emoji" aria-hidden="true">🔗</span><h3>Add your own recipes</h3><p>Paste a link from any recipe site and it joins your week, priced like the rest.</p></article>
+      <article class="card reveal"><span class="emoji" aria-hidden="true">🔁</span><h3>Swap or skip</h3><p>Change any meal, or skip a night out, in one tap.</p></article>
+      <article class="card reveal"><span class="emoji" aria-hidden="true">📊</span><h3>Weekly recap</h3><p>See how the week went against your budget.</p></article>
+      <article class="card reveal"><span class="emoji" aria-hidden="true">🌍</span><h3>Six languages</h3><p>English, Spanish, French, German, Danish and Polish.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section tint" id="pricing" aria-labelledby="pricing-title">
+  <div class="wrap">
+    <p class="eyebrow center">Pricing</p>
+    <h2 id="pricing-title" class="center">Try it free <em>for 3 days.</em></h2>
+    <p class="sub center">One subscription, every feature, on the web, iPhone and Android.</p>
+    <div class="plans">
+      <div class="plan plan-best reveal">
+        <span class="badge">3 days free</span>
+        <h3>Yearly</h3>
+        <p class="price">$49.99<small>per year</small></p>
+        <p>That's less than $1 a week. Free for 3 days, then billed yearly.</p>
+        <a class="btn btn-lime" href="/app/">Start my 3 days free</a>
+      </div>
+      <div class="plan reveal">
+        <h3>Monthly</h3>
+        <p class="price">$9.99<small>per month</small></p>
+        <p>Billed monthly. Cancel anytime.</p>
+        <a class="btn btn-outline" href="/app/">Choose monthly</a>
+      </div>
+    </div>
+    <p class="fine center">Prices in US dollars; you see your local price before you pay.</p>
+  </div>
+</section>
+
+<section class="section" id="reviews" aria-labelledby="reviews-title">
+  <div class="wrap">
+    <p class="eyebrow center">From our testers</p>
+    <h2 id="reviews-title" class="center">What people <em>say.</em></h2>
+    <div class="reviews">
+      <blockquote class="review reveal"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>The end of my 6pm crisis</b><p>Every evening it was the same conversation with myself: "What are we eating?" "I don't know, what do YOU want?" Repeat until I'm ordering overpriced takeaway. Having my meals planned in advance has genuinely saved me.</p><cite>Olivia</cite></blockquote>
+      <blockquote class="review reveal"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>My bank account says thank you</b><p>My grocery bill was getting out of hand and honestly, I was starting to take it personally 😭 Now I compare prices before shopping and actually know where my money is going. My bank account is finally healing.</p><cite>Sophie</cite></blockquote>
+      <blockquote class="review reveal"><span class="stars" aria-label="5 stars"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>No more staring into the fridge</b><p>Me opening the fridge 17 times hoping new food magically appears 💀 This app actually tells me what I can cook with what's already inside. Life-changing for someone whose cooking skills are mostly vibes.</p><cite>Emily</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <p class="eyebrow center">FAQ</p>
+    <h2 id="faq-title" class="center">Questions, <em>answered.</em></h2>
+    <div class="faq">
+      <details><summary>Do I need to download anything?</summary><p>No. WisprFood works in your browser on any phone, tablet or computer. There is also an iPhone and Android app, and the same account works everywhere.</p></details>
+      <details><summary>How does the free trial work?</summary><p>The yearly plan starts with 3 days free. Cancel before the trial ends and you won't be charged.</p></details>
+      <details><summary>Do I have to shop at the cheapest store?</summary><p>No. You pick your favourite shop and every price follows it. The shop comparison is a tip, never a rule.</p></details>
+      <details><summary>Which countries and shops are covered?</summary><p>82 supermarkets in 10 countries: the United States, the United Kingdom, Ireland, Spain, France, Germany, Denmark, Poland, Mexico and Colombia.</p></details>
+      <details><summary>Can one plan handle different diets and allergies?</summary><p>Yes. Each person can be vegetarian, vegan or pescatarian and have their own allergies. WisprFood swaps ingredients per person and gives children smaller portions.</p></details>
+      <details><summary>How exact are the prices?</summary><p>They are estimates for each ingredient at each shop and get better over time. They're made for planning a budget, so your receipt may differ a little.</p></details>
+      <details><summary>How do I cancel or delete my account?</summary><p>Cancel any time from your profile, or from App Store or Google Play subscriptions if you subscribed there. Profile → Delete account removes your account and everything saved to it.</p></details>
+    </div>
+    <p class="fine center">Something else? Write to <a href="mailto:info@wisprfood.com">info@wisprfood.com</a></p>
+  </div>
+</section>
+
+<section class="section closing" id="download" aria-labelledby="closing-title">
+  <div class="wrap closing-in">
+    <h2 id="closing-title">Your week of meals <em>is waiting.</em></h2>
+    <p class="sub">Two minutes of questions, and every dinner is decided.</p>
+    <a class="btn btn-lime btn-lg" href="/app/">Plan my week <svg class="ic"><use href="#i-arrow"/></svg></a>
+    <p class="fine">Free for 3 days · cancel anytime</p>
+    <div class="stores">
+      <p>Prefer an app? Same account on iPhone and Android.</p>
+      <div class="badges">
+        <a class="badge-link" href="https://apps.apple.com/us/search?term=WisprFood" rel="noopener"><img class="apple" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" width="144" height="48"></a>
+        <a class="badge-link" href="https://play.google.com/store/search?q=WisprFood&amp;c=apps" rel="noopener"><img class="google" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="162" height="48"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
-<footer><div class="wrap wide">
-  <div class="brand"><span>© 2026 Kesitics Studios · WisprFood</span><small>Prices are estimates for meal planning. Nutrition figures are rounded averages, not medical advice. Store names and logos belong to their owners; WisprFood isn't affiliated with any grocery store. App Store is a service mark of Apple Inc. Google Play is a trademark of Google LLC.</small></div>
-  <nav aria-label="Footer"><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav>
-</div></footer>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="logo" href="/" aria-label="WisprFood home"><span class="mark"><svg><use href="#i-fork"/></svg></span>WisprFood</a>
+      <p class="foot-tag">Your week of meals, planned and priced.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="/app/">Open WisprFood</a>
+      <a href="/support">Support</a>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="mailto:info@wisprfood.com">info@wisprfood.com</a>
+    </nav>
+    <details class="lang lang-up"><summary aria-label="Language"><svg class="ic"><use href="#i-globe"/></svg><span class="lang-code">EN</span></summary><ul><li><a href="/" hreflang="en" lang="en" aria-current="true">English</a></li><li><a href="/es/" hreflang="es" lang="es">Español</a></li><li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li><li><a href="/da/" hreflang="da" lang="da">Dansk</a></li><li><a href="/pl/" hreflang="pl" lang="pl">Polski</a></li></ul></details>
+  </div>
+  <p class="wrap copy">© 2026 Kesitics Studios · WisprFood</p>
+</footer>
 
-<script src="/motion.js?v=23" defer></script>
+<div class="sticky-cta"><a class="btn" href="/app/">Plan my week <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+
+<script src="/home.js?v=1" defer></script>
 </body>
 </html>

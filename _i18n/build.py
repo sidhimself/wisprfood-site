@@ -54,6 +54,9 @@ def translate_page(src, code, T):
     body = body.replace('/intl/en_us/badges/static/images/badges/en_badge_web_generic.png',
                         f'/intl/{code}/badges/static/images/badges/{code}_badge_web_generic.png')
     body = body.replace('<span class="lang-code">EN</span>', f'<span class="lang-code">{code.upper()}</span>')
+    # The web app opens in the page's language.
+    body = body.replace('href="/app/"', f'href="/app/?lang={code}"')
+    body = body.replace('href="/" aria-label=', f'href="/{code}/" aria-label=')
     body = body.replace(' aria-current="true">English<', '>English<')
     body = re.sub(rf'(hreflang="{code}" lang="{code}")>', r'\1 aria-current="true">', body)
 
@@ -71,7 +74,7 @@ def translate_page(src, code, T):
     m = re.search(r'(<script type="application/ld\+json">)(.*?)(</script>)', head, re.S)
     data = json.loads(m.group(2))
     for g in data['@graph']:
-        if g['@type'] == 'MobileApplication':
+        if g['@type'] in ('MobileApplication', 'WebApplication'):
             g['description'] = tr(g['description'])
         if g['@type'] == 'FAQPage':
             g['@id'] = url_for(code) + '#faq'
