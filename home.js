@@ -111,6 +111,143 @@
     }
   });
 
+  // The week's dishes loop like the logo band (copies are hidden on wide screens).
+  document.querySelectorAll('.wc-band .wc-list').forEach(function (list) {
+    Array.prototype.slice.call(list.children).forEach(function (li) {
+      var copy = li.cloneNode(true);
+      copy.setAttribute('aria-hidden', 'true');
+      list.appendChild(copy);
+    });
+  });
+
+  // A finger on a band holds it still; it drifts on shortly after.
+  document.querySelectorAll('.marquee, .wc-band').forEach(function (band) {
+    var t = 0;
+    var hold = function () { clearTimeout(t); band.classList.add('held'); };
+    var free = function () { clearTimeout(t); t = setTimeout(function () { band.classList.remove('held'); }, 1200); };
+    band.addEventListener('touchstart', hold, { passive: true });
+    band.addEventListener('touchend', free, { passive: true });
+    band.addEventListener('mouseenter', hold);
+    band.addEventListener('mouseleave', free);
+  });
+
+  // Headings and tick lists rise in as they arrive.
+  var risers = document.querySelectorAll('.section .eyebrow, .section h2, .section .sub, .strip-title');
+  risers.forEach(function (el) { el.classList.add('rise'); });
+  var groups = document.querySelectorAll('.rise, .ticks');
+  if ('IntersectionObserver' in window) {
+    var io2 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io2.unobserve(e.target); }
+      });
+    }, { rootMargin: '0px 0px -6% 0px', threshold: 0.2 });
+    groups.forEach(function (el) { io2.observe(el); });
+  } else {
+    groups.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // The grocery list ticks itself off while it's on screen, then starts over.
+  var list = document.querySelector('.list-card');
+  if (list && !reduce && 'IntersectionObserver' in window) {
+    var rows = Array.prototype.slice.call(list.querySelectorAll('li'));
+    var start = rows.map(function (r) { return r.classList.contains('done'); });
+    var timer = 0, on = false;
+    var step = function () {
+      var next = rows.find(function (r) { return !r.classList.contains('done'); });
+      if (next) { next.classList.add('done'); timer = setTimeout(step, 650); }
+      else timer = setTimeout(function () {
+        rows.forEach(function (r, k) { r.classList.toggle('done', start[k]); });
+        timer = setTimeout(step, 900);
+      }, 2200);
+    };
+    new IntersectionObserver(function (entries) {
+      var vis = entries[0].isIntersecting;
+      if (vis && !on) { on = true; timer = setTimeout(step, 700); }
+      if (!vis && on) { on = false; clearTimeout(timer); }
+    }, { threshold: 0.4 }).observe(list);
+  }
+
+  // The hero card floats up a little as the page scrolls.
+  var card = document.querySelector('.week-card');
+  if (card && !reduce) {
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () {
+        var y = Math.min(window.scrollY, 600);
+        card.style.transform = 'translate3d(0,' + (-y * 0.06).toFixed(1) + 'px,0)';
+        ticking = false;
+      });
+    }, { passive: true });
+  }
+
+  // A soft shine on the main buttons.
+  document.querySelectorAll('.hero .btn-lg, .sticky-cta .btn, .closing .btn-lg').forEach(function (b) { b.classList.add('btn-shine'); });
+
+  // A thin line under the header shows how far down the page you are.
+  if (top) {
+    var bar = document.createElement('div');
+    bar.className = 'progress';
+    top.appendChild(bar);
+    var paintBar = function () {
+      var max = document.documentElement.scrollHeight - window.innerHeight;
+      bar.style.transform = 'scaleX(' + (max > 0 ? Math.min(window.scrollY / max, 1) : 0).toFixed(3) + ')';
+    };
+    window.addEventListener('scroll', function () { requestAnimationFrame(paintBar); }, { passive: true });
+    paintBar();
+  }
+
+  // FAQ answers slide open and closed.
+  document.querySelectorAll('.faq details').forEach(function (d) {
+    var sum = d.querySelector('summary'), body = d.querySelector('p');
+    if (!sum || !body || reduce) return;
+    sum.addEventListener('click', function (e) {
+      e.preventDefault();
+      d.classList.add('anim');
+      if (d.open) {
+        body.style.height = body.scrollHeight + 'px';
+        requestAnimationFrame(function () { body.style.height = '0px'; body.style.opacity = '0'; });
+        setTimeout(function () { d.open = false; body.style.height = ''; body.style.opacity = ''; }, 300);
+      } else {
+        d.open = true;
+        var h = body.scrollHeight;
+        body.style.height = '0px'; body.style.opacity = '0';
+        requestAnimationFrame(function () { body.style.height = h + 'px'; body.style.opacity = '1'; });
+        setTimeout(function () { body.style.height = ''; }, 320);
+      }
+    });
+  });
+
+  // The shop example uses the page's own country's chains.
+  var CHAINS = {
+    es: ['Aldi', 'Lidl', 'Mercadona', 'Dia', 'Carrefour'], fr: ['Lidl', 'Aldi', 'E.Leclerc', 'Intermarché', 'Carrefour'],
+    de: ['Aldi', 'Lidl', 'Rewe', 'Kaufland', 'Edeka'], da: ['Netto', 'Lidl', 'Rema 1000', 'Føtex', 'Meny'],
+    pl: ['Biedronka', 'Lidl', 'Dino', 'Kaufland', 'Carrefour'],
+  };
+  var chains = CHAINS[document.documentElement.lang];
+  if (chains) {
+    document.querySelectorAll('.compare li .shop').forEach(function (shop, k) {
+      var text = shop.firstChild;
+      if (text && text.nodeType === 3 && chains[k]) text.nodeValue = chains[k] + ' ';
+    });
+  }
+
+  // Compare: tap a shop in the example to make it "your shop".
+  var compare = document.querySelector('.compare ul');
+  if (compare) {
+    compare.addEventListener('click', function (e) {
+      var li = e.target.closest('li');
+      var tag = compare.querySelector('.tag-mine');
+      if (!li || !tag || li.classList.contains('mine')) return;
+      compare.querySelectorAll('li').forEach(function (x) { x.classList.remove('mine'); });
+      li.classList.add('mine');
+      var copy = tag.cloneNode(true);
+      tag.remove();
+      li.querySelector('.shop').appendChild(copy);
+    });
+  }
+
   // Only one language menu open at a time; a tap outside closes it.
   var menus = document.querySelectorAll('details.lang');
   menus.forEach(function (d) {
