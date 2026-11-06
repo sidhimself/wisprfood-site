@@ -5,10 +5,34 @@
    "other": "%lld items"
   }
  },
+ "%lld meals a week": {
+  "plural": {
+   "one": "%lld meal a week",
+   "other": "%lld meals a week"
+  }
+ },
  "%lld meals for %@": {
   "plural": {
    "one": "%lld meal for %@",
    "other": "%lld meals for %@"
+  }
+ },
+ "%lld meals for %lld": {
+  "plural": {
+   "one": "%lld meal for %lld",
+   "other": "%lld meals for %lld"
+  }
+ },
+ "Picking your %lld meals": {
+  "plural": {
+   "one": "Picking your %lld meal",
+   "other": "Picking your %lld meals"
+  }
+ },
+ "for %lld meals at %@": {
+  "plural": {
+   "one": "for %lld meal at %@",
+   "other": "for %lld meals at %@"
   }
  }
 }
