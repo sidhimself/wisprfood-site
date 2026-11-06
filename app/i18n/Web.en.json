@@ -1,4 +1,22 @@
 {
+ "%lld adults": {
+  "plural": {
+   "one": "%lld adult",
+   "other": "%lld adults"
+  }
+ },
+ "%lld children": {
+  "plural": {
+   "one": "%lld child",
+   "other": "%lld children"
+  }
+ },
+ "%lld ingredients · estimates for guidance": {
+  "plural": {
+   "one": "%lld ingredient · estimates for guidance",
+   "other": "%lld ingredients · estimates for guidance"
+  }
+ },
  "%lld items": {
   "plural": {
    "one": "%lld item",
@@ -21,6 +39,24 @@
   "plural": {
    "one": "%lld meal for %lld",
    "other": "%lld meals for %lld"
+  }
+ },
+ "%lld portions": {
+  "plural": {
+   "one": "%lld portion",
+   "other": "%lld portions"
+  }
+ },
+ "Made from this week's plan, for %lld people, priced at %@.": {
+  "plural": {
+   "one": "Made from this week's plan, for %lld person, priced at %@.",
+   "other": "Made from this week's plan, for %lld people, priced at %@."
+  }
+ },
+ "New meals for all %lld slots, picked from your preferences and kept under %@.": {
+  "plural": {
+   "one": "A new meal for %lld slot, picked from your preferences and kept under %@.",
+   "other": "New meals for all %lld slots, picked from your preferences and kept under %@."
   }
  },
  "Picking your %lld meals": {
