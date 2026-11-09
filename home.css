@@ -528,3 +528,14 @@ html, body { overflow-x: clip; }
 .page-hero { padding: 30px 0 6px; }
 .page-hero .cta-row { margin-top: 22px; }
 .top-nav a[aria-current="page"] { color: var(--deep); font-weight: 800; }
+
+/* Store badges under the hero button (9 Nov). Google Play shows as "coming soon"
+   until the Android app is live; Google's own badge may only link to a real listing. */
+.hero-badges { justify-content: flex-start; margin-top: 18px; }
+.hero-badges img.apple { height: 44px; }
+.soon-badge { height: 48px; padding: 0 16px 0 14px; border-radius: 9px; background: #000; color: #fff; border: 1px solid #a6a6a6;
+  display: inline-flex; flex-direction: column; justify-content: center; line-height: 1.1; text-align: left; opacity: .82; cursor: default; user-select: none; }
+.soon-badge small { font-size: 10px; font-weight: 600; letter-spacing: .2px; color: #c8e86b; }
+.soon-badge b { font-size: 17px; font-weight: 700; letter-spacing: -.2px; }
+.hero-badges .soon-badge { height: 44px; }
+@media (max-width: 899px) { .hero-badges { justify-content: center; } }
