@@ -120,8 +120,19 @@
     });
   });
 
+  // The recipes drift by on their own, in a loop (a second copy follows the first).
+  document.querySelectorAll('.rail.drift ul').forEach(function (list) {
+    Array.prototype.slice.call(list.children).forEach(function (li) {
+      var copy = li.cloneNode(true);
+      copy.setAttribute('aria-hidden', 'true');
+      var img = copy.querySelector('img');
+      if (img) img.setAttribute('loading', 'lazy');
+      list.appendChild(copy);
+    });
+  });
+
   // A finger on a band holds it still; it drifts on shortly after.
-  document.querySelectorAll('.marquee, .wc-band').forEach(function (band) {
+  document.querySelectorAll('.marquee, .wc-band, .rail.drift').forEach(function (band) {
     var t = 0;
     var hold = function () { clearTimeout(t); band.classList.add('held'); };
     var free = function () { clearTimeout(t); t = setTimeout(function () { band.classList.remove('held'); }, 1200); };

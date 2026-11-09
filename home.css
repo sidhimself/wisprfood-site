@@ -554,3 +554,17 @@ html, body { overflow-x: clip; }
 .badges .badge-link:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(0,0,0,.35); }
 @keyframes badgeShine { 0% { transform: translateX(-180%) skewX(-18deg); } 38%, 100% { transform: translateX(260%) skewX(-18deg); } }
 @media (prefers-reduced-motion: reduce) { .badges .badge-link::after, .badges .soon-badge::after { animation: none; display: none; } }
+
+/* The recipes (9 Nov): a slow, endless drift like the logo band; a pointer or finger on it holds it. */
+.rail.drift { overflow: hidden; scroll-snap-type: none; position: relative; contain: paint; padding: 4px 0 8px; }
+.rail.drift ul { gap: 0; padding: 0; will-change: transform; transform: translate3d(0, 0, 0); backface-visibility: hidden; animation: band 70s linear infinite; }
+.rail.drift li { flex: none; margin-right: 14px; }
+.rail.drift.held ul { animation-play-state: paused; }
+.rail.drift::before, .rail.drift::after { content: ''; position: absolute; top: 0; bottom: 0; width: 48px; z-index: 2; pointer-events: none; }
+.rail.drift::before { left: 0; background: linear-gradient(to right, var(--paper), rgba(245,242,234,0)); }
+.rail.drift::after { right: 0; background: linear-gradient(to left, var(--paper), rgba(245,242,234,0)); }
+@media (prefers-reduced-motion: reduce) {
+  .rail.drift { overflow-x: auto; }
+  .rail.drift ul { animation: none; padding: 0 20px; }
+  .rail.drift li[aria-hidden] { display: none; }
+}
