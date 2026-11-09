@@ -523,3 +523,8 @@ html, body { overflow-x: clip; }
   .rail li { width: 56vw; max-width: 220px; }
   .rail b { font-size: 14px; }
 }
+
+/* The site's own pages (How it works, Features, Pricing, FAQ), 9 Nov. */
+.page-hero { padding: 30px 0 6px; }
+.page-hero .cta-row { margin-top: 22px; }
+.top-nav a[aria-current="page"] { color: var(--deep); font-weight: 800; }
