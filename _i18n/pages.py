@@ -185,6 +185,9 @@ def write_sitemap():
 
 if __name__ == '__main__':
     src = open(os.path.join(ROOT, 'index.html')).read()
+    # The pricing section left the homepage on 11 Nov; /pricing still shows it.
+    extra = open(os.path.join(ROOT, '_i18n', 'pricing-section.html')).read().split('\n', 1)[1]
+    src = src.replace('<section class="section" id="reviews"', extra + '\n<section class="section" id="reviews"', 1)
     for n, code in enumerate(LANGS):
         jp = os.path.join(ROOT, '_i18n', f'{code}.json')
         T = json.load(open(jp))
