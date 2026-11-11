@@ -158,9 +158,18 @@ body::after { content: ''; position: fixed; inset: 0; z-index: -1; pointer-event
 @media (min-width: 1000px) { .plates { display: block; } }
 @media (max-width: 700px) { body::before { opacity: .45; } body::after { background: rgba(245,242,234,.35); } }
 @media (prefers-reduced-motion: reduce) { .plates img { animation: none; } }
+/* Not hiring (12 Nov): remove class="closed" from <body> to open applications again. */
+.closed-note { display: none; text-align: center; padding: 40px 0 10px; animation: arrive .35s ease both; }
+body.closed .closed-note { display: block; }
+body.closed #apply { display: none; }
+.closed-note .eyebrow { justify-content: center; }
+.closed-note .icon { width: 74px; height: 74px; border-radius: 74px; background: var(--deep); color: var(--lime); display: grid; place-items: center; margin: 24px auto 20px; font-size: 32px; }
+.closed-note .lead { max-width: 440px; margin: 0 auto; }
+.closed-note .dark { margin: 24px auto 0; max-width: 440px; text-align: left; font-size: 14.5px; }
+.closed-note .dark p { margin: 0; }
 </style>
 </head>
-<body>
+<body class="closed">
 <div class="plates" aria-hidden="true">
   <img src="/images/recipes/chicken-fajitas-sm.webp" alt="">
   <img src="/images/recipes/lentil-bolognese-sm.webp" alt="">
@@ -168,6 +177,13 @@ body::after { content: ''; position: fixed; inset: 0; z-index: -1; pointer-event
   <img src="/images/recipes/butter-bean-shakshuka-sm.webp" alt="">
 </div>
 <main class="wrap">
+<section class="closed-note" aria-labelledby="closed-title">
+  <div class="eyebrow"><img src="/favicon.svg" alt="">WisprFood creators</div>
+  <div class="icon" aria-hidden="true">🎬</div>
+  <h1 id="closed-title">We're not hiring right now</h1>
+  <p class="lead">Thanks for your interest in making content for WisprFood. Our creator team is full for now, so we're not taking applications.</p>
+  <div class="dark"><p>As soon as we're hiring again, the application will be back on this page. Check back soon!</p></div>
+</section>
 <form id="apply" novalidate autocomplete="on">
   <div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
   <div class="progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
@@ -321,6 +337,7 @@ body::after { content: ''; position: fixed; inset: 0; z-index: -1; pointer-event
 (() => {
   // Applications arrive as an email in info@wisprfood.com (FormSubmit).
   const ENDPOINT = 'https://formsubmit.co/ajax/info@wisprfood.com';
+  if (document.body.classList.contains('closed')) return; // not hiring: no application can be sent
   const form = document.getElementById('apply');
   const steps = [...form.querySelectorAll('.step')];
   const bars = [...form.querySelectorAll('.progress span')];
