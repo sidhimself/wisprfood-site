@@ -158,7 +158,7 @@ body::after { content: ''; position: fixed; inset: 0; z-index: -1; pointer-event
 @media (min-width: 1000px) { .plates { display: block; } }
 @media (max-width: 700px) { body::before { opacity: .45; } body::after { background: rgba(245,242,234,.35); } }
 @media (prefers-reduced-motion: reduce) { .plates img { animation: none; } }
-/* Not hiring (12 Nov): remove class="closed" from <body> to open applications again. */
+/* Not hiring (closed 12 Nov, reopened 15 Nov, closed again 16 Nov): remove class="closed" from <body> to open applications again. */
 .closed-note { display: none; text-align: center; padding: 40px 0 10px; animation: arrive .35s ease both; }
 body.closed .closed-note { display: block; }
 body.closed #apply { display: none; }
@@ -169,7 +169,7 @@ body.closed #apply { display: none; }
 .closed-note .dark p { margin: 0; }
 </style>
 </head>
-<body>
+<body class="closed">
 <div class="plates" aria-hidden="true">
   <img src="/images/recipes/chicken-fajitas-sm.webp" alt="">
   <img src="/images/recipes/lentil-bolognese-sm.webp" alt="">
