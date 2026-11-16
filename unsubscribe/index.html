@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Email settings · WisprFood</title>
+<meta name="description" content="Stop or restart WisprFood's reminder and offer emails.">
+<meta name="theme-color" content="#12372A">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="/style.css?v=23">
+<style>
+  .unsub { max-width: 460px; margin: 48px auto 64px; background: #fff; border: 1px solid #E4DECF; border-radius: 22px; padding: 28px 24px; text-align: center; }
+  .unsub h1 { font-size: 24px; line-height: 30px; margin: 10px 0 8px; }
+  .unsub p { color: #5C6F66; font-size: 15px; line-height: 22px; margin: 0 0 18px; }
+  .unsub .icon { font-size: 34px; }
+  .unsub button { font: inherit; font-weight: 800; font-size: 15px; border: 1.5px solid #2E7D4F; color: #2E7D4F; background: #fff; border-radius: 999px; padding: 12px 22px; cursor: pointer; }
+  .unsub button:disabled { opacity: .5; cursor: default; }
+  .unsub small { display: block; margin-top: 14px; color: #9AA39D; font-size: 13px; }
+</style>
+</head>
+<body>
+<header class="wrap bar"><a class="mark" href="/"><img src="/favicon.svg" alt="">WisprFood</a><nav><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav></header>
+<main class="wrap doc">
+  <div class="unsub" aria-live="polite">
+    <div class="icon" id="icon">✉️</div>
+    <h1 id="title">…</h1>
+    <p id="text"></p>
+    <button id="again" hidden></button>
+    <small id="note"></small>
+  </div>
+</main>
+<footer><div class="wrap"><span>© 2026 Kesitics Studios</span><nav><a href="/support">Support</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a></nav></div></footer>
+<script>
+(() => {
+  const FN = 'https://kkgwuavulkfvsgvjeraj.supabase.co/functions/v1/email-unsubscribe';
+  const T = {
+    en: { busy: 'One moment…', out: "You're unsubscribed", outText: "You won't get any more reminder or offer emails from WisprFood.", back: 'Subscribe again', in: "You're subscribed again", inText: "You'll get WisprFood's reminder and offer emails again.", bad: "This link doesn't work", badText: 'Write to info@wisprfood.com and we will take you off the list.', retry: 'Try again', note: 'Sign-in codes still arrive whenever you ask for one.' },
+    es: { busy: 'Un momento…', out: 'Te has dado de baja', outText: 'Ya no recibirás más correos de recordatorios ni de ofertas de WisprFood.', back: 'Volver a suscribirme', in: 'Te has vuelto a suscribir', inText: 'Volverás a recibir los correos de recordatorios y ofertas de WisprFood.', bad: 'Este enlace no funciona', badText: 'Escríbenos a info@wisprfood.com y te quitaremos de la lista.', retry: 'Reintentar', note: 'Los códigos para iniciar sesión te seguirán llegando cuando los pidas.' },
+    fr: { busy: 'Un instant…', out: 'Tu es désabonné(e)', outText: "Tu ne recevras plus d'e-mails de rappel ni d'offres de WisprFood.", back: "Me réabonner", in: 'Tu es de nouveau abonné(e)', inText: "Tu recevras de nouveau les e-mails de rappel et d'offres de WisprFood.", bad: 'Ce lien ne fonctionne pas', badText: "Écris-nous à info@wisprfood.com et nous te retirerons de la liste.", retry: 'Réessayer', note: 'Les codes de connexion arrivent toujours quand tu en demandes un.' },
+    de: { busy: 'Einen Moment…', out: 'Du bist abgemeldet', outText: 'Du bekommst keine Erinnerungs- und Angebots-E-Mails von WisprFood mehr.', back: 'Wieder anmelden', in: 'Du bist wieder angemeldet', inText: 'Du bekommst wieder Erinnerungs- und Angebots-E-Mails von WisprFood.', bad: 'Dieser Link funktioniert nicht', badText: 'Schreib an info@wisprfood.com, dann nehmen wir dich von der Liste.', retry: 'Erneut versuchen', note: 'Anmeldecodes kommen weiterhin, wenn du einen anforderst.' },
+    da: { busy: 'Et øjeblik…', out: 'Du er afmeldt', outText: 'Du får ikke flere påmindelser eller tilbud fra WisprFood på e-mail.', back: 'Tilmeld mig igen', in: 'Du er tilmeldt igen', inText: 'Du får igen påmindelser og tilbud fra WisprFood på e-mail.', bad: 'Linket virker ikke', badText: 'Skriv til info@wisprfood.com, så fjerner vi dig fra listen.', retry: 'Prøv igen', note: 'Login-koder kommer stadig, når du beder om en.' },
+    pl: { busy: 'Chwileczkę…', out: 'Wypisano cię', outText: 'Nie będziesz już dostawać od WisprFood e-maili z przypomnieniami ani ofertami.', back: 'Zapisz mnie ponownie', in: 'Zapisano cię ponownie', inText: 'Znowu będziesz dostawać od WisprFood e-maile z przypomnieniami i ofertami.', bad: 'Ten link nie działa', badText: 'Napisz na info@wisprfood.com, a usuniemy cię z listy.', retry: 'Spróbuj ponownie', note: 'Kody logowania nadal przyjdą, gdy o nie poprosisz.' },
+  };
+  const lang = (navigator.languages || [navigator.language || 'en']).map((l) => l.slice(0, 2)).find((l) => T[l]) || 'en';
+  const w = T[lang];
+  document.documentElement.lang = lang;
+  const q = new URLSearchParams(location.search);
+  const u = q.get('u'), t = q.get('t');
+  const $ = (id) => document.getElementById(id);
+  $('note').textContent = w.note;
+
+  function show(icon, title, text, button, onClick) {
+    $('icon').textContent = icon; $('title').textContent = title; $('text').textContent = text;
+    const b = $('again'); b.hidden = !button; b.disabled = false;
+    if (button) { b.textContent = button; b.onclick = onClick; }
+  }
+  async function call(resubscribe) {
+    show('⏳', w.busy, '', null);
+    try {
+      const r = await fetch(FN, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ u, t, resubscribe }) });
+      if (r.status === 400) return show('⚠️', w.bad, w.badText, null);
+      if (!r.ok) throw new Error(String(r.status));
+      if (resubscribe) show('✅', w.in, w.inText, null);
+      else show('👋', w.out, w.outText, w.back, () => call(true));
+    } catch {
+      show('⚠️', w.bad, w.badText, w.retry, () => call(resubscribe));
+    }
+  }
+  if (!u || !t) show('⚠️', w.bad, w.badText, null);
+  else call(false);
+})();
+</script>
+</body>
+</html>

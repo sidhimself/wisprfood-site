@@ -447,5 +447,8 @@
  "QR code for the App Store": "Kod QR do App Store",
  "Scan with your iPhone camera": "Zeskanuj aparatem iPhone'a",
  "See my week": "Zobacz mój tydzień",
- "Welcome to WisprFood Plus. Your whole week is unlocked.": "Witaj w WisprFood Plus. Cały Twój tydzień jest odblokowany."
+ "Welcome to WisprFood Plus. Your whole week is unlocked.": "Witaj w WisprFood Plus. Cały Twój tydzień jest odblokowany.",
+ "We'll send you a few emails about your week and offers. Unsubscribe anytime.": "Wyślemy ci kilka e-maili o twoim tygodniu i naszych ofertach. Możesz się wypisać w każdej chwili.",
+ "%lld%% off Lifetime": "−%lld%% na plan Dożywotnio",
+ "Offer ends %@": "Oferta kończy się: %@"
 }
