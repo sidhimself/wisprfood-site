@@ -143,6 +143,15 @@ em { font-style: normal; color: var(--green); }
 
 /* done */
 .done { text-align: center; padding-top: 30px; }
+.done .trial { text-align: left; margin-top: 18px; }
+.done .trial a { color: var(--lime); }
+.done .trial .luck { margin: 14px 0 0; font-weight: 800; font-size: 17px; color: var(--lime); }
+.done .guide { margin-top: 30px; text-align: left; }
+.done .guide h2 { margin: 6px 0 6px; }
+.guide-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+.guide-actions .btn { text-decoration: none; display: inline-flex; align-items: center; justify-content: center; flex: 1 1 200px; }
+.guide-img { display: block; border-radius: 18px; overflow: hidden; border: 1px solid #E4DECF; box-shadow: 0 10px 30px rgba(18,55,42,.12); background: #F5F2EA; }
+.guide-img img { display: block; width: 100%; height: auto; }
 .done .tick { width: 74px; height: 74px; border-radius: 74px; background: var(--deep); color: var(--lime); display: grid; place-items: center; margin: 0 auto 20px; font-size: 34px; font-weight: 800; }
 .foot { text-align: center; font-size: 12px; color: var(--faint); margin-top: 32px; }
 .foot a { color: var(--muted); }
@@ -308,7 +317,26 @@ body.closed #apply { display: none; }
   <section class="step done" data-step="6">
     <div class="tick">✓</div>
     <h2>Application sent</h2>
-    <p class="lead">Thanks! We read every application and reply by email within a few days. Keep an eye on your inbox (and the spam folder).</p>
+    <p class="lead">Thanks! <b>Your trial starts now 🎉</b></p>
+    <div class="dark trial">
+      <ol class="numbered">
+        <li><b>1</b><span>Create your account handles: a new TikTok and a new Instagram account for your WisprFood videos (e.g. @yourname.cooks). The guide below shows how.</span></li>
+        <li><b>2</b><span>Attach both handles on <a href="https://app.sideshift.app/signup/creators" target="_blank" rel="noopener">SideShift</a>, in the WisprFood campaign.</span></li>
+        <li><b>3</b><span>Follow the Creator Guide below for your first videos.</span></li>
+      </ol>
+      <p class="luck">Best of luck! 🍀</p>
+    </div>
+    <div class="guide">
+      <div class="eyebrow">Your Creator Guide</div>
+      <h2>What to do, step by step</h2>
+      <div class="guide-actions">
+        <a class="btn btn-main" href="https://docs.google.com/document/d/1vFt7IEaSmITJSxTOfurMBZdwfU5_4aXVEflQuMD2Hbc/edit?usp=sharing" target="_blank" rel="noopener">Open the video list</a>
+        <a class="btn btn-back" href="/creators/WisprFood-Creator-Guide.pdf" target="_blank" rel="noopener" download>Download the guide (PDF)</a>
+      </div>
+      <a class="guide-img" href="/creators/WisprFood-Creator-Guide.pdf" target="_blank" rel="noopener" aria-label="Open the Creator Guide as a PDF">
+        <img src="/creators/creator-guide.webp" width="1400" height="1980" loading="lazy" alt="WisprFood Creator Guide: 1. Create a new account. 2. Set your profile. 3. Warm up for 2 days. 4. Film and post: 1 to 3 videos a day, remake the videos in the video list, never post a video already used.">
+      </a>
+    </div>
   </section>
 
   <div class="nav" id="nav">
