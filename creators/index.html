@@ -187,7 +187,7 @@ body.closed #apply { display: none; }
 </section>
 <form id="apply" novalidate autocomplete="on">
   <div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" name="_honey" tabindex="-1" autocomplete="off"></label></div>
-  <div class="progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="progress" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
 
   <!-- 1 · Intro -->
   <section class="step" data-step="1">
@@ -287,23 +287,8 @@ body.closed #apply { display: none; }
     </div>
   </section>
 
-  <!-- 5 · Payment -->
+  <!-- 5 · Send -->
   <section class="step" data-step="5">
-    <div class="eyebrow">Payment</div>
-    <h2>How you get paid</h2>
-    <div class="dark">
-      <div class="pay-big">$500 per month</div>
-      <p>The same fixed pay for every creator, written in your contract.</p>
-      <ul class="tiers">
-        <li><span>Paid every 2 weeks</span><span>$250</span></li>
-      </ul>
-      <hr>
-      <p>Bonuses for videos that take off may come after your first month.</p>
-    </div>
-  </section>
-
-  <!-- 6 · Send -->
-  <section class="step" data-step="6">
     <h2>Send my application</h2>
     <div class="dark">
       <h3>After you send this</h3>
@@ -320,7 +305,7 @@ body.closed #apply { display: none; }
     <p class="err" data-err></p>
   </section>
 
-  <section class="step done" data-step="7">
+  <section class="step done" data-step="6">
     <div class="tick">✓</div>
     <h2>Application sent</h2>
     <p class="lead">Thanks! We read every application and reply by email within a few days. Keep an eye on your inbox (and the spam folder).</p>
@@ -344,7 +329,7 @@ body.closed #apply { display: none; }
   const bars = [...form.querySelectorAll('.progress span')];
   const back = document.getElementById('back');
   const next = document.getElementById('next');
-  const LAST = 6;
+  const LAST = 5;
   let at = 1;
 
   function show(n) {
@@ -386,7 +371,7 @@ body.closed #apply { display: none; }
       err(step, open.length ? 'Please answer every question.' : '');
       return !open.length;
     }
-    if (n === 6) {
+    if (n === LAST) {
       const open = [...step.querySelectorAll('[data-req]')].filter(l => !l.querySelector('input').checked);
       step.querySelectorAll('[data-req]').forEach(l => l.classList.toggle('bad', open.includes(l)));
       err(step, open.length ? 'Please tick both boxes to send.' : '');
