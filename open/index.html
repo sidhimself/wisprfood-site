@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Open WisprFood</title>
+<style>
+  :root { --deep:#12372A; --lime:#C8E86B; --paper:#F5F2EA; --muted:#5C6F66; }
+  * { box-sizing:border-box; }
+  body { margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+         background:var(--paper); color:var(--deep);
+         font:16px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { width:100%; max-width:360px; padding:32px 24px; text-align:center; }
+  img { width:76px; height:76px; border-radius:18px; }
+  h1 { font-size:24px; margin:18px 0 6px; letter-spacing:-0.4px; }
+  p { color:var(--muted); margin:0 0 24px; }
+  a.btn { display:block; padding:16px; border-radius:999px; font-weight:700; text-decoration:none; margin-bottom:12px; }
+  .primary { background:var(--deep); color:#fff; }
+  .secondary { background:#fff; color:var(--deep); border:1.5px solid #E4DECF; }
+</style>
+</head>
+<body>
+<main>
+  <img src="/apple-touch-icon.png" alt="" onerror="this.style.display='none'">
+  <h1>Opening WisprFood…</h1>
+  <p>If nothing happens, tap the button below.</p>
+  <a class="btn primary" href="wisprfood://week">Open WisprFood</a>
+  <a class="btn secondary" href="https://apps.apple.com/app/id6824159093">Get it on the App Store</a>
+</main>
+<script>
+  // Emails link here (wisprfood.com/open/): try the app straight away.
+  setTimeout(function () { window.location.href = "wisprfood://week"; }, 150);
+</script>
+</body>
+</html>
