@@ -40,7 +40,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@1,9..144,500,50&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="/home.css?v=8">
 
@@ -115,13 +115,12 @@
 </section>
 <section class="section tint" id="how" aria-labelledby="how-title">
   <div class="wrap">
-    <p class="eyebrow center">Jak to działa</p>
-    <h2 id="how-title" class="center">Twój tydzień w <em>trzech krokach.</em></h2>
+    <h2 id="how-title" class="center">Jak to działa</h2>
     <ol class="steps snap mslide">
       <li class="reveal">
         <span class="num">1</span>
-        <h3>Opowiedz nam o swoim stole</h3>
-        <p>Osoby, diety, alergie, budżet, twój sklep i kuchnia. Zajmuje to około dwóch minut.</p>
+        <h3>Powiedz nam, kto je</h3>
+        <p>Kto je, czego kto nie może jeść, twój budżet, twój sklep i kuchnia, którą masz. Wegetarianin i sześciolatek mogą zjeść tę samą kolację. Zajmuje to około dwóch minut.</p>
       </li>
       <li class="reveal">
         <span class="num">2</span>
@@ -130,68 +129,77 @@
       </li>
       <li class="reveal">
         <span class="num">3</span>
-        <h3>Zrób zakupy raz, gotuj spokojnie</h3>
-        <p>Jedna lista zakupów według działów, a potem tryb gotowania krok po kroku z minutnikami.</p>
+        <h3>Zakupy raz, potem gotowanie</h3>
+        <p>Jedna lista zakupów według działów. Przy kuchence tryb gotowania prowadzi cię krok po kroku, z wbudowanymi minutnikami.</p>
       </li>
     </ol>
     <div class="center"><a class="btn" href="/app/?lang=pl">Zaplanuj mój tydzień <svg class="ic"><use href="#i-arrow"/></svg></a></div>
   </div>
 </section>
-<section class="section" id="features" aria-labelledby="table-title">
+<section class="section deals" id="deals" aria-labelledby="deals-title">
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Jeden plan dla całego stołu</p>
-      <h2 id="table-title">Posiłki dla <em>wszystkich przy stole.</em></h2>
-      <p class="sub">Powiedz WisprFood, kto je, a zaplanuje dla wszystkich, bez gotowania trzech różnych kolacji.</p>
+      <p class="eyebrow on-deep">Nowość</p>
+      <h2 id="deals-title">Gazetka twojego sklepu, <em>dopasowana do twoich posiłków</em></h2>
+      <p class="sub">WisprFood czyta gazetkę twojego supermarketu z tego tygodnia i porównuje ją z twoim planem. Jeśli udka z kurczaka są w promocji, a masz je już w czwartkowej kolacji, zobaczysz to razem z tym, ile oszczędzasz.</p>
       <ul class="ticks">
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Zamienniki dla każdego.</b> Wegetarianie, weganie, peskatarianie i alergie – w tym samym przepisie.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Mniejsze porcje dla dzieci.</b> Lista zakupów obejmuje dokładnie to, co trzeba.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Tylko w dni, w które gotujesz.</b> Śniadanie, obiad i kolacja albo tylko kolacja.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Pod twoją kuchnię.</b> Brak piekarnika? Brak frytkownicy? Przepisy dopasują się do tego, co masz.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>W twoim tygodniu: promocje na to, co i tak gotujesz, z oszczędnością przy każdej.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Jedno dotknięcie i promocja trafia na twoją listę zakupów.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Otwórz produkt, by zobaczyć wartości odżywcze z etykiety albo typowe wartości dla tego rodzaju żywności.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>W USA i Kanadzie dodaj kod pocztowy, by zobaczyć gazetkę dla swojej okolicy.</span></li>
       </ul>
+      <a class="btn btn-lime" href="/app/?lang=pl">Zaplanuj mój tydzień <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <p class="fine deals-note">Promocje pochodzą z gazetki każdego sklepu. Dodajemy sklepy jeden po drugim, a niektóre oferty wymagają karty lojalnościowej. Wartości odżywcze z Open Food Facts.</p>
     </div>
-    <figure class="meal-card reveal" aria-label="Jedna kolacja dopasowana do trzech osób">
-      <img src="/images/recipes/chicken-fajitas.webp" alt="Fajitas z kurczakiem z góry" width="480" height="480">
-      <div class="mc-body">
-        <div class="mc-top"><b>Fajitas z kurczakiem</b><span>Dziś wieczorem · 25 min</span></div>
-        <ul class="people">
-          <li><span class="av">A</span><span>Alex</span><em>Pełny przepis</em></li>
-          <li><span class="av av2">S</span><span>Sam</span><em>Wegetariańsko: ciecierzyca zamiast kurczaka</em></li>
-          <li><span class="av av3">L</span><span>Leo, 6 lat</span><em>Porcja dziecięca</em></li>
+    <figure class="deals-mock reveal" aria-label="Przykład promocji z tego tygodnia w jednym sklepie">
+      <div class="dm-head">
+        <b>Promocje</b>
+        <span class="dm-shop"><img src="/images/stores/walmart.webp" alt="" width="20" height="20">Walmart</span>
+        <small>Przykład</small>
+      </div>
+      <div class="dm-week">
+        <p class="dm-label">W twoim tygodniu</p>
+        <p class="dm-total">W promocji: 3</p>
+        <ul class="dm-mini">
+          <li><span class="dm-tile t-produce" aria-hidden="true">🧅</span><span>Cebula</span><b>2,49 €</b><s>3,99 €</s></li>
+          <li><span class="dm-tile t-dairy" aria-hidden="true">🥚</span><span>Jajka, 12 szt.</span><b>2,49 €</b><s>3,29 €</s></li>
+          <li><span class="dm-tile t-produce" aria-hidden="true">🫑</span><span>Czerwona papryka</span><b>0,99 €</b><s>1,49 €</s></li>
         </ul>
       </div>
+      <ul class="dm-grid">
+        <li><span class="dm-off">−43%</span><span class="dm-tile big t-meat" aria-hidden="true">🍗</span><span class="dm-name">Piersi z kurczaka</span><b>1,99 €</b><s>3,49 €</s><span class="dm-add added" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−41%</span><span class="dm-tile big t-pantry" aria-hidden="true">🍝</span><span class="dm-name">Spaghetti, 500 g</span><b>1,00 €</b><s>1,69 €</s><span class="dm-add" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−37%</span><span class="dm-tile big t-produce" aria-hidden="true">🥑</span><span class="dm-name">Awokado Hass</span><b>0,79 €</b><s>1,25 €</s><span class="dm-add" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−37%</span><span class="dm-tile big t-pantry" aria-hidden="true">🥫</span><span class="dm-name">Pomidory krojone</span><b>1,25 €</b><s>1,99 €</s><span class="dm-add" aria-hidden="true"></span></li>
+      </ul>
     </figure>
   </div>
 </section>
-<section class="section" id="budget" aria-labelledby="change-title">
-  <div class="wrap">
-    <p class="eyebrow center">Co się zmienia</p>
-    <h2 id="change-title" class="center">Mniej decydowania. <em>Więcej dobrego jedzenia.</em></h2>
-    <div class="cards3 snap mslide">
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🕕</span>
-        <h3>Koniec z paniką o 18:00</h3>
-        <p>Kolacja jest ustalona, zanim zacznie się tydzień, więc codzienne „co jemy?” znika.</p>
-      </article>
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🛒</span>
-        <h3>Jedne zakupy, jedna lista</h3>
-        <p>Wszystko na tydzień za jednym razem, w tych samych ilościach co w przepisach. Mniej wyrzucanego jedzenia.</p>
-      </article>
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🧾</span>
-        <h3>Bez niespodzianek przy kasie</h3>
-        <p>Widzisz sumę tygodnia obok budżetu przed zakupami, a każda zamiana pokazuje, co zmienia.</p>
-      </article>
+<section class="section deep" id="shops" aria-labelledby="shops-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="shops-title">Ile ten sam tydzień kosztuje w innych sklepach</h2>
+      <p class="sub">WisprFood wycenia cały twój tydzień w każdym supermarkecie w twoim kraju. Jeśli inny sklep jest tańszy, zobaczysz, o ile. Sklep wybierasz ty, a plan za nim podąża.</p>
+      <a class="btn btn-lime" href="/app/?lang=pl">Porównaj moje sklepy <svg class="ic"><use href="#i-arrow"/></svg></a>
     </div>
+    <figure class="compare reveal" aria-label="Przykład jednego tygodnia wycenionego w pięciu sklepach">
+      <div class="cp-head"><b>Ten tydzień w</b><small>Przykład · 2 osoby</small></div>
+      <ul>
+        <li><span class="shop">Aldi <em class="tag">Najtaniej</em></span><span class="bar"><i style="width:62%"></i></span><b>59,57 €</b></li>
+        <li><span class="shop">Lidl</span><span class="bar"><i style="width:68%"></i></span><b>60,80 €</b></li>
+        <li class="mine"><span class="shop">Walmart <em class="tag tag-mine">Twój sklep</em></span><span class="bar"><i style="width:76%"></i></span><b>62,64 €</b></li>
+        <li><span class="shop">Target</span><span class="bar"><i style="width:84%"></i></span><b>63,87 €</b></li>
+        <li><span class="shop">Kroger</span><span class="bar"><i style="width:92%"></i></span><b>65,71 €</b></li>
+      </ul>
+    </figure>
   </div>
 </section>
 <section class="section closing" id="download" aria-labelledby="closing-title">
   <div class="wrap closing-in">
-    <h2 id="closing-title">Twój tygodniowy jadłospis <em>czeka.</em></h2>
+    <h2 id="closing-title">Kolacje na przyszły tydzień z głowy</h2>
     <p class="sub">Dwie minuty pytań i każda kolacja jest ustalona.</p>
     <a class="btn btn-lime btn-lg" href="/app/?lang=pl">Zaplanuj mój tydzień <svg class="ic"><use href="#i-arrow"/></svg></a>
-    <p class="fine">Za darmo na próbę · bez karty</p>
+    <p class="fine">Zobacz swój tydzień za darmo · bez karty</p>
     <div class="stores">
       <p>Wolisz aplikację? WisprFood jest na iPhone’a, z tym samym kontem. Android już wkrótce.</p>
       <div class="badges">

@@ -16,7 +16,7 @@ PAGES = [
      "Tell WisprFood who's eating, where you shop and your budget. It plans every meal, prices it at your supermarket and writes one grocery list.",
      'How it works', ('Your week, planned', 'in two minutes.'),
      "Answer a few questions about your table, your shop and your budget. WisprFood plans every meal, prices it at your supermarket and writes one grocery list.",
-     ['how', 'features', 'budget']),
+     ['how', 'deals', 'shops']),
     ('features', 'Features · WisprFood Meal Planner',
      'Compare supermarket prices, 165 cook-tested recipes for every diet, one grocery list sorted by aisle, and a fridge scan for using up what you have.',
      'Features', ('Everything your week', 'needs.'),

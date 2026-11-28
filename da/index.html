@@ -20,7 +20,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="WisprFood">
 <meta property="og:title" content="WisprFood · Ugens måltider, planlagt på få sekunder">
-<meta property="og:description" content="Tænk aldrig mere over aftensmaden. En uges måltider til alle ved bordet, prissat i din egen butik.">
+<meta property="og:description" content="Du ved, hvad der er til aftensmad hele ugen. WisprFood planlægger din husstands måltider og prissætter dem i dit eget supermarked, med én indkøbsliste til hele ugen.">
 <meta property="og:url" content="https://wisprfood.com/da/">
 <meta property="og:image" content="https://wisprfood.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -29,7 +29,7 @@
 <meta property="og:locale" content="da_DK">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WisprFood · Ugens måltider, planlagt på få sekunder">
-<meta name="twitter:description" content="Tænk aldrig mere over aftensmaden. En uges måltider til alle ved bordet, prissat i din egen butik.">
+<meta name="twitter:description" content="Du ved, hvad der er til aftensmad hele ugen. WisprFood planlægger din husstands måltider og prissætter dem i dit eget supermarked, med én indkøbsliste til hele ugen.">
 <meta name="twitter:image" content="https://wisprfood.com/og-image.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -40,7 +40,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@1,9..144,500,50&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="/home.css?v=8">
 
@@ -118,7 +118,7 @@
           "name": "Kan jeg prøve det gratis?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ja. Log ind, sæt din uge op, og se dit første måltid gratis, uden kort. Lås op for hele ugen med månedlig eller livstid, betalt én gang."
+            "text": "Ja. Log ind, sæt din uge op, og se den med ét måltid åbent, gratis og uden kort. Vil du have hele ugen, vælger du månedlig eller livstid, som du betaler én gang."
           }
         },
         {
@@ -134,7 +134,7 @@
           "name": "Hvilke lande og butikker er med?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "82 supermarkeder i 10 lande: USA, Storbritannien, Irland, Spanien, Frankrig, Tyskland, Danmark, Polen, Mexico og Colombia."
+            "text": "Over 100 supermarkeder i 12 lande: USA, Canada, Mexico, Colombia, Storbritannien, Irland, Spanien, Frankrig, Tyskland, Danmark, Polen og Australien."
           }
         },
         {
@@ -151,6 +151,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Det er skøn pr. ingrediens pr. butik, og de bliver bedre med tiden. De er lavet til at planlægge et budget, så din kvittering kan afvige lidt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hvor kommer tilbuddene fra?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Fra din butiks tilbudsavis, som vi læser hver uge. I USA og Canada bruger vi dit postnummer, fordi tilbudsaviserne er forskellige fra område til område. Vi tilføjer butikker én ad gangen, og nogle tilbud kræver butikkens kundekort."
           }
         },
         {
@@ -199,12 +207,12 @@
   <div class="wrap hero-in">
     <div class="hero-copy">
       <p class="chip">Ugentlig madplan · med priser fra din butik</p>
-      <h1><span>Tænk aldrig mere over, hvad der skal</span> <em>være til aftensmad.</em></h1>
-      <p class="lead">WisprFood planlægger hele ugens måltider på få sekunder efter din husstand, din smag og dit køkken. Hvert måltid er prissat i dit supermarked, så du ved også, hvor det er billigst.</p>
+      <h1><span>Du ved, hvad der er til aftensmad</span> <em>hele ugen.</em></h1>
+      <p class="lead">Fortæl WisprFood, hvem der spiser med, og hvor du handler. Du får hvert måltid til de dage, du laver mad, prissat i dit supermarked, og én indkøbsliste sorteret efter afdeling. Det tager cirka to minutter at sætte op.</p>
       <div class="cta-row">
         <a class="btn btn-lg" href="/app/?lang=da">Planlæg min uge <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
-      <p class="fine">Gratis at prøve · intet kort · virker i din browser</p>
+      <p class="fine">Se din uge gratis · intet kort · virker i din browser</p>
     </div>
 
     <figure class="week-card reveal" aria-label="Et eksempel på en uge med aftensmad og priser">
@@ -228,7 +236,7 @@
 
 <section class="shops-strip" id="shops-strip" aria-labelledby="strip-title">
   <div class="wrap">
-    <p class="strip-title" id="strip-title">Priser fra 82 supermarkeder i 10 lande</p>
+    <p class="strip-title" id="strip-title">Priser fra over 100 supermarkeder i 12 lande</p>
     <div class="marquee"><ul class="logos">
       <li><img src="/images/stores/walmart.webp" alt="Walmart" height="30"></li>
       <li><img src="/images/stores/target.svg" alt="Target" height="30"></li>
@@ -243,42 +251,14 @@
   </div>
 </section>
 
-<section class="section" id="features" aria-labelledby="table-title">
-  <div class="wrap split">
-    <div>
-      <p class="eyebrow">Én plan til hele bordet</p>
-      <h2 id="table-title">Måltider, der passer til <em>alle ved dit bord.</em></h2>
-      <p class="sub">Fortæl WisprFood, hvem der spiser med, så planlægger den til alle – uden at du skal lave tre forskellige retter.</p>
-      <ul class="ticks">
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Udskiftninger pr. person.</b> Vegetarer, veganere, pescetarer og allergier – klaret i samme opskrift.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Mindre portioner til børn.</b> Indkøbslisten køber præcis det, der skal bruges.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Kun de dage, du laver mad.</b> Morgenmad, frokost og aftensmad – eller kun aftensmad.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Lavet til dit køkken.</b> Ingen ovn? Ingen airfryer? Opskrifterne følger det, du har.</span></li>
-      </ul>
-    </div>
-    <figure class="meal-card reveal" aria-label="Én aftensmad tilpasset tre personer">
-      <img src="/images/recipes/chicken-fajitas.webp" alt="Kyllingefajitas set oppefra" width="480" height="480">
-      <div class="mc-body">
-        <div class="mc-top"><b>Fajitas med kylling</b><span>I aften · 25 min</span></div>
-        <ul class="people">
-          <li><span class="av">A</span><span>Alex</span><em>Hele opskriften</em></li>
-          <li><span class="av av2">S</span><span>Sam</span><em>Vegetar: kikærter i stedet for kylling</em></li>
-          <li><span class="av av3">L</span><span>Leo, 6 år</span><em>Børneportion</em></li>
-        </ul>
-      </div>
-    </figure>
-  </div>
-</section>
-
 <section class="section tint" id="how" aria-labelledby="how-title">
   <div class="wrap">
-    <p class="eyebrow center">Sådan virker det</p>
-    <h2 id="how-title" class="center">Din uge, planlagt i <em>tre trin.</em></h2>
+    <h2 id="how-title" class="center">Sådan virker det</h2>
     <ol class="steps snap mslide">
       <li class="reveal">
         <span class="num">1</span>
-        <h3>Fortæl os om dit bord</h3>
-        <p>Personer, kost, allergier, budget, din butik og dit køkken. Det tager cirka to minutter.</p>
+        <h3>Fortæl os, hvem der spiser med</h3>
+        <p>Hvem der spiser med, hvad hver person ikke kan tåle, dit budget, din butik og det køkken, du har. En vegetar og en seksårig kan stadig dele samme aftensmad. Det tager cirka to minutter.</p>
       </li>
       <li class="reveal">
         <span class="num">2</span>
@@ -287,78 +267,51 @@
       </li>
       <li class="reveal">
         <span class="num">3</span>
-        <h3>Handl én gang, lav mad i ro</h3>
-        <p>Én indkøbsliste sorteret efter afdeling og derefter madlavning trin for trin med timere.</p>
+        <h3>Handl én gang, og lav så maden</h3>
+        <p>Én indkøbsliste sorteret efter afdeling. Ved komfuret tager madlavningstilstanden dig trin for trin, med indbyggede timere.</p>
       </li>
     </ol>
     <div class="center"><a class="btn" href="/app/?lang=da">Planlæg min uge <svg class="ic"><use href="#i-arrow"/></svg></a></div>
   </div>
 </section>
 
-<section class="section" id="budget" aria-labelledby="change-title">
-  <div class="wrap">
-    <p class="eyebrow center">Hvad der ændrer sig</p>
-    <h2 id="change-title" class="center">Færre beslutninger. <em>Mere god mad.</em></h2>
-    <div class="cards3 snap mslide">
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🕕</span>
-        <h3>Slut med panik klokken 18</h3>
-        <p>Aftensmaden er besluttet, før ugen starter, så det daglige “hvad skal vi have?” er væk.</p>
-      </article>
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🛒</span>
-        <h3>Én tur, én liste</h3>
-        <p>Alt til ugen på én tur, med de samme mængder som opskrifterne. Mindre madspild.</p>
-      </article>
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🧾</span>
-        <h3>Ingen overraskelser ved kassen</h3>
-        <p>Du ser ugens total ved siden af dit budget, før du handler, og hver udskiftning viser, hvad den ændrer.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section deep" id="shops" aria-labelledby="shops-title">
+<section class="section deals" id="deals" aria-labelledby="deals-title">
   <div class="wrap split">
     <div>
-      <p class="eyebrow on-deep">Sammenlign butikker</p>
-      <h2 id="shops-title">Se, hvor din uge <em>er billigst.</em></h2>
-      <p class="sub">WisprFood prissætter hele din uge i hvert supermarked i dit land. Det er et tip, aldrig en regel: Du vælger selv din butik, og planen følger den.</p>
-      <a class="btn btn-lime" href="/app/?lang=da">Sammenlign mine butikker <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <p class="eyebrow on-deep">Nyt</p>
+      <h2 id="deals-title">Din butiks tilbudsavis, <em>matchet med dine måltider</em></h2>
+      <p class="sub">WisprFood læser ugens tilbudsavis fra dit supermarked og holder den op mod din plan. Er kyllingelår på tilbud, og står de allerede på torsdagens aftensmad, kan du se det, og hvor meget du sparer.</p>
+      <ul class="ticks">
+        <li><svg class="ic"><use href="#i-check"/></svg><span>I din uge: tilbud på det, du alligevel skal lave, med besparelsen på hvert.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Ét tryk, så kommer et tilbud på din indkøbsliste.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Åbn en vare for at se næringsindholdet fra deklarationen eller typiske værdier for den slags mad.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>I USA og Canada tilføjer du dit postnummer og får tilbudsavisen for dit område.</span></li>
+      </ul>
+      <a class="btn btn-lime" href="/app/?lang=da">Planlæg min uge <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <p class="fine deals-note">Tilbuddene kommer fra hver butiks tilbudsavis. Vi tilføjer butikker én ad gangen, og nogle tilbud kræver butikkens kundekort. Næringsdata fra Open Food Facts.</p>
     </div>
-    <figure class="compare reveal" aria-label="Et eksempel på én uge prissat i fem butikker">
-      <div class="cp-head"><b>Denne uge hos</b><small>Eksempel · 2 personer</small></div>
-      <ul>
-        <li><span class="shop">Aldi <em class="tag">Billigst</em></span><span class="bar"><i style="width:62%"></i></span><b>59,57 €</b></li>
-        <li><span class="shop">Lidl</span><span class="bar"><i style="width:68%"></i></span><b>60,80 €</b></li>
-        <li class="mine"><span class="shop">Walmart <em class="tag tag-mine">Din butik</em></span><span class="bar"><i style="width:76%"></i></span><b>62,64 €</b></li>
-        <li><span class="shop">Target</span><span class="bar"><i style="width:84%"></i></span><b>63,87 €</b></li>
-        <li><span class="shop">Kroger</span><span class="bar"><i style="width:92%"></i></span><b>65,71 €</b></li>
+    <figure class="deals-mock reveal" aria-label="Et eksempel på ugens tilbud i én butik">
+      <div class="dm-head">
+        <b>Tilbud</b>
+        <span class="dm-shop"><img src="/images/stores/walmart.webp" alt="" width="20" height="20">Walmart</span>
+        <small>Eksempel</small>
+      </div>
+      <div class="dm-week">
+        <p class="dm-label">I din uge</p>
+        <p class="dm-total">3 på tilbud</p>
+        <ul class="dm-mini">
+          <li><span class="dm-tile t-produce" aria-hidden="true">🧅</span><span>Løg</span><b>2,49 €</b><s>3,99 €</s></li>
+          <li><span class="dm-tile t-dairy" aria-hidden="true">🥚</span><span>Æg, 12 stk.</span><b>2,49 €</b><s>3,29 €</s></li>
+          <li><span class="dm-tile t-produce" aria-hidden="true">🫑</span><span>Røde peberfrugter</span><b>0,99 €</b><s>1,49 €</s></li>
+        </ul>
+      </div>
+      <ul class="dm-grid">
+        <li><span class="dm-off">−43%</span><span class="dm-tile big t-meat" aria-hidden="true">🍗</span><span class="dm-name">Kyllingebryst</span><b>1,99 €</b><s>3,49 €</s><span class="dm-add added" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−41%</span><span class="dm-tile big t-pantry" aria-hidden="true">🍝</span><span class="dm-name">Spaghetti, 500 g</span><b>1,00 €</b><s>1,69 €</s><span class="dm-add" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−37%</span><span class="dm-tile big t-produce" aria-hidden="true">🥑</span><span class="dm-name">Hass-avocadoer</span><b>0,79 €</b><s>1,25 €</s><span class="dm-add" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−37%</span><span class="dm-tile big t-pantry" aria-hidden="true">🥫</span><span class="dm-name">Hakkede tomater</span><b>1,25 €</b><s>1,99 €</s><span class="dm-add" aria-hidden="true"></span></li>
       </ul>
     </figure>
-  </div>
-</section>
-
-<section class="section" id="recipes" aria-labelledby="recipes-title">
-  <div class="wrap">
-    <p class="eyebrow center">Opskrifterne</p>
-    <h2 id="recipes-title" class="center">165 opskrifter, <em>alle testet i køkkenet.</em></h2>
-    <p class="sub center">Hjemmelavet mad fra Spanien, Italien, Mexico, Indien, Asien, Middelhavet og køkkener fra hele verden. Hurtig hverdagsaftensmad, nem morgenmad og frokost, der kan holde.</p>
-  </div>
-  <div class="rail drift" aria-label="Eksempler på opskrifter">
-    <ul>
-      <li><img src="/images/recipes/pollo-al-chilindron.webp" alt="" width="240" height="240"><b>Pollo al chilindrón</b><small>Spansk · 45 min</small></li>
-      <li><img src="/images/recipes/cacio-e-pepe.webp" alt="" width="240" height="240"><b>Cacio e pepe</b><small>Italiensk · 20 min</small></li>
-      <li><img src="/images/recipes/chicken-fajitas.webp" alt="" width="240" height="240" loading="lazy"><b>Fajitas med kylling</b><small>Mexicansk · 25 min</small></li>
-      <li><img src="/images/recipes/chicken-tikka-masala.webp" alt="" width="240" height="240" loading="lazy"><b>Kylling tikka masala</b><small>Indisk · 45 min</small></li>
-      <li><img src="/images/recipes/teriyaki-chicken-bowl.webp" alt="" width="240" height="240" loading="lazy"><b>Risbowl med teriyakikylling</b><small>Asiatisk · 25 min</small></li>
-      <li><img src="/images/recipes/butter-bean-shakshuka.webp" alt="" width="240" height="240" loading="lazy"><b>Shakshuka med smørbønner</b><small>Middelhavsmad · 30 min</small></li>
-      <li><img src="/images/recipes/vegetarian-pad-thai.webp" alt="" width="240" height="240" loading="lazy"><b>Vegetarisk pad thai</b><small>Asiatisk · 25 min</small></li>
-      <li><img src="/images/recipes/lentil-chorizo-stew.webp" alt="" width="240" height="240" loading="lazy"><b>Linsegryde med chorizo</b><small>Spansk · 40 min</small></li>
-      <li><img src="/images/recipes/tomato-basil-pasta.webp" alt="" width="240" height="240" loading="lazy"><b>Pasta med tomat og basilikum</b><small>Italiensk · 25 min</small></li>
-      <li><img src="/images/recipes/porridge-banana.webp" alt="" width="240" height="240" loading="lazy"><b>Havregrød med banan</b><small>Morgenmad · 10 min</small></li>
-    </ul>
   </div>
 </section>
 
@@ -385,22 +338,61 @@
       <div class="lc-foot"><span>I kurven</span><b>15,51 €</b></div>
     </figure>
     <div>
-      <p class="eyebrow">Indkøbslisten</p>
-      <h2 id="list-title">Én liste. <em>Én total.</em></h2>
-      <p class="sub">Alle ugens ingredienser på én liste, sorteret efter afdeling, med de samme mængder som opskrifterne. Sæt flueben undervejs, og se kurven blive lagt sammen.</p>
+      <h2 id="list-title">Én liste til hele ugen</h2>
+      <p class="sub">Alle ugens ingredienser, sorteret efter afdeling og i de samme mængder som opskrifterne. Sæt flueben, mens du handler. Før du går hjemmefra, kan du se ugens total ved siden af dit budget.</p>
       <ul class="ticks">
         <li><svg class="ic"><use href="#i-check"/></svg><span><b>Del den</b> med den, der handler.</span></li>
         <li><svg class="ic"><use href="#i-check"/></svg><span><b>Skift et måltid</b> og listen opdaterer sig selv.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Metrisk eller imperial,</b> på seks sprog.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Se tilbuddene:</b> det, der er på tilbud i din butik i denne uge, er markeret.</span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<section class="section deep" id="shops" aria-labelledby="shops-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="shops-title">Hvad den samme uge koster i andre butikker</h2>
+      <p class="sub">WisprFood prissætter hele din uge i hvert supermarked i dit land. Er en anden butik billigere, kan du se hvor meget. Du vælger stadig selv din butik, og planen følger den.</p>
+      <a class="btn btn-lime" href="/app/?lang=da">Sammenlign mine butikker <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <figure class="compare reveal" aria-label="Et eksempel på én uge prissat i fem butikker">
+      <div class="cp-head"><b>Denne uge hos</b><small>Eksempel · 2 personer</small></div>
+      <ul>
+        <li><span class="shop">Aldi <em class="tag">Billigst</em></span><span class="bar"><i style="width:62%"></i></span><b>59,57 €</b></li>
+        <li><span class="shop">Lidl</span><span class="bar"><i style="width:68%"></i></span><b>60,80 €</b></li>
+        <li class="mine"><span class="shop">Walmart <em class="tag tag-mine">Din butik</em></span><span class="bar"><i style="width:76%"></i></span><b>62,64 €</b></li>
+        <li><span class="shop">Target</span><span class="bar"><i style="width:84%"></i></span><b>63,87 €</b></li>
+        <li><span class="shop">Kroger</span><span class="bar"><i style="width:92%"></i></span><b>65,71 €</b></li>
+      </ul>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="recipes" aria-labelledby="recipes-title">
+  <div class="wrap">
+    <h2 id="recipes-title" class="center">Over 470 opskrifter, alle testet i køkkenet</h2>
+    <p class="sub center">Hjemmelavet mad fra Spanien, Italien, Mexico, Indien, Asien, Middelhavet og køkkener fra hele verden. Hurtig hverdagsaftensmad, nem morgenmad og frokost, der kan holde.</p>
+  </div>
+  <div class="rail drift" aria-label="Eksempler på opskrifter">
+    <ul>
+      <li><img src="/images/recipes/pollo-al-chilindron.webp" alt="" width="240" height="240"><b>Pollo al chilindrón</b><small>Spansk · 45 min</small></li>
+      <li><img src="/images/recipes/cacio-e-pepe.webp" alt="" width="240" height="240"><b>Cacio e pepe</b><small>Italiensk · 20 min</small></li>
+      <li><img src="/images/recipes/chicken-fajitas.webp" alt="" width="240" height="240" loading="lazy"><b>Fajitas med kylling</b><small>Mexicansk · 25 min</small></li>
+      <li><img src="/images/recipes/chicken-tikka-masala.webp" alt="" width="240" height="240" loading="lazy"><b>Kylling tikka masala</b><small>Indisk · 45 min</small></li>
+      <li><img src="/images/recipes/teriyaki-chicken-bowl.webp" alt="" width="240" height="240" loading="lazy"><b>Risbowl med teriyakikylling</b><small>Asiatisk · 25 min</small></li>
+      <li><img src="/images/recipes/butter-bean-shakshuka.webp" alt="" width="240" height="240" loading="lazy"><b>Shakshuka med smørbønner</b><small>Middelhavsmad · 30 min</small></li>
+      <li><img src="/images/recipes/vegetarian-pad-thai.webp" alt="" width="240" height="240" loading="lazy"><b>Vegetarisk pad thai</b><small>Asiatisk · 25 min</small></li>
+      <li><img src="/images/recipes/lentil-chorizo-stew.webp" alt="" width="240" height="240" loading="lazy"><b>Linsegryde med chorizo</b><small>Spansk · 40 min</small></li>
+      <li><img src="/images/recipes/tomato-basil-pasta.webp" alt="" width="240" height="240" loading="lazy"><b>Pasta med tomat og basilikum</b><small>Italiensk · 25 min</small></li>
+      <li><img src="/images/recipes/porridge-banana.webp" alt="" width="240" height="240" loading="lazy"><b>Havregrød med banan</b><small>Morgenmad · 10 min</small></li>
+    </ul>
+  </div>
+</section>
+
 <section class="section" id="reviews" aria-labelledby="reviews-title">
   <div class="wrap">
-    <p class="eyebrow center">Fra vores testere</p>
-    <h2 id="reviews-title" class="center">Hvad folk <em>siger.</em></h2>
+    <h2 id="reviews-title" class="center">Hvad vores testere sagde til os</h2>
     <div class="reviews snap" data-auto="4500">
       <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Min bankkonto siger tak</b><p>Min indkøbsregning var ved at løbe løbsk, og ærligt talt begyndte jeg at tage det personligt 😭 Nu sammenligner jeg priser, før jeg handler, og ved faktisk, hvor mine penge bliver af. Min bankkonto er endelig ved at komme sig.</p><cite>Sophie</cite></blockquote>
       <blockquote class="review"><span class="stars" aria-label="5 stjerner"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Slut med at stirre ind i køleskabet</b><p>Mig, der åbner køleskabet 17 gange i håb om, at der magisk dukker ny mad op 💀 Den her app fortæller mig faktisk, hvad jeg kan lave med det, der allerede er derinde. Livsændrende for en, hvis madlavning mest er på fornemmelsen.</p><cite>Emily</cite></blockquote>
@@ -418,14 +410,14 @@
 
 <section class="section" id="faq" aria-labelledby="faq-title">
   <div class="wrap narrow">
-    <p class="eyebrow center">FAQ</p>
-    <h2 id="faq-title" class="center">Dine spørgsmål, <em>besvaret.</em></h2>
+    <h2 id="faq-title" class="center">Ofte stillede spørgsmål</h2>
     <div class="faq">
-      <details><summary>Kan jeg prøve det gratis?</summary><p>Ja. Log ind, sæt din uge op, og se dit første måltid gratis, uden kort. Lås op for hele ugen med månedlig eller livstid, betalt én gang.</p></details>
+      <details><summary>Kan jeg prøve det gratis?</summary><p>Ja. Log ind, sæt din uge op, og se den med ét måltid åbent, gratis og uden kort. Vil du have hele ugen, vælger du månedlig eller livstid, som du betaler én gang.</p></details>
       <details><summary>Skal jeg handle i den billigste butik?</summary><p>Nej. Du vælger din yndlingsbutik, og alle priser følger den. Sammenligningen er et tip, aldrig en regel.</p></details>
-      <details><summary>Hvilke lande og butikker er med?</summary><p>82 supermarkeder i 10 lande: USA, Storbritannien, Irland, Spanien, Frankrig, Tyskland, Danmark, Polen, Mexico og Colombia.</p></details>
+      <details><summary>Hvilke lande og butikker er med?</summary><p>Over 100 supermarkeder i 12 lande: USA, Canada, Mexico, Colombia, Storbritannien, Irland, Spanien, Frankrig, Tyskland, Danmark, Polen og Australien.</p></details>
       <details><summary>Kan én plan klare forskellige kostformer og allergier?</summary><p>Ja. Hver person kan være vegetar, veganer eller pescetar og have sine egne allergier. WisprFood skifter ingredienser pr. person og giver børn mindre portioner.</p></details>
       <details><summary>Hvor præcise er priserne?</summary><p>Det er skøn pr. ingrediens pr. butik, og de bliver bedre med tiden. De er lavet til at planlægge et budget, så din kvittering kan afvige lidt.</p></details>
+      <details><summary>Hvor kommer tilbuddene fra?</summary><p>Fra din butiks tilbudsavis, som vi læser hver uge. I USA og Canada bruger vi dit postnummer, fordi tilbudsaviserne er forskellige fra område til område. Vi tilføjer butikker én ad gangen, og nogle tilbud kræver butikkens kundekort.</p></details>
       <details><summary>Hvordan opsiger eller sletter jeg min konto?</summary><p>Opsig når som helst fra din profil eller fra abonnementer i App Store eller Google Play, hvis du tegnede det der. Profil → Slet konto fjerner din konto og alt, der er gemt på den.</p></details>
     </div>
     <p class="fine center">Noget andet? Skriv til <a href="mailto:info@wisprfood.com">info@wisprfood.com</a></p>
@@ -434,10 +426,10 @@
 
 <section class="section closing" id="download" aria-labelledby="closing-title">
   <div class="wrap closing-in">
-    <h2 id="closing-title">Din uges madplan <em>venter.</em></h2>
+    <h2 id="closing-title">Næste uges aftensmad, klaret</h2>
     <p class="sub">To minutters spørgsmål, så er hver aftensmad besluttet.</p>
     <a class="btn btn-lime btn-lg" href="/app/?lang=da">Planlæg min uge <svg class="ic"><use href="#i-arrow"/></svg></a>
-    <p class="fine">Gratis at prøve · intet kort</p>
+    <p class="fine">Se din uge gratis · intet kort</p>
     <div class="stores">
       <p>Foretrækker du en app? WisprFood findes til iPhone med den samme konto. Android kommer snart.</p>
       <div class="badges">

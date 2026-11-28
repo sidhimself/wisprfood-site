@@ -498,7 +498,6 @@ html, body { overflow-x: clip; }
 @keyframes shine { 0%, 70% { left: -60%; } 100% { left: 130%; } }
 
 /* Hero card floats a little with the scroll (set by home.js) */
-.week-card { transition: transform .1s linear; will-change: transform; }
 
 @media (prefers-reduced-motion: reduce) {
   .marquee .logos, .wc-list { animation: none !important; }
@@ -567,4 +566,119 @@ html, body { overflow-x: clip; }
   .rail.drift { overflow-x: auto; }
   .rail.drift ul { animation: none; padding: 0 20px; }
   .rail.drift li[aria-hidden] { display: none; }
+}
+
+/* ================= Redesign, 28 Nov 2026 =================
+   Less template, more kitchen: one serif italic voice for the accent words (Fraunces, as in the
+   Instagram set), fewer boxes, ruled lists instead of card grids, and motion you can feel. */
+
+/* Accent words: Fraunces italic instead of a second colour of the same sans. */
+h1 em, h2 em { font-family: 'Fraunces', Georgia, serif; font-style: italic; font-weight: 500; letter-spacing: -.01em; font-variation-settings: 'opsz' 96, 'SOFT' 50; }
+.hero h1 { letter-spacing: -.035em; }
+.hero h1 em { color: var(--green); }
+
+/* Eyebrows: quiet sentence case, not shouted caps. */
+.eyebrow { text-transform: none; letter-spacing: 0; font-size: 14px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; }
+.eyebrow::before { content: ''; width: 8px; height: 8px; border-radius: 50%; background: currentColor; opacity: .9; }
+.eyebrow.center { display: flex; justify-content: center; }
+.chip { background: none; padding: 0; color: var(--green); font-size: 14px; }
+
+/* The hero card stands on its own (no tilted card behind it). */
+.week-card::before { display: none; }
+.week-card { box-shadow: 0 1px 0 rgba(18,55,42,.04), 0 30px 60px -20px rgba(18,55,42,.25); }
+
+/* How it works: a ruled timeline, not three boxes. */
+.steps { gap: 0; counter-reset: none; }
+.steps li { background: none; border-radius: 0; padding: 22px 0 0; border-top: 2px solid var(--deep); }
+@media (min-width: 800px) { .steps { gap: 36px; } }
+.num { width: auto; height: auto; background: none; color: var(--green); border-radius: 0; font: italic 500 44px/1 'Fraunces', Georgia, serif; display: block; }
+.steps h3 { margin-top: 10px; }
+.steps li.in .num, .snap .num { animation: none; }
+
+/* "What changes": a ruled list, no boxes. */
+.cards3:not(.cards-sm) .card { background: none; border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 20px 0 0; }
+.cards3:not(.cards-sm) .emoji { display: none; }
+.cards3:not(.cards-sm) .card h3 { margin-top: 0; font-size: 20px; }
+
+/* Reviews read like notes, not tiles. */
+.review { background: var(--paper); border: 0; position: relative; padding-top: 52px; }
+.review::before { content: '\201C'; position: absolute; top: 6px; left: 22px; font: italic 500 64px/1 'Fraunces', Georgia, serif; color: var(--green); opacity: .5; }
+.tint .review { background: var(--paper); }
+
+/* FAQ: a ruled list. */
+.faq { gap: 0; border-top: 1px solid var(--line); }
+.faq details { background: none; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; padding: 0 4px; }
+
+/* ---------- Deals ---------- */
+.deals { background-color: var(--deep); background-image: linear-gradient(rgba(18, 55, 42, .5), rgba(18, 55, 42, .5)), url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22232%22%20height%3D%22256%22%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%232A5A44%22%20stroke-width%3D%222.2%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20transform%3D%22translate%28-15%20-44%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2843%20-44%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28101%20-44%29%20rotate%287%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28159%20-44%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28217%20-44%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28275%20-44%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28-44%2020%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2814%2020%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2872%2020%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28130%2020%29%20rotate%287%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28188%2020%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28246%2020%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28-15%2084%29%20rotate%287%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2843%2084%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28101%2084%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28159%2084%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28217%2084%29%20rotate%287%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28275%2084%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28-44%20148%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2814%20148%29%20rotate%287%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2872%20148%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28130%20148%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28188%20148%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28246%20148%29%20rotate%287%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28-15%20212%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2843%20212%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28101%20212%29%20rotate%287%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28159%20212%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28217%20212%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28275%20212%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28-44%20276%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2814%20276%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%2872%20276%29%20rotate%28-7%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28130%20276%29%20rotate%287%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28188%20276%29%20rotate%2821%29%22%20d%3D%22M-5.5%20-10a5.5%207%200%201%200%2011%200a5.5%207%200%201%200%20-11%200M0%20-3L0%2017%22/%3E%3Cpath%20transform%3D%22translate%28246%20276%29%20rotate%28-21%29%22%20d%3D%22M-5%20-17L-5%20-9M0%20-17L0%20-9M5%20-17L5%20-9M-5%20-9Q0%20-1%205%20-9M0%20-5L0%2017%22/%3E%3C/g%3E%3C/svg%3E"); color: var(--ivory); }
+.deals em { color: var(--lime); }
+.deals .sub, .deals .ticks li { color: rgba(246, 241, 228, .82); }
+.deals .deals-note { color: rgba(246, 241, 228, .66); max-width: 34em; margin-top: 16px; }
+.deals .ticks li b { color: var(--ivory); }
+.deals-mock { margin: 0; width: 100%; max-width: 430px; justify-self: center; background: rgba(18, 55, 42, .55); border: 1px solid rgba(246, 241, 228, .14); border-radius: 30px; padding: 18px; box-shadow: 0 40px 80px -30px rgba(0, 0, 0, .55); }
+.dm-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+.dm-head > b { font-size: 26px; font-weight: 800; letter-spacing: -.02em; }
+.dm-shop { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px 4px 4px; border-radius: 999px; background: rgba(255, 255, 255, .12); font-size: 13px; font-weight: 700; }
+.dm-shop img { width: 20px; height: 20px; border-radius: 50%; background: #fff; object-fit: contain; padding: 2px; }
+.dm-head small { margin-left: auto; font-size: 11px; font-weight: 700; color: rgba(246, 241, 228, .55); }
+.dm-week { border: 1px solid rgba(200, 232, 107, .35); background: rgba(255, 255, 255, .07); border-radius: 20px; padding: 14px; }
+.dm-label { font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--lime); }
+.dm-total { font-size: 17px; font-weight: 800; margin-top: 2px; }
+.dm-total span { color: var(--lime); margin-left: 4px; }
+.dm-mini { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.dm-mini li { background: #fbfaf6; color: var(--deep); border-radius: 14px; padding: 8px; display: grid; grid-template-columns: auto 1fr; grid-template-areas: 'tile tile' 'name name' 'price old'; gap: 2px 6px; align-items: baseline; }
+.dm-mini .dm-tile { grid-area: tile; margin-bottom: 4px; }
+.dm-mini li > span:nth-child(2) { grid-area: name; font-size: 12px; font-weight: 700; }
+.dm-mini b { grid-area: price; color: var(--tomato); font-size: 14px; }
+.dm-mini s { grid-area: old; color: var(--faint); font-size: 11px; }
+.dm-tile { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; font-size: 18px; line-height: 1; }
+.dm-tile.big { width: 100%; height: 74px; border-radius: 14px; font-size: 34px; }
+.t-produce { background: #e6efdc; } .t-dairy { background: #e3ecf6; } .t-meat { background: #f8e1d9; } .t-pantry { background: #f3ead2; }
+.dm-grid { list-style: none; margin: 12px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.dm-grid li { position: relative; background: #fbfaf6; color: var(--deep); border-radius: 18px; padding: 8px 8px 12px; display: flex; flex-direction: column; gap: 3px; }
+.dm-off { position: absolute; top: 14px; left: 14px; z-index: 1; font-size: 11px; font-weight: 800; color: #fff; background: var(--tomato); padding: 2px 7px; border-radius: 999px; }
+.dm-name { font-size: 13px; font-weight: 700; line-height: 1.25; margin-top: 6px; }
+.dm-grid b { font-size: 17px; font-weight: 800; margin-top: 2px; }
+.dm-grid b small { font-size: 12px; font-weight: 700; }
+.dm-grid s { font-size: 12px; color: var(--faint); }
+.dm-add { position: absolute; right: 10px; bottom: 10px; width: 30px; height: 30px; border-radius: 50%; background: var(--lime); }
+.dm-add::before, .dm-add::after { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 800; font-size: 18px; line-height: 1; transition: opacity .25s ease, transform .35s cubic-bezier(.16, 1, .3, 1); }
+.dm-add::before { content: '+'; color: var(--deep); }
+.dm-add::after { content: '\2713'; color: var(--lime); font-size: 15px; opacity: 0; transform: scale(.4); }
+.dm-add.added { transition: background .3s ease 1.6s; }
+.deals-mock.in .dm-add.added { background: var(--deep); }
+.deals-mock.in .dm-add.added::before { opacity: 0; transform: scale(.4); transition-delay: 1.6s; }
+.deals-mock.in .dm-add.added::after { opacity: 1; transform: none; transition-delay: 1.6s; }
+@media (max-width: 899px) {
+  .deals-mock { padding: 14px; border-radius: 26px; }
+  .dm-tile.big { height: 62px; font-size: 30px; }
+  .deals .btn { width: 100%; }
+}
+
+/* ---------- Motion you can feel (28 Nov) ----------
+   Sections arrive as you reach them: headings rise out of a soft blur, the product cards
+   swing up into place, and the cards inside follow one by one. Exponential ease-out, no bounce. */
+.js .rise { opacity: 0; transform: translate3d(0, 34px, 0); filter: blur(6px); transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform 1s cubic-bezier(.16, 1, .3, 1), filter .8s cubic-bezier(.16, 1, .3, 1); }
+.js .rise.in { opacity: 1; transform: none; filter: none; }
+.js .rise.in + .rise { transition-delay: .08s; }
+.js .rise.in + .rise + .rise { transition-delay: .16s; }
+.js .reveal { opacity: 0; transform: translate3d(0, 70px, 0) scale(.94) rotate(-1.5deg); transition: opacity .9s cubic-bezier(.16, 1, .3, 1), transform 1.2s cubic-bezier(.16, 1, .3, 1); }
+.js .reveal.in { opacity: 1; transform: none; }
+.js .steps .reveal, .js .reveal-group > * { transform: translate3d(0, 40px, 0); }
+.js .reveal-group > * { transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform 1s cubic-bezier(.16, 1, .3, 1); }
+.js .steps .reveal.in, .js .reveal-group.in > * { opacity: 1; transform: none; }
+.js .steps li.reveal:nth-child(2) { transition-delay: .1s; } .js .steps li.reveal:nth-child(3) { transition-delay: .2s; }
+/* Cards inside a mock follow the mock in. */
+.js .deals-mock .dm-week, .js .deals-mock .dm-grid li, .js .list-card ul, .js .compare li { opacity: 0; transform: translate3d(0, 22px, 0); transition: opacity .7s cubic-bezier(.16, 1, .3, 1), transform .9s cubic-bezier(.16, 1, .3, 1); }
+.js .deals-mock.in .dm-week, .js .deals-mock.in .dm-grid li, .js .list-card.in ul, .js .compare.in li { opacity: 1; transform: none; }
+.js .deals-mock.in .dm-week { transition-delay: .25s; }
+.js .deals-mock.in .dm-grid li:nth-child(1) { transition-delay: .4s; } .js .deals-mock.in .dm-grid li:nth-child(2) { transition-delay: .5s; }
+.js .deals-mock.in .dm-grid li:nth-child(3) { transition-delay: .6s; } .js .deals-mock.in .dm-grid li:nth-child(4) { transition-delay: .7s; }
+.js .list-card.in ul:nth-of-type(2) { transition-delay: .12s; } .js .list-card.in ul:nth-of-type(3) { transition-delay: .24s; }
+.js .compare.in li:nth-child(2) { transition-delay: .08s; } .js .compare.in li:nth-child(3) { transition-delay: .16s; }
+.js .compare.in li:nth-child(4) { transition-delay: .24s; } .js .compare.in li:nth-child(5) { transition-delay: .32s; }
+/* Product cards drift against the scroll a little (set by home.js). */
+.drift-y { will-change: transform; }
+@media (prefers-reduced-motion: reduce) {
+  .js .rise, .js .reveal, .js .reveal-group > *, .js .deals-mock .dm-week, .js .deals-mock .dm-grid li, .js .list-card ul, .js .compare li { opacity: 1; transform: none; filter: none; transition: none; }
 }

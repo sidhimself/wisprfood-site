@@ -20,6 +20,7 @@
   onScroll();
 
   // Things arrive as they scroll into view.
+  document.querySelectorAll('.steps > li').forEach(function (li) { li.classList.add('reveal'); });
   var items = document.querySelectorAll('.reveal, .reveal-group');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
@@ -178,19 +179,27 @@
     }, { threshold: 0.4 }).observe(list);
   }
 
-  // The hero card floats up a little as the page scrolls.
-  var card = document.querySelector('.week-card');
-  if (card && !reduce) {
+  // The product cards (the week, deals, shops, grocery list) drift a little against the
+  // scroll, so each section has some depth as it passes. Uses the `translate` property, which
+  // adds to the arrival animation's transform instead of replacing it.
+  var floaters = Array.prototype.slice.call(document.querySelectorAll('.week-card, .deals-mock, .compare, .list-card'));
+  if (floaters.length && !reduce) {
+    floaters.forEach(function (el) { el.classList.add('drift-y'); });
     var ticking = false;
-    window.addEventListener('scroll', function () {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(function () {
-        var y = Math.min(window.scrollY, 600);
-        card.style.transform = 'translate3d(0,' + (-y * 0.06).toFixed(1) + 'px,0)';
-        ticking = false;
+    var drift = function () {
+      ticking = false;
+      var vh = window.innerHeight;
+      floaters.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.bottom < -100 || r.top > vh + 100) return;
+        var off = (r.top + r.height / 2 - vh / 2) / vh; // -1 above the middle, +1 below
+        el.style.translate = '0 ' + (off * 36).toFixed(1) + 'px';
       });
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(drift); }
     }, { passive: true });
+    drift();
   }
 
   // A soft shine on the main buttons.

@@ -40,7 +40,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@1,9..144,500,50&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="/home.css?v=8">
 
@@ -115,13 +115,12 @@
 </section>
 <section class="section tint" id="how" aria-labelledby="how-title">
   <div class="wrap">
-    <p class="eyebrow center">Comment ça marche</p>
-    <h2 id="how-title" class="center">Ta semaine, planifiée en <em>trois étapes.</em></h2>
+    <h2 id="how-title" class="center">Comment ça marche</h2>
     <ol class="steps snap mslide">
       <li class="reveal">
         <span class="num">1</span>
-        <h3>Parle-nous de ta tablée</h3>
-        <p>Personnes, régimes, allergies, budget, ton magasin et ta cuisine. Environ deux minutes.</p>
+        <h3>Dis-nous qui mange</h3>
+        <p>Qui mange, ce que chacun ne peut pas manger, ton budget, ton magasin et la cuisine que tu as. Un végétarien et un enfant de six ans peuvent partager le même dîner. Ça prend environ deux minutes.</p>
       </li>
       <li class="reveal">
         <span class="num">2</span>
@@ -130,68 +129,77 @@
       </li>
       <li class="reveal">
         <span class="num">3</span>
-        <h3>Fais les courses une fois, cuisine sereinement</h3>
-        <p>Une liste de courses triée par rayon, puis un mode cuisine pas à pas avec minuteurs.</p>
+        <h3>Fais les courses une fois, puis cuisine</h3>
+        <p>Une liste de courses triée par rayon. Aux fourneaux, le mode cuisine te guide étape par étape, minuteurs compris.</p>
       </li>
     </ol>
     <div class="center"><a class="btn" href="/app/?lang=fr">Planifier ma semaine <svg class="ic"><use href="#i-arrow"/></svg></a></div>
   </div>
 </section>
-<section class="section" id="features" aria-labelledby="table-title">
+<section class="section deals" id="deals" aria-labelledby="deals-title">
   <div class="wrap split">
     <div>
-      <p class="eyebrow">Un plan pour toute la tablée</p>
-      <h2 id="table-title">Des repas qui conviennent <em>à toute ta tablée.</em></h2>
-      <p class="sub">Dis à WisprFood qui mange et il planifie pour tout le monde, sans cuisiner trois dîners différents.</p>
+      <p class="eyebrow on-deep">Nouveau</p>
+      <h2 id="deals-title">Le prospectus de ton magasin, <em>croisé avec tes repas</em></h2>
+      <p class="sub">WisprFood lit le prospectus de la semaine de ton supermarché et le compare à ton plan. Si les hauts de cuisse de poulet sont en promo et qu’ils sont déjà dans le dîner de jeudi, tu le vois, avec ce que tu économises.</p>
       <ul class="ticks">
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Remplacements par personne.</b> Végétariens, végans, pescétariens et allergies, gérés dans la même recette.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Des portions plus petites pour les enfants.</b> La liste de courses prévoit juste ce qu’il faut.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Seulement les jours où tu cuisines.</b> Petit-déjeuner, déjeuner et dîner, ou juste le dîner.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Pensé pour ta cuisine.</b> Pas de four ? Pas d’air fryer ? Les recettes suivent ce que tu as.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Dans ta semaine : les promos sur ce que tu cuisines déjà, avec l’économie sur chacune.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>D’un geste, une promo passe dans ta liste de courses.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Ouvre un produit pour voir les valeurs nutritionnelles de son étiquette, ou les valeurs moyennes pour ce type d’aliment.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Aux États-Unis et au Canada, ajoute ton code postal pour voir le prospectus de ta zone.</span></li>
       </ul>
+      <a class="btn btn-lime" href="/app/?lang=fr">Planifier ma semaine <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <p class="fine deals-note">Les promos viennent du prospectus de chaque magasin. On ajoute les magasins un par un, et certaines offres demandent sa carte de fidélité. Valeurs nutritionnelles : Open Food Facts.</p>
     </div>
-    <figure class="meal-card reveal" aria-label="Un dîner adapté à trois personnes">
-      <img src="/images/recipes/chicken-fajitas.webp" alt="Fajitas au poulet, vues du dessus" width="480" height="480">
-      <div class="mc-body">
-        <div class="mc-top"><b>Fajitas au poulet</b><span>Ce soir · 25 min</span></div>
-        <ul class="people">
-          <li><span class="av">A</span><span>Alex</span><em>Recette complète</em></li>
-          <li><span class="av av2">S</span><span>Sam</span><em>Végétarien : pois chiches au lieu du poulet</em></li>
-          <li><span class="av av3">L</span><span>Léo, 6 ans</span><em>Portion enfant</em></li>
+    <figure class="deals-mock reveal" aria-label="Un exemple des promos de la semaine dans un magasin">
+      <div class="dm-head">
+        <b>Promos</b>
+        <span class="dm-shop"><img src="/images/stores/walmart.webp" alt="" width="20" height="20">Walmart</span>
+        <small>Exemple</small>
+      </div>
+      <div class="dm-week">
+        <p class="dm-label">Dans ta semaine</p>
+        <p class="dm-total">3 en promo</p>
+        <ul class="dm-mini">
+          <li><span class="dm-tile t-produce" aria-hidden="true">🧅</span><span>Oignons</span><b>2,49 €</b><s>3,99 €</s></li>
+          <li><span class="dm-tile t-dairy" aria-hidden="true">🥚</span><span>Œufs, x12</span><b>2,49 €</b><s>3,29 €</s></li>
+          <li><span class="dm-tile t-produce" aria-hidden="true">🫑</span><span>Poivrons rouges</span><b>0,99 €</b><s>1,49 €</s></li>
         </ul>
       </div>
+      <ul class="dm-grid">
+        <li><span class="dm-off">−43%</span><span class="dm-tile big t-meat" aria-hidden="true">🍗</span><span class="dm-name">Blancs de poulet</span><b>1,99 €</b><s>3,49 €</s><span class="dm-add added" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−41%</span><span class="dm-tile big t-pantry" aria-hidden="true">🍝</span><span class="dm-name">Spaghetti, 500 g</span><b>1,00 €</b><s>1,69 €</s><span class="dm-add" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−37%</span><span class="dm-tile big t-produce" aria-hidden="true">🥑</span><span class="dm-name">Avocats Hass</span><b>0,79 €</b><s>1,25 €</s><span class="dm-add" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−37%</span><span class="dm-tile big t-pantry" aria-hidden="true">🥫</span><span class="dm-name">Tomates concassées</span><b>1,25 €</b><s>1,99 €</s><span class="dm-add" aria-hidden="true"></span></li>
+      </ul>
     </figure>
   </div>
 </section>
-<section class="section" id="budget" aria-labelledby="change-title">
-  <div class="wrap">
-    <p class="eyebrow center">Ce qui change</p>
-    <h2 id="change-title" class="center">Moins de décisions. <em>Plus de bons repas.</em></h2>
-    <div class="cards3 snap mslide">
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🕕</span>
-        <h3>Fini la panique de 18 h</h3>
-        <p>Le dîner est décidé avant le début de la semaine : fini le « on mange quoi ? » de chaque jour.</p>
-      </article>
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🛒</span>
-        <h3>Une course, une liste</h3>
-        <p>Tout pour la semaine en un seul passage, avec les mêmes quantités que les recettes. Moins de gaspillage.</p>
-      </article>
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🧾</span>
-        <h3>Pas de surprise à la caisse</h3>
-        <p>Tu vois le total de la semaine à côté de ton budget avant tes courses, et chaque changement montre son effet.</p>
-      </article>
+<section class="section deep" id="shops" aria-labelledby="shops-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="shops-title">Ce que coûte la même semaine ailleurs</h2>
+      <p class="sub">WisprFood calcule le prix de toute ta semaine dans chaque supermarché de ton pays. Si un autre magasin est moins cher, tu vois de combien. Ton magasin reste ton choix et le plan le suit.</p>
+      <a class="btn btn-lime" href="/app/?lang=fr">Comparer mes magasins <svg class="ic"><use href="#i-arrow"/></svg></a>
     </div>
+    <figure class="compare reveal" aria-label="Un exemple d’une semaine chiffrée dans cinq magasins">
+      <div class="cp-head"><b>Cette semaine chez</b><small>Exemple · 2 personnes</small></div>
+      <ul>
+        <li><span class="shop">Aldi <em class="tag">Le moins cher</em></span><span class="bar"><i style="width:62%"></i></span><b>59,57 €</b></li>
+        <li><span class="shop">Lidl</span><span class="bar"><i style="width:68%"></i></span><b>60,80 €</b></li>
+        <li class="mine"><span class="shop">Walmart <em class="tag tag-mine">Ton magasin</em></span><span class="bar"><i style="width:76%"></i></span><b>62,64 €</b></li>
+        <li><span class="shop">Target</span><span class="bar"><i style="width:84%"></i></span><b>63,87 €</b></li>
+        <li><span class="shop">Kroger</span><span class="bar"><i style="width:92%"></i></span><b>65,71 €</b></li>
+      </ul>
+    </figure>
   </div>
 </section>
 <section class="section closing" id="download" aria-labelledby="closing-title">
   <div class="wrap closing-in">
-    <h2 id="closing-title">Tes repas de la semaine <em>t’attendent.</em></h2>
+    <h2 id="closing-title">Les dîners de la semaine prochaine, c’est réglé</h2>
     <p class="sub">Deux minutes de questions, et tous les dîners sont décidés.</p>
     <a class="btn btn-lime btn-lg" href="/app/?lang=fr">Planifier ma semaine <svg class="ic"><use href="#i-arrow"/></svg></a>
-    <p class="fine">Gratuit pour essayer · sans carte</p>
+    <p class="fine">Vois ta semaine gratuitement · sans carte</p>
     <div class="stores">
       <p>Tu préfères une app ? WisprFood est sur iPhone, avec le même compte. Android arrive bientôt.</p>
       <div class="badges">

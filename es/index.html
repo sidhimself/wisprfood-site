@@ -20,7 +20,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="WisprFood">
 <meta property="og:title" content="WisprFood · Tu menú de la semana, planificado en segundos">
-<meta property="og:description" content="Deja de preguntarte qué hay de cenar. Una semana de comidas para todos en tu mesa, con los precios de tu súper.">
+<meta property="og:description" content="Sabes qué vas a cenar toda la semana. WisprFood planifica las comidas de tu casa y les pone precio en tu propio súper, con una sola lista de la compra para la semana.">
 <meta property="og:url" content="https://wisprfood.com/es/">
 <meta property="og:image" content="https://wisprfood.com/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -29,7 +29,7 @@
 <meta property="og:locale" content="es_ES">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="WisprFood · Tu menú de la semana, planificado en segundos">
-<meta name="twitter:description" content="Deja de preguntarte qué hay de cenar. Una semana de comidas para todos en tu mesa, con los precios de tu súper.">
+<meta name="twitter:description" content="Sabes qué vas a cenar toda la semana. WisprFood planifica las comidas de tu casa y les pone precio en tu propio súper, con una sola lista de la compra para la semana.">
 <meta name="twitter:image" content="https://wisprfood.com/og-image.png">
 
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -40,7 +40,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@1,9..144,500,50&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <script>document.documentElement.classList.add("js")</script>
 <link rel="stylesheet" href="/home.css?v=8">
 
@@ -118,7 +118,7 @@
           "name": "¿Se puede probar gratis?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí. Inicia sesión, configura tu semana y mira tu primera comida gratis, sin tarjeta. Desbloquea toda la semana con el plan mensual o el de por vida, de pago único."
+            "text": "Sí. Inicia sesión, configura tu semana y mírala con una comida abierta, gratis y sin tarjeta. Para la semana entera, elige el plan mensual o el de por vida, que pagas una sola vez."
           }
         },
         {
@@ -134,7 +134,7 @@
           "name": "¿Qué países y supermercados incluye?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "82 supermercados en 10 países: Estados Unidos, Reino Unido, Irlanda, España, Francia, Alemania, Dinamarca, Polonia, México y Colombia."
+            "text": "Más de 100 supermercados en 12 países: Estados Unidos, Canadá, México, Colombia, Reino Unido, Irlanda, España, Francia, Alemania, Dinamarca, Polonia y Australia."
           }
         },
         {
@@ -151,6 +151,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Son estimaciones por ingrediente y supermercado, y mejoran con el tiempo. Están pensadas para planificar un presupuesto, así que tu ticket puede variar un poco."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿De dónde salen las ofertas?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Del folleto semanal de tu súper, que leemos cada semana. En Estados Unidos y Canadá usamos tu código postal, porque los folletos cambian según la zona. Vamos añadiendo supermercados poco a poco, y algunas ofertas requieren su tarjeta de cliente."
           }
         },
         {
@@ -199,12 +207,12 @@
   <div class="wrap hero-in">
     <div class="hero-copy">
       <p class="chip">Planificador de menús · con los precios de tu súper</p>
-      <h1><span>Deja de preguntarte qué hay de cenar</span> <em>para siempre.</em></h1>
-      <p class="lead">WisprFood planifica las comidas de toda tu semana en segundos, pensando en tu casa, tus gustos y tu cocina. Cada comida lleva el precio de tu supermercado, así que también sabes dónde te sale más barato.</p>
+      <h1><span>Ya sabes qué vas a cenar</span> <em>toda la semana.</em></h1>
+      <p class="lead">Cuéntale a WisprFood quién come y dónde compras. Recibes todas las comidas de los días que cocinas, con los precios de tu súper, y una sola lista de la compra ordenada por pasillos. Configurarlo lleva unos dos minutos.</p>
       <div class="cta-row">
         <a class="btn btn-lg" href="/app/?lang=es">Planificar mi semana <svg class="ic"><use href="#i-arrow"/></svg></a>
       </div>
-      <p class="fine">Gratis para probar · sin tarjeta · funciona en tu navegador</p>
+      <p class="fine">Mira tu semana gratis · sin tarjeta · funciona en tu navegador</p>
     </div>
 
     <figure class="week-card reveal" aria-label="Un ejemplo de semana de cenas con precios">
@@ -228,7 +236,7 @@
 
 <section class="shops-strip" id="shops-strip" aria-labelledby="strip-title">
   <div class="wrap">
-    <p class="strip-title" id="strip-title">Precios de 82 supermercados en 10 países</p>
+    <p class="strip-title" id="strip-title">Precios de más de 100 supermercados en 12 países</p>
     <div class="marquee"><ul class="logos">
       <li><img src="/images/stores/walmart.webp" alt="Walmart" height="30"></li>
       <li><img src="/images/stores/target.svg" alt="Target" height="30"></li>
@@ -243,42 +251,14 @@
   </div>
 </section>
 
-<section class="section" id="features" aria-labelledby="table-title">
-  <div class="wrap split">
-    <div>
-      <p class="eyebrow">Un plan para toda la mesa</p>
-      <h2 id="table-title">Comidas que le van bien <em>a todos en tu mesa.</em></h2>
-      <p class="sub">Dile a WisprFood quién come y planifica para todos, sin cocinar tres cenas distintas.</p>
-      <ul class="ticks">
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Cambios por persona.</b> Vegetarianos, veganos, pescetarianos y alergias, dentro de la misma receta.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Raciones más pequeñas para los niños.</b> La lista de la compra lleva justo lo necesario.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Solo los días que cocinas.</b> Desayuno, comida y cena, o solo la cena.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Hecho para tu cocina.</b> ¿Sin horno? ¿Sin freidora de aire? Las recetas se adaptan a lo que tienes.</span></li>
-      </ul>
-    </div>
-    <figure class="meal-card reveal" aria-label="Una cena adaptada a tres personas">
-      <img src="/images/recipes/chicken-fajitas.webp" alt="Fajitas de pollo, vistas desde arriba" width="480" height="480">
-      <div class="mc-body">
-        <div class="mc-top"><b>Fajitas de pollo</b><span>Esta noche · 25 min</span></div>
-        <ul class="people">
-          <li><span class="av">A</span><span>Alex</span><em>Receta completa</em></li>
-          <li><span class="av av2">S</span><span>Sam</span><em>Vegetariano: garbanzos en vez de pollo</em></li>
-          <li><span class="av av3">L</span><span>Leo, 6 años</span><em>Ración infantil</em></li>
-        </ul>
-      </div>
-    </figure>
-  </div>
-</section>
-
 <section class="section tint" id="how" aria-labelledby="how-title">
   <div class="wrap">
-    <p class="eyebrow center">Cómo funciona</p>
-    <h2 id="how-title" class="center">Tu semana, planificada en <em>tres pasos.</em></h2>
+    <h2 id="how-title" class="center">Cómo funciona</h2>
     <ol class="steps snap mslide">
       <li class="reveal">
         <span class="num">1</span>
-        <h3>Cuéntanos quién come en tu mesa</h3>
-        <p>Personas, dietas, alergias, presupuesto, tu súper y la cocina que tienes. Unos dos minutos.</p>
+        <h3>Cuéntanos quién come</h3>
+        <p>Quién come, lo que no puede comer cada uno, tu presupuesto, tu súper y la cocina que tienes. Un vegetariano y un niño de seis años pueden compartir la misma cena. Son unos dos minutos.</p>
       </li>
       <li class="reveal">
         <span class="num">2</span>
@@ -287,78 +267,51 @@
       </li>
       <li class="reveal">
         <span class="num">3</span>
-        <h3>Compra una vez, cocina tranquilo</h3>
-        <p>Una lista de la compra por pasillos y luego modo cocina paso a paso con temporizadores.</p>
+        <h3>Compra una vez y a cocinar</h3>
+        <p>Una lista de la compra ordenada por pasillos. Ya en los fogones, el modo cocina te lleva paso a paso, con temporizadores incluidos.</p>
       </li>
     </ol>
     <div class="center"><a class="btn" href="/app/?lang=es">Planificar mi semana <svg class="ic"><use href="#i-arrow"/></svg></a></div>
   </div>
 </section>
 
-<section class="section" id="budget" aria-labelledby="change-title">
-  <div class="wrap">
-    <p class="eyebrow center">Qué cambia</p>
-    <h2 id="change-title" class="center">Menos decidir. <em>Más comer bien.</em></h2>
-    <div class="cards3 snap mslide">
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🕕</span>
-        <h3>Adiós al agobio de las 6 de la tarde</h3>
-        <p>La cena está decidida antes de que empiece la semana, así que se acabó el “¿qué comemos?” de cada día.</p>
-      </article>
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🛒</span>
-        <h3>Una compra, una lista</h3>
-        <p>Todo lo de la semana en un solo viaje, con las mismas cantidades que las recetas. Menos comida a la basura.</p>
-      </article>
-      <article class="card reveal">
-        <span class="emoji" aria-hidden="true">🧾</span>
-        <h3>Sin sorpresas en la caja</h3>
-        <p>Ves el total de la semana junto a tu presupuesto antes de comprar, y cada cambio muestra lo que supone.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section deep" id="shops" aria-labelledby="shops-title">
+<section class="section deals" id="deals" aria-labelledby="deals-title">
   <div class="wrap split">
     <div>
-      <p class="eyebrow on-deep">Compara supermercados</p>
-      <h2 id="shops-title">Descubre dónde tu semana <em>sale más barata.</em></h2>
-      <p class="sub">WisprFood calcula el precio de toda tu semana en cada supermercado de tu país. Es un consejo, nunca una obligación: el súper lo eliges tú y el plan te sigue.</p>
-      <a class="btn btn-lime" href="/app/?lang=es">Comparar mis supermercados <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <p class="eyebrow on-deep">Nuevo</p>
+      <h2 id="deals-title">El folleto de tu súper, <em>comparado con tu menú</em></h2>
+      <p class="sub">WisprFood lee el folleto de esta semana de tu súper y lo compara con tu plan. Si los contramuslos de pollo están de oferta y ya están en la cena del jueves, lo verás, junto con lo que te ahorras.</p>
+      <ul class="ticks">
+        <li><svg class="ic"><use href="#i-check"/></svg><span>En tu semana: ofertas de lo que ya vas a cocinar, con lo que ahorras en cada una.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Con un toque, una oferta pasa a tu lista de la compra.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Abre un producto para ver la información nutricional de su etiqueta, o los valores típicos de ese tipo de alimento.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>En Estados Unidos y Canadá, añade tu código postal para ver el folleto de tu zona.</span></li>
+      </ul>
+      <a class="btn btn-lime" href="/app/?lang=es">Planificar mi semana <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <p class="fine deals-note">Las ofertas salen del folleto semanal de cada súper. Vamos añadiendo supermercados poco a poco, y algunas ofertas requieren su tarjeta de cliente. Datos nutricionales de Open Food Facts.</p>
     </div>
-    <figure class="compare reveal" aria-label="Un ejemplo de una semana con precios en cinco supermercados">
-      <div class="cp-head"><b>Esta semana en</b><small>Ejemplo · 2 personas</small></div>
-      <ul>
-        <li><span class="shop">Aldi <em class="tag">Más barato</em></span><span class="bar"><i style="width:62%"></i></span><b>59,57 €</b></li>
-        <li><span class="shop">Lidl</span><span class="bar"><i style="width:68%"></i></span><b>60,80 €</b></li>
-        <li class="mine"><span class="shop">Walmart <em class="tag tag-mine">Tu súper</em></span><span class="bar"><i style="width:76%"></i></span><b>62,64 €</b></li>
-        <li><span class="shop">Target</span><span class="bar"><i style="width:84%"></i></span><b>63,87 €</b></li>
-        <li><span class="shop">Kroger</span><span class="bar"><i style="width:92%"></i></span><b>65,71 €</b></li>
+    <figure class="deals-mock reveal" aria-label="Un ejemplo de las ofertas de esta semana en un súper">
+      <div class="dm-head">
+        <b>Ofertas</b>
+        <span class="dm-shop"><img src="/images/stores/walmart.webp" alt="" width="20" height="20">Walmart</span>
+        <small>Ejemplo</small>
+      </div>
+      <div class="dm-week">
+        <p class="dm-label">En tu semana</p>
+        <p class="dm-total">3 de oferta</p>
+        <ul class="dm-mini">
+          <li><span class="dm-tile t-produce" aria-hidden="true">🧅</span><span>Cebollas</span><b>2,49 €</b><s>3,99 €</s></li>
+          <li><span class="dm-tile t-dairy" aria-hidden="true">🥚</span><span>Huevos, 12 uds.</span><b>2,49 €</b><s>3,29 €</s></li>
+          <li><span class="dm-tile t-produce" aria-hidden="true">🫑</span><span>Pimientos rojos</span><b>0,99 €</b><s>1,49 €</s></li>
+        </ul>
+      </div>
+      <ul class="dm-grid">
+        <li><span class="dm-off">−43%</span><span class="dm-tile big t-meat" aria-hidden="true">🍗</span><span class="dm-name">Pechugas de pollo</span><b>1,99 €</b><s>3,49 €</s><span class="dm-add added" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−41%</span><span class="dm-tile big t-pantry" aria-hidden="true">🍝</span><span class="dm-name">Espaguetis, 500 g</span><b>1,00 €</b><s>1,69 €</s><span class="dm-add" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−37%</span><span class="dm-tile big t-produce" aria-hidden="true">🥑</span><span class="dm-name">Aguacates Hass</span><b>0,79 €</b><s>1,25 €</s><span class="dm-add" aria-hidden="true"></span></li>
+        <li><span class="dm-off">−37%</span><span class="dm-tile big t-pantry" aria-hidden="true">🥫</span><span class="dm-name">Tomate triturado</span><b>1,25 €</b><s>1,99 €</s><span class="dm-add" aria-hidden="true"></span></li>
       </ul>
     </figure>
-  </div>
-</section>
-
-<section class="section" id="recipes" aria-labelledby="recipes-title">
-  <div class="wrap">
-    <p class="eyebrow center">Las recetas</p>
-    <h2 id="recipes-title" class="center">165 recetas, <em>todas probadas en la cocina.</em></h2>
-    <p class="sub center">Cocina casera de España, Italia, México, la India, Asia, el Mediterráneo y cocinas de todo el mundo. Cenas rápidas entre semana, desayunos fáciles y comidas que aguantan.</p>
-  </div>
-  <div class="rail drift" aria-label="Ejemplos de recetas">
-    <ul>
-      <li><img src="/images/recipes/pollo-al-chilindron.webp" alt="" width="240" height="240"><b>Pollo al chilindrón</b><small>Española · 45 min</small></li>
-      <li><img src="/images/recipes/cacio-e-pepe.webp" alt="" width="240" height="240"><b>Cacio e pepe</b><small>Italiana · 20 min</small></li>
-      <li><img src="/images/recipes/chicken-fajitas.webp" alt="" width="240" height="240" loading="lazy"><b>Fajitas de pollo</b><small>Mexicana · 25 min</small></li>
-      <li><img src="/images/recipes/chicken-tikka-masala.webp" alt="" width="240" height="240" loading="lazy"><b>Pollo tikka masala</b><small>India · 45 min</small></li>
-      <li><img src="/images/recipes/teriyaki-chicken-bowl.webp" alt="" width="240" height="240" loading="lazy"><b>Bol de arroz con pollo teriyaki</b><small>Asiática · 25 min</small></li>
-      <li><img src="/images/recipes/butter-bean-shakshuka.webp" alt="" width="240" height="240" loading="lazy"><b>Shakshuka de judiones</b><small>Mediterránea · 30 min</small></li>
-      <li><img src="/images/recipes/vegetarian-pad-thai.webp" alt="" width="240" height="240" loading="lazy"><b>Pad thai vegetariano</b><small>Asiática · 25 min</small></li>
-      <li><img src="/images/recipes/lentil-chorizo-stew.webp" alt="" width="240" height="240" loading="lazy"><b>Guiso de lentejas con chorizo</b><small>Española · 40 min</small></li>
-      <li><img src="/images/recipes/tomato-basil-pasta.webp" alt="" width="240" height="240" loading="lazy"><b>Pasta con tomate y albahaca</b><small>Italiana · 25 min</small></li>
-      <li><img src="/images/recipes/porridge-banana.webp" alt="" width="240" height="240" loading="lazy"><b>Gachas de avena con plátano</b><small>Desayuno · 10 min</small></li>
-    </ul>
   </div>
 </section>
 
@@ -385,22 +338,61 @@
       <div class="lc-foot"><span>En la cesta</span><b>15,51 €</b></div>
     </figure>
     <div>
-      <p class="eyebrow">La lista de la compra</p>
-      <h2 id="list-title">Una lista. <em>Un total.</em></h2>
-      <p class="sub">Todos los ingredientes de la semana en una lista, por pasillos, con las mismas cantidades que las recetas. Márcalos mientras compras y mira cómo suma la cesta.</p>
+      <h2 id="list-title">Una lista para toda la semana</h2>
+      <p class="sub">Todos los ingredientes de la semana, por pasillos y en las mismas cantidades que las recetas. Márcalos mientras compras. Antes de salir de casa ya ves el total de la semana junto a tu presupuesto.</p>
       <ul class="ticks">
         <li><svg class="ic"><use href="#i-check"/></svg><span><b>Compártela</b> con quien haga la compra.</span></li>
         <li><svg class="ic"><use href="#i-check"/></svg><span><b>Cambia una comida</b> y la lista se actualiza sola.</span></li>
-        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Sistema métrico o imperial,</b> en seis idiomas.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span><b>Ofertas a la vista:</b> lo que esté de oferta esta semana en tu súper lleva etiqueta.</span></li>
       </ul>
     </div>
   </div>
 </section>
 
+<section class="section deep" id="shops" aria-labelledby="shops-title">
+  <div class="wrap split">
+    <div>
+      <h2 id="shops-title">Lo que cuesta la misma semana en otros súper</h2>
+      <p class="sub">WisprFood calcula el precio de toda tu semana en cada supermercado de tu país. Si otro sale más barato, verás por cuánto. El súper lo sigues eligiendo tú y el plan te sigue.</p>
+      <a class="btn btn-lime" href="/app/?lang=es">Comparar mis supermercados <svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+    <figure class="compare reveal" aria-label="Un ejemplo de una semana con precios en cinco supermercados">
+      <div class="cp-head"><b>Esta semana en</b><small>Ejemplo · 2 personas</small></div>
+      <ul>
+        <li><span class="shop">Aldi <em class="tag">Más barato</em></span><span class="bar"><i style="width:62%"></i></span><b>59,57 €</b></li>
+        <li><span class="shop">Lidl</span><span class="bar"><i style="width:68%"></i></span><b>60,80 €</b></li>
+        <li class="mine"><span class="shop">Walmart <em class="tag tag-mine">Tu súper</em></span><span class="bar"><i style="width:76%"></i></span><b>62,64 €</b></li>
+        <li><span class="shop">Target</span><span class="bar"><i style="width:84%"></i></span><b>63,87 €</b></li>
+        <li><span class="shop">Kroger</span><span class="bar"><i style="width:92%"></i></span><b>65,71 €</b></li>
+      </ul>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="recipes" aria-labelledby="recipes-title">
+  <div class="wrap">
+    <h2 id="recipes-title" class="center">Más de 470 recetas, todas probadas en la cocina</h2>
+    <p class="sub center">Cocina casera de España, Italia, México, la India, Asia, el Mediterráneo y cocinas de todo el mundo. Cenas rápidas entre semana, desayunos fáciles y comidas que aguantan.</p>
+  </div>
+  <div class="rail drift" aria-label="Ejemplos de recetas">
+    <ul>
+      <li><img src="/images/recipes/pollo-al-chilindron.webp" alt="" width="240" height="240"><b>Pollo al chilindrón</b><small>Española · 45 min</small></li>
+      <li><img src="/images/recipes/cacio-e-pepe.webp" alt="" width="240" height="240"><b>Cacio e pepe</b><small>Italiana · 20 min</small></li>
+      <li><img src="/images/recipes/chicken-fajitas.webp" alt="" width="240" height="240" loading="lazy"><b>Fajitas de pollo</b><small>Mexicana · 25 min</small></li>
+      <li><img src="/images/recipes/chicken-tikka-masala.webp" alt="" width="240" height="240" loading="lazy"><b>Pollo tikka masala</b><small>India · 45 min</small></li>
+      <li><img src="/images/recipes/teriyaki-chicken-bowl.webp" alt="" width="240" height="240" loading="lazy"><b>Bol de arroz con pollo teriyaki</b><small>Asiática · 25 min</small></li>
+      <li><img src="/images/recipes/butter-bean-shakshuka.webp" alt="" width="240" height="240" loading="lazy"><b>Shakshuka de judiones</b><small>Mediterránea · 30 min</small></li>
+      <li><img src="/images/recipes/vegetarian-pad-thai.webp" alt="" width="240" height="240" loading="lazy"><b>Pad thai vegetariano</b><small>Asiática · 25 min</small></li>
+      <li><img src="/images/recipes/lentil-chorizo-stew.webp" alt="" width="240" height="240" loading="lazy"><b>Guiso de lentejas con chorizo</b><small>Española · 40 min</small></li>
+      <li><img src="/images/recipes/tomato-basil-pasta.webp" alt="" width="240" height="240" loading="lazy"><b>Pasta con tomate y albahaca</b><small>Italiana · 25 min</small></li>
+      <li><img src="/images/recipes/porridge-banana.webp" alt="" width="240" height="240" loading="lazy"><b>Gachas de avena con plátano</b><small>Desayuno · 10 min</small></li>
+    </ul>
+  </div>
+</section>
+
 <section class="section" id="reviews" aria-labelledby="reviews-title">
   <div class="wrap">
-    <p class="eyebrow center">De nuestros testers</p>
-    <h2 id="reviews-title" class="center">Lo que dice <em>la gente.</em></h2>
+    <h2 id="reviews-title" class="center">Lo que nos dijeron quienes la probaron</h2>
     <div class="reviews snap" data-auto="4500">
       <blockquote class="review"><span class="stars" aria-label="5 estrellas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Mi cuenta bancaria te da las gracias</b><p>La cuenta del súper se me estaba yendo de las manos y, sinceramente, ya me lo estaba tomando como algo personal 😭 Ahora comparo precios antes de comprar y por fin sé en qué se me va el dinero. Mi cuenta bancaria por fin se está recuperando.</p><cite>Sophie</cite></blockquote>
       <blockquote class="review"><span class="stars" aria-label="5 estrellas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></span><b>Se acabó quedarse mirando la nevera</b><p>Yo abriendo la nevera 17 veces esperando que aparezca comida nueva por arte de magia 💀 Esta app de verdad me dice qué puedo cocinar con lo que ya tengo dentro. Un cambio total para alguien que cocina básicamente a ojo.</p><cite>Emily</cite></blockquote>
@@ -418,14 +410,14 @@
 
 <section class="section" id="faq" aria-labelledby="faq-title">
   <div class="wrap narrow">
-    <p class="eyebrow center">FAQ</p>
-    <h2 id="faq-title" class="center">Preguntas, <em>respondidas.</em></h2>
+    <h2 id="faq-title" class="center">Preguntas frecuentes</h2>
     <div class="faq">
-      <details><summary>¿Se puede probar gratis?</summary><p>Sí. Inicia sesión, configura tu semana y mira tu primera comida gratis, sin tarjeta. Desbloquea toda la semana con el plan mensual o el de por vida, de pago único.</p></details>
+      <details><summary>¿Se puede probar gratis?</summary><p>Sí. Inicia sesión, configura tu semana y mírala con una comida abierta, gratis y sin tarjeta. Para la semana entera, elige el plan mensual o el de por vida, que pagas una sola vez.</p></details>
       <details><summary>¿Tengo que comprar en el súper más barato?</summary><p>No. Eliges tu súper favorito y todos los precios lo siguen. La comparación es un consejo, nunca una obligación.</p></details>
-      <details><summary>¿Qué países y supermercados incluye?</summary><p>82 supermercados en 10 países: Estados Unidos, Reino Unido, Irlanda, España, Francia, Alemania, Dinamarca, Polonia, México y Colombia.</p></details>
+      <details><summary>¿Qué países y supermercados incluye?</summary><p>Más de 100 supermercados en 12 países: Estados Unidos, Canadá, México, Colombia, Reino Unido, Irlanda, España, Francia, Alemania, Dinamarca, Polonia y Australia.</p></details>
       <details><summary>¿Un mismo plan sirve para dietas y alergias distintas?</summary><p>Sí. Cada persona puede ser vegetariana, vegana o pescetariana y tener sus propias alergias. WisprFood cambia ingredientes por persona y da raciones más pequeñas a los niños.</p></details>
       <details><summary>¿Qué precisión tienen los precios?</summary><p>Son estimaciones por ingrediente y supermercado, y mejoran con el tiempo. Están pensadas para planificar un presupuesto, así que tu ticket puede variar un poco.</p></details>
+      <details><summary>¿De dónde salen las ofertas?</summary><p>Del folleto semanal de tu súper, que leemos cada semana. En Estados Unidos y Canadá usamos tu código postal, porque los folletos cambian según la zona. Vamos añadiendo supermercados poco a poco, y algunas ofertas requieren su tarjeta de cliente.</p></details>
       <details><summary>¿Cómo cancelo o borro mi cuenta?</summary><p>Cancela cuando quieras desde tu perfil, o desde las suscripciones de App Store o Google Play si te suscribiste allí. Perfil → Eliminar cuenta borra tu cuenta y todo lo guardado.</p></details>
     </div>
     <p class="fine center">¿Otra cosa? Escríbenos a <a href="mailto:info@wisprfood.com">info@wisprfood.com</a></p>
@@ -434,10 +426,10 @@
 
 <section class="section closing" id="download" aria-labelledby="closing-title">
   <div class="wrap closing-in">
-    <h2 id="closing-title">Tu menú de la semana <em>te espera.</em></h2>
+    <h2 id="closing-title">Las cenas de la próxima semana, resueltas</h2>
     <p class="sub">Dos minutos de preguntas y todas las cenas decididas.</p>
     <a class="btn btn-lime btn-lg" href="/app/?lang=es">Planificar mi semana <svg class="ic"><use href="#i-arrow"/></svg></a>
-    <p class="fine">Gratis para probar · sin tarjeta</p>
+    <p class="fine">Mira tu semana gratis · sin tarjeta</p>
     <div class="stores">
       <p>¿Prefieres una app? WisprFood está en iPhone, con la misma cuenta. Android llega pronto.</p>
       <div class="badges">
