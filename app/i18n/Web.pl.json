@@ -510,5 +510,8 @@
  "Deals coming soon": "Promocje wkrótce",
  "From this week's deals": "Z promocji tego tygodnia",
  "This week's deals": "Promocje tygodnia",
- "at your shop": "w twoim sklepie"
+ "at your shop": "w twoim sklepie",
+ "Updated %@": "Zaktualizowano: %@",
+ "No %@ ad for your ZIP code yet, so here's the nearest one we have. Prices at your store may differ.": "Nie mamy jeszcze gazetki %@ dla twojego kodu ZIP, oto najbliższa, jaką mamy. Ceny w twoim sklepie mogą się różnić.",
+ "No %@ ad for your postal code yet, so here's the nearest one we have. Prices at your store may differ.": "Nie mamy jeszcze gazetki %@ dla twojego kodu pocztowego, oto najbliższa, jaką mamy. Ceny w twoim sklepie mogą się różnić."
 }
