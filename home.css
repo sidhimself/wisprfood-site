@@ -682,3 +682,13 @@ h1 em, h2 em { font-family: 'Fraunces', Georgia, serif; font-style: italic; font
 @media (prefers-reduced-motion: reduce) {
   .js .rise, .js .reveal, .js .reveal-group > *, .js .deals-mock .dm-week, .js .deals-mock .dm-grid li, .js .list-card ul, .js .compare li { opacity: 1; transform: none; filter: none; transition: none; }
 }
+
+/* Deals mock: real product photos from Open Food Facts (CC BY-SA), all in one image
+   (images/deals-products.webp, 1200 x 400): four 300 x 240 cells on top, three 160 x 160 below. */
+.deals-mock .dm-tile { background: #fbfaf6 url(/images/deals-products.webp) no-repeat; }
+.dm-tile.big { height: auto; aspect-ratio: 5 / 4; background-size: 400% 166.667%; overflow: hidden; }
+.dm-tile.p0 { background-position: 0 0; } .dm-tile.p1 { background-position: 33.333% 0; }
+.dm-tile.p2 { background-position: 66.667% 0; } .dm-tile.p3 { background-position: 100% 0; }
+.dm-mini .dm-tile { width: 44px; height: 44px; border-radius: 11px; background-size: 750% 250%; }
+.dm-tile.m0 { background-position: 0 100%; } .dm-tile.m1 { background-position: 15.385% 100%; } .dm-tile.m2 { background-position: 30.769% 100%; }
+@media (max-width: 899px) { .dm-tile.big { height: auto; } }
