@@ -188,6 +188,9 @@ if __name__ == '__main__':
     # The pricing section left the homepage on 11 Nov; /pricing still shows it.
     extra = open(os.path.join(ROOT, '_i18n', 'pricing-section.html')).read().split('\n', 1)[1]
     src = src.replace('<section class="section" id="reviews"', extra + '\n<section class="section" id="reviews"', 1)
+    # "And a few more things" left the homepage on 28 Nov; /features still shows it.
+    more = open(os.path.join(ROOT, '_i18n', 'more-section.html')).read().split('\n', 1)[1]
+    src = src.replace('<section class="section" id="reviews"', more + '\n<section class="section" id="reviews"', 1)
     for n, code in enumerate(LANGS):
         jp = os.path.join(ROOT, '_i18n', f'{code}.json')
         T = json.load(open(jp))
